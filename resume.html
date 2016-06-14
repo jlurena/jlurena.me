@@ -1,0 +1,62 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Jean Luis Urena</title>
+
+	<!----------------------------------------------BOOTSTRAP---------------------------------------------------------->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<!-- THEME OF SITE -->
+	<link rel="stylesheet" href="css/carousel.css">
+
+	<!-----------------------JQUERY AND BOOTSTRAP JS------------------------------------------------------------------->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--------------------------------END BOOTSTRAP CDN---------------------------------------------------------------->
+
+	<style>
+		.resume {
+			overflow: hidden;
+			width: 600px;
+			height: 830px;
+
+		}
+
+		.object-resume {
+			text-align: center;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+	 	jQuery(document).ready(function(){
+	       	jQuery("#nav").load("navbar.html");
+	   	});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+		jQuery("#footer").load("footer.html")
+		});</script>
+</head>
+
+<body style="padding-top: 120px;">
+
+<div id="nav"></div>
+
+<div class="object-resume">
+	<iframe src="http://www.jlurena.me/misc/resume.pdf"
+			class="resume"></iframe>
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>
