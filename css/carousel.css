@@ -102,12 +102,12 @@ body {
     margin-top: 20px;
   }
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 561px;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+    width: 561px;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */

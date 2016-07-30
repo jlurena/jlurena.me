@@ -1,3 +1,5 @@
+
+<!--Script for outside linkes-->
 <script>
 	$(document).ready(function () {
 		$('a.prolinks').click(function () {
@@ -5,6 +7,8 @@
 		});
 	});
 </script>
+
+<!--Simple change of pointer to link-->
 <style>
 	a.prolinks {
 		cursor: pointer;
@@ -27,10 +31,14 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="under_construction.html">About Me</a></li>
-						<li><a href="under_construction.html">Contact</a></li>
-						<li><a href="resume.html">Resume</a></li>
+						<li><a href="home.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" role="button"
+							   aria-haspopup="true" aria-expanded="false">About Me<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="resume.html">Resume</a></li>
+							</ul>
+						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
 							   aria-haspopup="true" aria-expanded="false">Social Profiles<span class="caret"></span></a>
@@ -41,10 +49,18 @@
 								</li>
 							</ul>
 						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							   aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="/HealthNetProject.html">HealthNet</a></li>
+								<li><a href="under_construction.html">Solitaire Chess</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
-</div>
+</div> <!--COLLAPSE NAVBAR -->
 
