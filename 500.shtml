@@ -25,8 +25,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content">
 		<img src="img/500.jpg" alt="Error" title="error"/>
 		<p><span><label>O</label>hh.....</span>Something went terrible wrong.</p>
-		<p>We are trying to fix it as quickly as possible</p>
-		<a href="home.html">Back To Home</a>
+		<p>I am trying to fix it as quickly as possible</p>
+		<a href="/">Back To Home</a>
 	</div>
 	<!--End-Cotent-->
 </div>

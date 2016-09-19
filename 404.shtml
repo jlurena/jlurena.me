@@ -25,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content">
 		<img src="img/error-img.png" alt="Error" title="error"/>
 		<p><span><label>O</label>hh.....</span>You Requested the page that is no longer there.</p>
-		<a href="home.html">Back To Home</a>
+		<a href="/">Back To Home</a>
 	</div>
 	<!--End-Content-->
 </div>
