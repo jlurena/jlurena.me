@@ -23,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--End-header-->
 	<!--start-content-->
 	<div class="content">
-		<img src="img/500.jpg" alt="Error" title="error"/>
+		<img src="images/500.jpg" alt="Error" title="error"/>
 		<p><span><label>O</label>hh.....</span>Something went terrible wrong.</p>
 		<p>I am trying to fix it as quickly as possible</p>
 		<a href="/">Back To Home</a>
