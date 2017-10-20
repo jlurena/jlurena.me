@@ -21,10 +21,10 @@
 
 (function($) {
   $.fn.appendTable = function(headers, body, colors) {
+    var $container = $("<div></div>").addClass("table-responsive center-block");
     var $headerRow = $("<tr></tr>");
     var $tbody = $("<tbody></tbody>");
-    var $table = $("<table></table>").addClass("table table-responsive")
-      .css("max-height", "300px")
+    var $table = $("<table></table>").addClass("table")
       .append($tbody).append($headerRow);
     var i;
     for (i = 0; i < headers.length; i++) {
@@ -40,7 +40,8 @@
       }
       $tbody.append($row);
     }
-    this.append($table);
+    $container.append($table);
+    this.append($container);
     return this;
   };
 }(jQuery));
@@ -96,7 +97,7 @@ function parseXMLTest(path) {
         }
         tests.push(test);
       });
-      $innerContainer = $("<div></div>").css("width", "inherit")
+      $innerContainer = $("<div></div>")
         .appendTitle(title)
         .appendOverView(["Passed", "Ignored", "Failed"], [passed, ignored, failed], ["success", "default", "danger"])
         .appendTable(["Name", "Time", "Result", "Log"], tests, rowColors);
@@ -154,8 +155,8 @@ function initTestFilesSelector(path) {
 function toggleLog() {
   $(function() {
     $(document).on("click", "td > button", function() {
-      var $log = $("<p></p>").addClass("text-danger").text($(this).val());
-      var $log_title = $("<p></p>").addClass("text-danger").addClass("text-left").text($(this).data("log-title") + " Log");
+      var $log = $("<p></p>").addClass("text-danger text-left").text($(this).val());
+      var $log_title = $("<p></p>").addClass("text-danger text-left").text($(this).data("log-title") + " Log");
       $("#log_modal_title").empty().append($log_title);
       $("#log_modal_body").empty().append($log);
     });

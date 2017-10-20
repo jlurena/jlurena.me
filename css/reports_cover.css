@@ -9,6 +9,11 @@ a:hover {
   color: #fff;
 }
 
+.table-responsive {
+  max-height: 300px;
+  max-width: 500px;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
