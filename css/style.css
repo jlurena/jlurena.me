@@ -1043,6 +1043,10 @@ html, body {
     text-align: left;
 }
 
+.tmtimeline > li .tmlabel span {
+    font-weight: bolder;
+}
+
 .tmtimeline > li:last-child {
     margin-bottom: 40px;
 }
