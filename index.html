@@ -52,38 +52,31 @@
 		</div>
 		<!-- /LOADER TEMPLATE -->
 
+    <!-- NAVIGATION -->
+    <div id="navigation" class="navigation">
+      <ol class="slider-navigation">
+        <li class="selected"><a href="#0"><i class="fa fa-home"></i><em>Home</em></a></li>
+        <li id="about"><a href="#0"><i class="fa fa-user"></i><em>About Me</em></a></li>
+        <li><a href="#0"><i class="fa fa-file-text"></i><em>Resume</em></a></li>
+        <li><a href="#0"><i class="fa fa-briefcase"></i><em>Portfolio</em></a></li>
+        <li><a href="#0" ><i class="fa fa-newspaper-o"></i><em>Blog</em></a></li>
+        <li id="map"><a href="#0"><i class="fa fa-map-marker"></i><em>Contact</em></a></li>
+      </ol>
+    </div>
+    <!-- END NAVIGATION -->
 
-		<!-- SLIDER PROFILE PHOTO OR VIDEO-->
-		<div class="swiper-container slider-left">
-
-			<!--TODO Might delete sliders and keep one picture???-->
-			<!-- TODO I should really really seperate these things -->
-			<div class="swiper-wrapper">
-
-				<!-- Slide 1 -->
-				<div class="swiper-slide">
-					<div class="bg" style="background-image:url(images/jean/webslidepic1.jpg)"></div>
-					<div class="info">
-						<h3>Hey, I'm Jean </h3>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<!-- END SLIDER PROFILE PHOTO OR VIDEO-->
-
+    <!-- MOBILE ICON MENU -->
+    <div class="icon-mobile-wrapper">
+      <div class="icon-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- /MOBILE ICON MENU -->
 
 		<section class="slider-wrapper">
-
-			<!-- MOBILE ICON MENU -->
-			<div class="icon-mobile">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<!-- /MOBILE ICON MENU -->
-
 			<!-- CONTENT SLIDER -->
 			<ul class="slider">
 
@@ -91,8 +84,8 @@
 				<!-- HOME -->
 				<li class="visible">
 					<div class="content">
-
 						<div class="profile">
+              <div class="picture"></div>
 							<div class="welcome">
 								<div class="hello">
 									<h1>Hello, my name is</h1>
@@ -569,6 +562,16 @@
 					</div>
 				</li>
 				<!-- END PORTFOLIO -->
+        <!-- BEGIN BLOG -->
+        <li>
+					<div class="content">
+						<section class="blog" style="height:100%">
+              <object class="blog-container" type="text/html" data="https://blog.jlurena.me" width="100%" height="100%"></object>
+						</section>
+					</div>
+				</li>
+        <!-- END BLOG  -->
+
 				<!-- CONTACT -->
 				<li>
 					<div class="content">
@@ -603,34 +606,6 @@
 				<!-- END CONTACT -->
 			</ul>
 			<!-- END CONTENT SLIDER -->
-			<!-- NAVIGATION -->
-			<div class="navigation">
-				<ol class="slider-navigation">
-					<li class="selected"><a href="#0"><i class="fa fa-home"></i><em>Home</em></a></li>
-					<li id="about"><a href="#0"><i class="fa fa-user"></i><em>About Me</em></a></li>
-					<li><a href="#0"><i class="fa fa-file-text"></i><em>Resume</em></a></li>
-					<li><a href="#0"><i class="fa fa-briefcase"></i><em>Portfolio</em></a></li>
-					<!--<li><a href="#0"><i class="fa fa-newspaper-o"></i><em>Blog</em></a></li>-->
-					<li id="map"><a href="#0"><i class="fa fa-map-marker"></i><em>Contact</em></a></li>
-				</ol>
-			</div>
-			<!-- END NAVIGATION -->
-
-			<!-- FOOTER -->
-			<footer>
-				<div class="social-icons">
-					<ul>
-						<li><a href="https://facebook.com/eljeanxp" class="facebook"><i class="fa fa-fw fa-facebook"></i></a>
-						</li>
-						<li><a href="https://www.linkedin.com/in/jean-luis-urena-73903366" class="linkedin"><i class="fa fa-linkedin-square"></i></a>
-						</li>
-						<li><a href="https://twitter.com/eljeanxp" class="twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
-						<li><a href="https://github.com/jlurena" class="github"><i class="fa fa-github"></i></a></li>
-					</ul>
-				</div>
-			</footer>
-			<!-- END FOOTER -->
-
 			<!-- SVG ANIMATION COVER -->
 			<div class="svg-cover" data-step1="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" data-step2="M1400,800H383L770.7,0.6c0.2-0.3,0.5-0.6,0.9-0.6H1400v294V800z"
 			  data-step3="M1400,800H0V0.6C0,0.4,0,0.3,0,0h1400v294V800z" data-step4="M615,800H0V0.6C0,0.4,0,0.3,0,0h615L393,312L615,800z"
@@ -646,6 +621,21 @@
 			<!-- END SVG ANIMATION COVER -->
 		</section>
 		<!-- END SLIDER-WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-icons">
+        <ul>
+          <li><a href="https://facebook.com/eljeanxp" class="facebook"><i class="fa fa-fw fa-facebook"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/jean-luis-urena-73903366" class="linkedin"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+          <li><a href="https://twitter.com/eljeanxp" class="twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
+          <li><a href="https://github.com/jlurena" class="github"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
 
 		<!--MODAL-->
 		<div id="SolitaireChessModal" class="modal fade" role="dialog">
@@ -683,7 +673,7 @@
 		<script src="js/jquery.validate.js"></script>
 		<!-- jQuery OwlCarousel -->
 		<script src="js/owl.carousel.min.js"></script>
-		<!-- Swiper Slider -->
+    <!-- Swiper Slider -->
 		<script src="js/swiper.min.js"></script>
 		<!-- Youtube Player -->
 		<script src="js/jquery.youtubebackground.js"></script>

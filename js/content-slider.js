@@ -9,21 +9,18 @@ jQuery(document).ready(function(){
     firstCustomMinaAnimation = bezier(.42,.03,.77,.63, epsilon),
     secondCustomMinaAnimation = bezier(.27,.5,.6,.99, epsilon);
 
-  //initialize the slider
-  $('.slider-wrapper').each(function(){
-    initSlider($(this));
-  });
-
-  function initSlider(sliderWrapper) {
+  initSlider();
+  function initSlider() {
     //cache jQuery objects
-    var slider = sliderWrapper.find('.slider'),
-      sliderNavigation = sliderWrapper.find('.slider-navigation').find('li'),
-      about = sliderWrapper.find('.slider-navigation').find('#about');
-      svgCoverLayer = sliderWrapper.find('div.svg-cover'),
-      pathId = svgCoverLayer.find('path').attr('id'),
-      svgPath = Snap('#'+pathId);
-    
-    //store path 'd' attribute values 
+    var slider = $('.slider');
+    var navigation = $('#navigation');
+    var sliderNavigation = $('.slider-navigation').find('li');
+    var about = $('#about');
+    var svgCoverLayer = $('div.svg-cover');
+    var pathId = svgCoverLayer.find('path').attr('id');
+    var svgPath = Snap('#'+pathId);
+
+    //store path 'd' attribute values
     var pathArray = [];
     pathArray[0] = svgCoverLayer.data('step1');
     pathArray[1] = svgCoverLayer.data('step6');
@@ -34,11 +31,11 @@ jQuery(document).ready(function(){
     pathArray[6] = svgCoverLayer.data('step4');
     pathArray[7] = svgCoverLayer.data('step9');
     pathArray[8] = svgCoverLayer.data('step5');
-    pathArray[9] = svgCoverLayer.data('step10');  
+    pathArray[9] = svgCoverLayer.data('step10');
 
     //AboutMe
     about.one('click', function(){
-    
+
     //Skillbar animate
      jQuery('.skillbar').each(function(){
        jQuery(this).find('.skillbar-bar').animate({
@@ -54,9 +51,9 @@ jQuery(document).ready(function(){
                 to: counter,
                 speed: 4000,
                 refreshInterval: 60
-            });
-       });
-});
+                });
+           });
+    });
 
 
 
@@ -98,9 +95,9 @@ jQuery(document).ready(function(){
         path5 = paths[9];
     }
 
-   
+
     svgCoverLayer.addClass('is-animating');
-    
+
     svgPath.attr('d', path1);
     svgPath.animate({'d': path2}, duration, firstCustomMinaAnimation, function(){
       svgPath.animate({'d': path3}, duration, secondCustomMinaAnimation, function(){
@@ -111,8 +108,8 @@ jQuery(document).ready(function(){
           svgPath.animate({'d': path4}, duration, firstCustomMinaAnimation, function(){
             svgPath.animate({'d': path5}, duration, secondCustomMinaAnimation, function(){
               svgCoverLayer.removeClass('is-animating');
-            
-                  
+
+
             });
           });
         }, delay);

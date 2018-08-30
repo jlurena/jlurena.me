@@ -79,20 +79,6 @@
 
 
     /* ================================= */
-    /* :::::::: 4. Swiper Slider ::::::: */
-    /* ================================= */
-
-    var galleryTop = new Swiper('.slider-left', {
-      speed: 900,
-      loop: true,
-      effect: 'fade',
-      centeredSlides: true,
-      autoplay: 2500,
-      simulateTouch: false,
-    });
-
-
-    /* ================================= */
     /* ::::::::: 5. Isotope :::::::::::: */
     /* ================================= */
 
