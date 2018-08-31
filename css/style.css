@@ -2545,7 +2545,6 @@ footer a:hover, footer a:focus {
 
   .icon-mobile-wrapper {
     background-color: white;
-    z-index: 99999999999;
   }
 
   .icon-mobile {
