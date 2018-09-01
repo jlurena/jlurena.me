@@ -551,8 +551,6 @@ html, body {
 .about-info label {
   margin-bottom: 0;
   font-weight: 500;
-  text-align: right;
-  float: right;
   font-size: 12px;
 }
 
@@ -613,10 +611,6 @@ html, body {
 
 .about-info li {
   padding: 8px 0 8px 0;
-}
-
-.about-info li label {
-  float: right;
 }
 
 .experience {
