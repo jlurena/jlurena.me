@@ -5,15 +5,14 @@ jQuery(document).ready(function() {
   */
   var duration = 300,
     delay = 100,
-    epsilon = (1000 / 60 / duration) / 4,
-    firstCustomMinaAnimation = bezier(.42, .03, .77, .63, epsilon),
-    secondCustomMinaAnimation = bezier(.27, .5, .6, .99, epsilon);
+    epsilon = 1000 / 60 / duration / 4,
+    firstCustomMinaAnimation = bezier(0.42, 0.03, 0.77, 0.63, epsilon),
+    secondCustomMinaAnimation = bezier(0.27, 0.5, 0.6, 0.99, epsilon);
 
   initSlider();
   function initSlider() {
     //cache jQuery objects
     var slider = $('.slider');
-    var navigation = $('#navigation');
     var sliderNavigation = $('.slider-navigation').find('li');
     var about = $('#about');
     var svgCoverLayer = $('div.svg-cover');
@@ -35,38 +34,45 @@ jQuery(document).ready(function() {
 
     //AboutMe
     about.one('click', function() {
-
       //Skillbar animate
       jQuery('.skillbar').each(function() {
-        jQuery(this).find('.skillbar-bar').animate({
-          width: jQuery(this).attr('data-percent')
-        }, 4000);
+        jQuery(this)
+          .find('.skillbar-bar')
+          .animate(
+            {
+              width: jQuery(this).attr('data-percent')
+            },
+            4000
+          );
       });
 
       //Counter animate
-      $(".timer .number").appear(function() {
+      $('.timer .number').appear(function() {
         var counter = $(this).html();
-        $(this).countTo({from: 0, to: counter, speed: 4000, refreshInterval: 60});
+        $(this).countTo({ from: 0, to: counter, speed: 4000, refreshInterval: 60 });
       });
     });
 
     //update visible slide when user clicks .slider-nvigation buttons
     sliderNavigation.on('click', function(event) {
       event.preventDefault();
-      $("#navigation").toggleClass('menu-mobile animated fadeIn')
+      $('#navigation').toggleClass('menu-mobile animated fadeIn');
       var selectedItem = $(this);
-      if (!selectedItem.hasClass('selected')) {
+      if (!selectedItem.hasClass('selected') && selectedItem.attr('id') !== 'blog') {
         // if it's not already selected
+        // TODO use data attributes, not indexes
         var selectedSlidePosition = selectedItem.index(),
           selectedSlide = slider.children('li').eq(selectedSlidePosition),
           visibleSlide = retrieveVisibleSlide(slider),
           visibleSlidePosition = visibleSlide.index(),
           direction = '';
-        direction = (visibleSlidePosition < selectedSlidePosition)
-          ? 'next'
-          : 'prev';
+        direction = visibleSlidePosition < selectedSlidePosition ? 'next' : 'prev';
         updateSlide(visibleSlide, selectedSlide, direction, svgCoverLayer, sliderNavigation, pathArray, svgPath);
       }
+    });
+
+    $('#blog').click(function() {
+      window.open('https://www.blog.jlurena.me', '_blank');
     });
   }
 
@@ -92,34 +98,56 @@ jQuery(document).ready(function() {
     svgCoverLayer.addClass('is-animating');
 
     svgPath.attr('d', path1);
-    svgPath.animate({
-      'd': path2
-    }, duration, firstCustomMinaAnimation, function() {
-      svgPath.animate({
-        'd': path3
-      }, duration, secondCustomMinaAnimation, function() {
-        oldSlide.removeClass('visible animated bounceInUp');
-        newSlide.addClass('visible animated bounceInUp');
-        updateNavSlide(newSlide, sliderNavigation);
-        setTimeout(function() {
-          svgPath.animate({
-            'd': path4
-          }, duration, firstCustomMinaAnimation, function() {
-            svgPath.animate({
-              'd': path5
-            }, duration, secondCustomMinaAnimation, function() {
-              svgCoverLayer.removeClass('is-animating');
-
-            });
-          });
-        }, delay);
-      });
-    });
+    svgPath.animate(
+      {
+        d: path2
+      },
+      duration,
+      firstCustomMinaAnimation,
+      function() {
+        svgPath.animate(
+          {
+            d: path3
+          },
+          duration,
+          secondCustomMinaAnimation,
+          function() {
+            oldSlide.removeClass('visible animated bounceInUp');
+            newSlide.addClass('visible animated bounceInUp');
+            updateNavSlide(newSlide, sliderNavigation);
+            setTimeout(function() {
+              svgPath.animate(
+                {
+                  d: path4
+                },
+                duration,
+                firstCustomMinaAnimation,
+                function() {
+                  svgPath.animate(
+                    {
+                      d: path5
+                    },
+                    duration,
+                    secondCustomMinaAnimation,
+                    function() {
+                      svgCoverLayer.removeClass('is-animating');
+                    }
+                  );
+                }
+              );
+            }, delay);
+          }
+        );
+      }
+    );
   }
 
   function updateNavSlide(actualSlide, sliderNavigation) {
     var position = actualSlide.index();
-    sliderNavigation.removeClass('selected').eq(position).addClass('selected');
+    sliderNavigation
+      .removeClass('selected')
+      .eq(position)
+      .addClass('selected');
   }
 
   function bezier(x1, y1, x2, y2, epsilon) {
@@ -140,7 +168,6 @@ jQuery(document).ready(function() {
     };
 
     return function(t) {
-
       var x = t,
         t0,
         t1,
@@ -152,38 +179,28 @@ jQuery(document).ready(function() {
       // First try a few iterations of Newton's method -- normally very fast.
       for (t2 = x, i = 0; i < 8; i++) {
         x2 = curveX(t2) - x;
-        if (Math.abs(x2) < epsilon)
-          return curveY(t2);
+        if (Math.abs(x2) < epsilon) return curveY(t2);
         d2 = derivativeCurveX(t2);
-        if (Math.abs(d2) < 1e-6)
-          break;
+        if (Math.abs(d2) < 1e-6) break;
         t2 = t2 - x2 / d2;
       }
 
-      t0 = 0,
-      t1 = 1,
-      t2 = x;
+      (t0 = 0), (t1 = 1), (t2 = x);
 
-      if (t2 < t0)
-        return curveY(t0);
-      if (t2 > t1)
-        return curveY(t1);
+      if (t2 < t0) return curveY(t0);
+      if (t2 > t1) return curveY(t1);
 
       // Fallback to the bisection method for reliability.
       while (t0 < t1) {
         x2 = curveX(t2);
-        if (Math.abs(x2 - x) < epsilon)
-          return curveY(t2);
-        if (x > x2)
-          t0 = t2;
-        else
-          t1 = t2;
-        t2 = (t1 - t0) * .5 + t0;
+        if (Math.abs(x2 - x) < epsilon) return curveY(t2);
+        if (x > x2) t0 = t2;
+        else t1 = t2;
+        t2 = (t1 - t0) * 0.5 + t0;
       }
 
       // Failure
       return curveY(t2);
-
     };
-  };
+  }
 });

@@ -1208,16 +1208,6 @@ html, body {
   padding-bottom: 10px;
 }
 
-#filters {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-#filters i {
-  padding-right: 7px;
-}
-
 .button {
   display: inline-block;
   border: none;
@@ -2677,10 +2667,6 @@ footer a:hover, footer a:focus {
 
   .nivo-lightbox-close {
     right: 4%;
-  }
-
-  #filters {
-    padding-left: 12px;
   }
 
   .post-intro {
