@@ -508,7 +508,7 @@
         '<h3>CONTACT INFORMATION.</h3>' +
         '<ul>' +
         '<li><i class="fa fa-fw fa-map-marker"></i>Bronx, NY</li>' +
-        '<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">' +
+        '<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:eljean@live.com">' +
         privateEm +
         '</a></li>' +
         '<li><i class="fa fa-fw fa-globe"></i><a href="">jlurena.me</a></li>' +

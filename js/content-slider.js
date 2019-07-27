@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
     });
 
     $('#blog').click(function() {
-      window.open('https://www.blog.jlurena.me', '_blank');
+      window.open('https://medium.com/@jlurena123', '_blank');
     });
   }
 
