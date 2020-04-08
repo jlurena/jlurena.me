@@ -1,0 +1,37 @@
+  
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "globals": {
+    "document": true,
+    "fetch": true,
+    "navigator": true,
+    "React": true,
+    "window": true
+  },
+  "rules": {
+    "arrow-parens": [
+      1,
+      "as-needed"
+    ],
+    "comma-dangle": 0,
+    "import/prefer-default-export": 0,
+    "key-spacing": [
+      1,
+      {
+        "align": "value"
+      }
+    ],
+    "max-len": [
+      1,
+      {
+        "code": 120
+      }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0
+  },
+  "parser": "babel-eslint"
+}

@@ -1,20 +1,27 @@
 {
   "name": "jlurena.me",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Jean Luis Urena",
+    "email": "eljean@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlurena/jlurena.me"
+  },
+  "description": "Personal website for Jean Luis Urena",
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix '**/*.{js,jsx}' && npx stylelint --fix '**/*.scss'",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +37,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "node-sass": "^4.13.1",
+    "stylelint": "^13.3.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.16.0"
   }
 }
