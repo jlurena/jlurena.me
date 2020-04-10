@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+#page-loader {
+	background: $primary-color;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+}
+.loader-icon {
+	background: none repeat scroll 0 0 #3d4a6e;
+	border-bottom: 3px solid rgba(19, 19, 19, 0.1);
+	border-left: 3px solid rgba(19, 19, 19, 0.1);
+	border-right: 3px solid rgba(19, 19, 19, 0.1);
+	border-top: 3px solid;
+	border-radius: 100px;
+	height: 60px;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 60px;
+}
+.colored-border {
+	border-color: white;
+}
+.picture {
+	background-color: $primary-color;
+	background-size: cover;
+	border-radius: 50%;
+	background-image: url(../images/jean/webslidepic1.jpg);
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: center;
+	box-shadow: 0px 0px 10px 0px;
+}
+
+::placeholder {
+  color: $primary-color;
+  opacity: 1;
+}
+
+.welcome .animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
