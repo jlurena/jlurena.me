@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => (
-
-  <div className="content">
+  <>
     <div className="profile">
       <div className="picture" />
       <div className="welcome">
@@ -36,7 +35,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default Home;

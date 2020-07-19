@@ -1,13 +1,15 @@
-  
 {
   "extends": [
     "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "airbnb"
   ],
   "globals": {
     "document": true,
     "fetch": true,
-    "navigator": true,
     "React": true,
     "window": true
   },

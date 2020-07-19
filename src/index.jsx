@@ -6,7 +6,6 @@ import App from './js/app';
 import './scss/reset.scss';
 import './scss/base.scss';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
