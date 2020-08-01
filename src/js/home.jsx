@@ -2,32 +2,31 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const Home = () => (
-  <>
-    <div className="profile">
-      <div className="picture" />
-      <div className="welcome">
-        <div className="hello">
-          <h1>Hello, my name is</h1>
-          <div className="name">Jean Luis Urena</div>
-        </div>
+import styles from '../scss/home.module.scss';
+import '../scss/antispam.scss';
 
-        <div className="text-center">
-          I am a
-          <span className="rw-words rw-words-1">
-            <span>Software Developer</span>
-            <span>Web Developer</span>
-            <span>Student</span>
-            <span>Car Enthusiast</span>
-            <span>Coffee Fanatic</span>
-          </span>
-        </div>
+const Home = () => {
+  const words = ['Leader', 'Software Engineer', 'Student', 'Car Enthusiast', 'Hiker', 'Coffee Fanatic'];
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <div className={styles.picture} />
+        <div className={styles.content}>
+          <div className={`${styles.introduction} ${styles.center}`}>
+            <h1>Hello, my name is</h1>
+            <h1><b>Jean Luis Urena</b></h1>
+          </div>
 
-        <div className="personal-info">
-          <div className="email reverse">
-            <a href="mailto:eljean@live.com?subject=&body=">
+          <div className={styles.wordsCarousel}>
+            I am a
+            <div>
+              {words.map(w => <span className={styles.word} key={w}>{w}</span>)}
+            </div>
+          </div>
+          <div className={styles.center}>
+            <a className="reverse" href="mailto:eljean@live.com?subject=&body=">
               moc.evil
-              <span className="atsymbol" />
+              <span />
               naejle
             </a>
             <FontAwesomeIcon icon={faPaperPlane} />
@@ -35,7 +34,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-  </>
-);
+  );
+};
 
 export default Home;
