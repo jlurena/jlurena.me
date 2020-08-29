@@ -5,7 +5,9 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import styles from '../scss/home.module.scss';
 import '../scss/antispam.scss';
 
-const Home = () => {
+import WordCarousel from './components/word-carousel';
+
+const Home: React.FC = () => {
   const words = ['Leader', 'Software Engineer', 'Student', 'Car Enthusiast', 'Hiker', 'Coffee Fanatic'];
   return (
     <div className={styles.wrapper}>
@@ -20,7 +22,7 @@ const Home = () => {
           <div className={styles.wordsCarousel}>
             I am a
             <div>
-              {words.map(w => <span className={styles.word} key={w}>{w}</span>)}
+              <WordCarousel words={words} />
             </div>
           </div>
           <div className={styles.center}>

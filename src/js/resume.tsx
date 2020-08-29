@@ -338,14 +338,14 @@ const Resume = () => (
           </div>
         </div>
       </div>
-      <button
+      <a
         className="btn-download"
         href="./web-resume.pdf"
         target="_blank"
         type="button"
       >
         Download
-      </button>
+      </a>
     </div>
   </div>
 );
