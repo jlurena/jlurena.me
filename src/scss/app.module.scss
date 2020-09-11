@@ -2,6 +2,8 @@
 
 @import "./breakpoints";
 
+$mobileNavBarHeight: 50px;
+
 .navigationContainer {
   display: none;
   position: absolute;
@@ -94,9 +96,9 @@
   }
 }
 
-.mobileNavigation {
+.burgerContainer {
   background-color: #fff;
-  height: 50px;
+  height: $mobileNavBarHeight;
 
   @include screen-sm {
     display: none;
@@ -133,5 +135,31 @@
     width: 100%;
     height: 100%;
     background-color: white;
+  }
+}
+
+.mobileNavigationContainer {
+  background-color: $primary-color;
+  position: absolute;
+  top: $mobileNavBarHeight;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  button.btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: .5px solid rgba(#fff, .2);
+
+    ~ em {
+      display: none;
+    }
+  }
+
+  div:last-of-type button.btn {
+    border-bottom: 0;
   }
 }

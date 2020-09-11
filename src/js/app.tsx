@@ -23,27 +23,31 @@ const App: React.FC = () => {
   };
 
   const [selectedTab, setSelectedTab] = useState('Home');
+  const [isShowingMobileNav, showMobileNav] = useState(false);
 
   const TestContent: React.FC = () => <div>Hello</div>;
 
   const Content = tabs[selectedTab].tab || TestContent;
 
+  const navOptions = 
+    Object.keys(tabs).map(k => (
+      <div className={`${styles.tab} ${selectedTab === k ? styles.selected : ''}`} key={k}>
+        <button type="button" aria-label={k} className={styles.btn} onClick={() => setSelectedTab(k)}>
+          <FontAwesomeIcon icon={tabs[k].icon} size="lg" />
+        </button>
+        <em>{k}</em>
+      </div>
+    ));
+
   return (
     <>
       <div className={styles.navigationContainer}>
-        <div className={styles.navigationSlider}>
-          {Object.keys(tabs).map(k => (
-            <div className={`${styles.tab} ${selectedTab === k ? styles.selected : ''}`} key={k}>
-              <button type="button" aria-label={k} className={styles.btn} onClick={() => setSelectedTab(k)}>
-                <FontAwesomeIcon icon={tabs[k].icon} />
-              </button>
-              <em>{k}</em>
-            </div>
-          ))}
-        </div>
+      <div className={styles.navigationSlider}>
+        {navOptions}
       </div>
-      <div className={styles.mobileNavigation}>
-        <button type="button" className={styles.burger} aria-label="Menu">
+      </div>
+      <div className={styles.burgerContainer}>
+        <button type="button" className={styles.burger} aria-label="Menu" onClick={() => showMobileNav(!isShowingMobileNav)}>
           <div />
           <div />
           <div />
@@ -55,6 +59,9 @@ const App: React.FC = () => {
           <Content />
         </div>
       </section>
+      <div className={styles.mobileNavigationContainer} style={{display: isShowingMobileNav ? 'block' : 'none'}}>
+        {navOptions}
+      </div>
     </>
   );
 };
