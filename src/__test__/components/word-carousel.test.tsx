@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import WordCarousel from '../../js/components/word-carousel';
 
-test('<WordCarousel/>', () => {
+test('<WordCarousel/> Rendering', () => {
   const words = ['Hello', 'World', 'Goodbye'];
 
   const component = renderer.create(

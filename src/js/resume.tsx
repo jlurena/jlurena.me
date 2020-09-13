@@ -1,7 +1,7 @@
 import React from 'react';
 import '../scss/resume.scss';
 
-const Resume = () => (
+const Resume: React.FC = () => (
   <div className="wrapper">
     <div className="preview-box">
       <div className="container">
