@@ -29,7 +29,7 @@ const Nav: React.FC<NavProps> = ({
   const navOptions = Object.keys(tabs).map(k => (
     <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
       <Icon ariaLabel={k} icon={tabs[k].icon} onClick={() => onTabClick(k)} />
-      <em>{k}</em>
+      <em className={styles.helperLabel}>{k}</em>
     </div>
   ));
 
