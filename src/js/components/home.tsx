@@ -2,10 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import styles from '../scss/home.module.scss';
+import styles from '../../scss/home.module.scss';
 import '../scss/antispam.scss';
 
-import WordCarousel from './components/word-carousel';
+import WordCarousel from './word-carousel';
 
 const Home: React.FC = () => {
   const words = ['Leader', 'Software Engineer', 'Student', 'Car Enthusiast', 'Hiker', 'Coffee Fanatic'];

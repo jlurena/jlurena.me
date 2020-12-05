@@ -9,7 +9,7 @@ import {
 
 import Burger from './components/burger';
 import Nav, { NavProps } from './components/nav';
-import Home from './home';
+import Home from './components/home';
 
 import styles from '../scss/app.module.scss';
 
