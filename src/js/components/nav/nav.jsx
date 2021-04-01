@@ -26,7 +26,13 @@ const Nav = ({
           {navOptions}
         </div>
       </div>
-      <div className={styles.mobileNavigationContainer} style={{ display: isMobileNav ? 'block' : 'none' }}>
+      <div 
+        className={styles.mobileNavigationContainer} 
+        style={
+          { 
+            visibility: isMobileNav ? 'visible' : 'hidden',
+            opacity: isMobileNav? '100' : '0'
+          }}>
         {navOptions}
       </div>
     </>

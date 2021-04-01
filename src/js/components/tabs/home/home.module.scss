@@ -3,14 +3,16 @@
 @import "../../../../scss/breakpoints";
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
 
-  .center {
-    display: flex;
-    justify-content: center;
-  }
+.contact {
+  align-self: center;
 }
 
 .introduction {

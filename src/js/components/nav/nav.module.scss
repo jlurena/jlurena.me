@@ -31,8 +31,7 @@
     white-space: nowrap;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: white;
     color: $primary-color;
     transition: all .3s ease-in-out;
@@ -55,6 +54,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  transition: all .2s ease-in-out;
 
   button.tab {
     margin-left: auto;

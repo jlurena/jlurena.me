@@ -13,6 +13,7 @@ const Home = () => {
   const imageAlt = "Picture of Jean Luis Urena"
   return (
     <Backdrop>
+      <div className={styles.content}>
       <img 
         src={JeanPic} 
         className={styles.picture} 
@@ -20,7 +21,6 @@ const Home = () => {
         width="200"
         height="200"
       />
-      <div className={styles.content}>
         <div className={`${styles.introduction} ${styles.center}`}>
           <h1>Hello, my name is</h1>
           <h1><b>Jean Luis Urena</b></h1>
@@ -32,7 +32,7 @@ const Home = () => {
             <WordCarousel words={words} />
           </div>
         </div>
-        <div className={styles.center}>
+        <div className={styles.contact}>
           <a className="reverse" href="mailto:eljean@live.com?subject=&body=">
             moc.evil@
             <span />
