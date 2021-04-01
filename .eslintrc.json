@@ -5,7 +5,10 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended"
   ],
-  "plugins": ["react", "@typescript-eslint", "jest"],
+  "plugins": [
+    "react",
+    "jest"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -21,8 +24,7 @@
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "sourceType": "module"
   },
   "rules": {
     "arrow-parens": [
