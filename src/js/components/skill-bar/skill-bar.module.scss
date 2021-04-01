@@ -1,0 +1,32 @@
+@import '../../../scss//variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.barContainer {
+  border: 2px solid $primary-color;
+  .fill {
+    background-color: $primary-color;
+    height: 10px;
+    transition: 1s ease;
+    transition-delay: 0.2s;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 12px;
+  color: $primary-color;
+  font-weight: 600;
+
+  &.percent {
+    font-weight: 400;
+  }
+}

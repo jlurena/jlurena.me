@@ -2,13 +2,6 @@
 
 @import "../../../../scss/breakpoints";
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
 .content {
   width: 50%;
   margin-left: auto;
@@ -35,15 +28,10 @@
 }
 
 .picture {
-  background-color: #3d4a6e;
-  background-size: cover;
   border-radius: 50%;
-  background-image: url('../../../../images/jean/webslidepic1.jpg');
-  width: 200px;
-  height: 200px;
+  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  background-position: center;
   box-shadow: 0 0 10px 0;
   margin-bottom: 1rem;
 }
