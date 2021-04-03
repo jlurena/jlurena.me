@@ -23,15 +23,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-
-      - name: Install yarn
-        run: npm install -g yarn && yarn set version berry
         
       - name: Install dependencies
-        run: yarn install --immutable
+        run: npm ci
 
       - name: Build
-        run: yarn build
+        run: npm run build
       
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
