@@ -10,17 +10,17 @@ import WordCarousel from '../../word-carousel/word-carousel';
 
 const Home = () => {
   const words = ['Leader', 'Software Engineer', 'Student', 'Car Enthusiast', 'Hiker', 'Coffee Fanatic'];
-  const imageAlt = "Picture of Jean Luis Urena"
+  const imageAlt = 'Picture of Jean Luis Urena';
   return (
-    <Backdrop>
+    <Backdrop animation="bounceIn">
       <div className={styles.content}>
-      <img 
-        src={JeanPic} 
-        className={styles.picture} 
-        alt={imageAlt}
-        width="200"
-        height="200"
-      />
+        <img
+          src={JeanPic}
+          className={styles.picture}
+          alt={imageAlt}
+          width="200"
+          height="200"
+        />
         <div className={`${styles.introduction} ${styles.center}`}>
           <h1>Hello, my name is</h1>
           <h1><b>Jean Luis Urena</b></h1>

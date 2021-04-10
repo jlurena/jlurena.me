@@ -28,7 +28,6 @@ const App = () => {
   const [selectedTab, setSelectedTab] = useState('Home');
   const [isShowingMobileNav, showMobileNav] = useState(false);
 
-
   const TestContent = () => <div>Hello</div>;
 
   const Content = tabs[selectedTab].tab || TestContent;
@@ -36,7 +35,7 @@ const App = () => {
     setPreviousTab(selectedTab);
     setSelectedTab(t);
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
-  }
+  };
 
   return (
     <>
