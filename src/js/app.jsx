@@ -6,7 +6,6 @@ import {
   faHome,
   faUser
 } from '@fortawesome/free-solid-svg-icons';
-import Backdrop from './components/backdrop';
 
 import Burger from './components/burger';
 import Home from './components/tabs/home';
@@ -24,15 +23,16 @@ const App = () => {
     Contact:    { icon: faMapMarkerAlt, tab: Home, id: 4 }
   };
 
-  const [previousTab, setPreviousTab] = useState('Home');
   const [selectedTab, setSelectedTab] = useState('Home');
   const [isShowingMobileNav, showMobileNav] = useState(false);
+  const [direction, setClickDirection] = useState(1);
 
   const TestContent = () => <div>Hello</div>;
 
   const Content = tabs[selectedTab].tab || TestContent;
   const onNavClick = t => {
-    setPreviousTab(selectedTab);
+    const inferencedDirection = tabs[selectedTab].id > tabs[t].id ? -1 : 1;
+    setClickDirection(inferencedDirection);
     setSelectedTab(t);
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };

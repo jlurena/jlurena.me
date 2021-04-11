@@ -1,13 +1,8 @@
 import React from 'react';
-import Backdrop from '../../backdrop';
-import SkillBar from '../../skill-bar'
+import SkillBar from '../../skill-bar';
 
-const AboutMe = () => {
-  return (
-    <Backdrop>
-      <SkillBar percent={80}/>
-    </Backdrop>
-  );
-};
+const AboutMe = () => (
+  <SkillBar percent={80} />
+);
 
 export default AboutMe;

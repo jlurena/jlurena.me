@@ -21,9 +21,11 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "cubic-bezier": "^0.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "snapsvg": "^0.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
