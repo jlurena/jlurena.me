@@ -1,8 +1,13 @@
 import React from 'react';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import TabHeader from '../../tab-header';
 import SkillBar from '../../skill-bar';
 
 const AboutMe = () => (
-  <SkillBar percent={80} />
+  <>
+    <TabHeader icon={faUser} />
+    <SkillBar percent={80} />
+  </>
 );
 
 export default AboutMe;
