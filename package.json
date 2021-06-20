@@ -1,6 +1,6 @@
 {
   "name": "jlurena.me",
-  "version": "0.1.0",
+  "version": "1.0",
   "author": {
     "name": "Jean Luis Urena",
     "email": "eljean@live.com"
@@ -14,7 +14,7 @@
   "license": "GNU",
   "scripts": {
     "build": "webpack --bail",
-    "dev": "webpack serve --watch-content-base --open",
+    "dev": "NODE_ENV=development webpack && NODE_ENV=development webpack serve",
     "prepare": "husky install"
   },
   "dependencies": {
