@@ -5,8 +5,8 @@ import SkillBar from '../../skill-bar';
 
 const AboutMe = () => (
   <>
-    <TabHeader icon={faUser} />
-    <SkillBar percent={80} />
+    <TabHeader icon={faUser} header="About" headerStrong="Me" />
+    <SkillBar percent={80} skillName="Object Oriented Programming" />
   </>
 );
 

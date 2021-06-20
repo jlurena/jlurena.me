@@ -47,7 +47,8 @@ module.exports = {
       chunkFilename: isDev ? '[id].css' : 'public/assets[id][contenthash:8].css'
     }),
     new HtmlWebpackPlugin({
-      title: 'JLU'
+      title:    'JLU',
+      filename: 'public/index.html'
     })
   ],
   module: {

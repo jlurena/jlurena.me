@@ -7,11 +7,12 @@
 
 .barContainer {
   border: 2px solid $primary-color;
+
   .fill {
     background-color: $primary-color;
     height: 10px;
-    transition: 1s ease;
-    transition-delay: 2s;
+    transition: 1s ease-out;
+    transition-delay: 0.5s;
   }
 }
 
