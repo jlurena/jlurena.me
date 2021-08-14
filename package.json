@@ -16,7 +16,7 @@
     "build": "NODE_ENV=production webpack --bail --mode production",
     "dev": "NODE_ENV=development webpack && NODE_ENV=development webpack serve",
     "prepare": "husky install",
-    "lint": "eslint --cache --fix --ext .js && stylelint --cache --fix ./**/*.scss"
+    "lint": "eslint --fix --ext .js,.jsx ./ && stylelint --fix ./**/*.scss"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
