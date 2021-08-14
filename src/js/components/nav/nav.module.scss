@@ -1,5 +1,4 @@
 @import "../../../scss/breakpoints";
-
 @import "../../../scss/variables.scss";
 
 .tab {
@@ -12,7 +11,7 @@
   height: 46px;
   width: 50px;
   background-color: transparent;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   & ~ em {
     visibility: hidden;
@@ -27,20 +26,20 @@
     padding: 14px 0;
     text-transform: uppercase;
     transform: translateX(-50%);
-    transition: opacity .2s 0s, visibility 0s .2s, transform .2s 0s;
+    transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
     white-space: nowrap;
   }
 
   &:hover {
     background-color: white;
     color: $primary-color;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     & ~ em {
       opacity: 1;
       visibility: visible;
       transform: translateX(-40%);
-      transition: opacity .2s 0s, visibility 0s 0s, transform .2s 0s;
+      transition: opacity 0.2s 0s, visibility 0s 0s, transform 0.2s 0s;
     }
   }
 }
@@ -54,13 +53,13 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   button.tab {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    border-bottom: .5px solid rgba(#fff, .2);
+    border-bottom: 0.5px solid rgba(#fff, 0.2);
 
     ~ em {
       display: none;
@@ -89,7 +88,6 @@
 }
 
 .navigationSlider {
-
   div {
     display: flex;
     border-top: 1px solid $primary-color;
