@@ -13,7 +13,11 @@
     "document": true,
     "fetch": true,
     "React": true,
-    "window": true
+    "window": true,
+    "test": true,
+    "describe": true,
+    "jest": true,
+    "expect": true
   },
   "rules": {
     "arrow-parens": [

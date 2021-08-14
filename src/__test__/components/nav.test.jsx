@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { faHome, faAd } from '@fortawesome/free-solid-svg-icons';
-import Nav, { Icon, NavProps } from '../../js/components/nav';
+import Nav, { Icon } from '../../js/components/nav';
 
 describe('<Icon/>', () => {
   const onClickSpy = jest.fn();
@@ -21,10 +21,10 @@ describe('<Icon/>', () => {
 });
 
 describe('<Nav/>', () => {
-  const FooComponent: React.FC = () => <div>Hello Foo!</div>;
-  const BarComponent: React.FC = () => <div>Hello Bar!</div>;
+  const FooComponent = () => <div>Hello Foo!</div>;
+  const BarComponent = () => <div>Hello Bar!</div>;
 
-  const tabs: NavProps['tabs'] = {
+  const tabs = {
     Foo: { icon: faHome, tab: FooComponent },
     Bar: { icon: faAd, tab: BarComponent }
   };

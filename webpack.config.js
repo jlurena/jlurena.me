@@ -99,7 +99,10 @@ const config = {
     }
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias:      {
+      app: path.resolve(__dirname, 'src')
+    }
   }
 };
 

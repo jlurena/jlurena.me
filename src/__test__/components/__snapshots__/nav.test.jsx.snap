@@ -62,7 +62,9 @@ Array [
             />
           </svg>
         </button>
-        <em>
+        <em
+          className="helperLabel"
+        >
           Foo
         </em>
       </div>
@@ -93,7 +95,9 @@ Array [
             />
           </svg>
         </button>
-        <em>
+        <em
+          className="helperLabel"
+        >
           Bar
         </em>
       </div>
@@ -103,7 +107,8 @@ Array [
     className="mobileNavigationContainer"
     style={
       Object {
-        "display": "none",
+        "opacity": "0",
+        "visibility": "hidden",
       }
     }
   >
@@ -134,7 +139,9 @@ Array [
           />
         </svg>
       </button>
-      <em>
+      <em
+        className="helperLabel"
+      >
         Foo
       </em>
     </div>
@@ -165,7 +172,9 @@ Array [
           />
         </svg>
       </button>
-      <em>
+      <em
+        className="helperLabel"
+      >
         Bar
       </em>
     </div>
@@ -208,7 +217,9 @@ Array [
             />
           </svg>
         </button>
-        <em>
+        <em
+          className="helperLabel"
+        >
           Foo
         </em>
       </div>
@@ -239,7 +250,9 @@ Array [
             />
           </svg>
         </button>
-        <em>
+        <em
+          className="helperLabel"
+        >
           Bar
         </em>
       </div>
@@ -249,7 +262,8 @@ Array [
     className="mobileNavigationContainer"
     style={
       Object {
-        "display": "block",
+        "opacity": "100",
+        "visibility": "visible",
       }
     }
   >
@@ -280,7 +294,9 @@ Array [
           />
         </svg>
       </button>
-      <em>
+      <em
+        className="helperLabel"
+      >
         Foo
       </em>
     </div>
@@ -311,7 +327,9 @@ Array [
           />
         </svg>
       </button>
-      <em>
+      <em
+        className="helperLabel"
+      >
         Bar
       </em>
     </div>
