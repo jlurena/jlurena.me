@@ -64,7 +64,11 @@ const config = {
       {
         test:    /\.jsx?$/,
         exclude: /node_modules/,
-        use:     ['babel-loader']
+        loader:  require.resolve('babel-loader'),
+        options: {
+          cacheDirectory: true,
+          plugins:        ['react-hot-loader/babel']
+        }
       },
       {
         test:    /\.scss$/,

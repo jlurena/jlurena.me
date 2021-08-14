@@ -21,7 +21,7 @@ const Home = () => {
       />
       <div className={`${styles.introduction} ${styles.center}`}>
         <h1>Hello, my name is</h1>
-        <h1><b>Jean Luis Urena</b></h1>
+        <div className={styles.name}>Jean Luis Urena</div>
       </div>
 
       <div className={styles.wordsCarousel}>

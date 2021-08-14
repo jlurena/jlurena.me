@@ -16,6 +16,15 @@
   display: block;
   font-family: "Montserrat", sans-serif;
   border-bottom: 4px solid $primary-color;
+
+  &::after {
+    content: ' ';
+    border: solid 2px $primary-color;
+    display: block;
+    width: 20px;
+    transform: rotate(-90deg);
+    margin: 20px auto 10px;
+  }
 }
 
 .strong {
