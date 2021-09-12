@@ -74,6 +74,10 @@ jQuery(document).ready(function() {
     $('#blog').click(function() {
       window.open('https://medium.com/@jlurena123', '_blank');
     });
+
+    $('#resume').click(function() {
+      window.open('/resume.html', '_blank');
+    });
   }
 
   //update visible slide when user clicks .slider-navigation buttons
