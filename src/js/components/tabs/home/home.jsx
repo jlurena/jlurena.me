@@ -19,7 +19,7 @@ const Home = () => {
         width="200"
         height="200"
       />
-      <div className={`${styles.introduction} ${styles.center}`}>
+      <div className={`${styles.introduction}`}>
         <h1>Hello, my name is</h1>
         <div className={styles.name}>Jean Luis Urena</div>
       </div>

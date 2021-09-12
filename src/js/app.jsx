@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { hot } from 'react-hot-loader';
 import {
   faFileAlt,
@@ -48,8 +49,10 @@ const App = () => {
         tabs={tabs}
       />
       <section className={styles.contentWrapper}>
-        <div className={styles.content}>
-          <Content />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <Content />
+          </div>
         </div>
       </section>
     </>

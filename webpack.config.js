@@ -13,7 +13,7 @@ function styleLoader(isModule) {
       loader:  'css-loader',
       options: {
         modules: isModule && {
-          localIdentName:         isDev ? '[path][name]__[local]--[hash:base64:5]' : '[hash:base64:5]',
+          localIdentName:         isDev ? '[path][local]' : '[hash:base64:5]',
           exportLocalsConvention: 'camelCase'
         },
         sourceMap: true

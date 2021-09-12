@@ -1,0 +1,24 @@
+.container {
+  height: 100%;
+}
+
+.summaryContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 0 2%;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 0 2%;
+}
