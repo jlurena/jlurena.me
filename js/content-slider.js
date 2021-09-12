@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
   function initSlider() {
     //cache jQuery objects
     var slider = $('.slider');
-    var sliderNavigation = $('.slider-navigation').find('li');
+    var sliderNavigation = $('.slider-navigation').find('li').not('#resume').not('#blog');
     var about = $('#about');
     var svgCoverLayer = $('div.svg-cover');
     var pathId = svgCoverLayer.find('path').attr('id');
