@@ -1,3 +1,5 @@
+@import '../../../../scss/breakpoints';
+
 .container {
   height: 100%;
 }
@@ -5,8 +7,13 @@
 .summaryContainer {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 1rem;
+
+  @include screen-lg {
+    flex-direction: row;
+  }
 }
 
 .contactContainer {
