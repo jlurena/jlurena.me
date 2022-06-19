@@ -80,7 +80,7 @@ const config = {
         use:  styleLoader(true)
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use:  [
           {
             loader:  'url-loader',
@@ -101,7 +101,8 @@ const config = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias:      {
-      app: path.resolve(__dirname, 'src')
+      app:          path.resolve(__dirname, 'src'),
+      node_modules: path.resolve(__dirname, 'node_modules')
     }
   }
 };
