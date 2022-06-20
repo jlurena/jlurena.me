@@ -24,8 +24,7 @@ const IMAGES = [
     original:      HikingImage,
     originalClass: styles.carouselImages,
     originalAlt:   'Jean Hiking next a mountain that with craters forming a smiling face',
-    description:   'I also enjoy hiking!'
-  }
+  },
 ];
 
 const HOBBIES = [
