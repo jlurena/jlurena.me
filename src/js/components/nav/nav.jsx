@@ -10,7 +10,7 @@ export const Icon = ({ ariaLabel, icon, onClick }) => (
 );
 
 const Nav = ({
-  isMobileNav, selectedTab, onTabClick, tabs
+  isMobileNav, selectedTab, onTabClick, tabs,
 }) => {
   const navOptions = Object.keys(tabs).map(k => (
     <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
@@ -31,7 +31,7 @@ const Nav = ({
         style={
           {
             visibility: isMobileNav ? 'visible' : 'hidden',
-            opacity:    isMobileNav ? '100' : '0'
+            opacity:    isMobileNav ? '100' : '0',
           }
 }
       >

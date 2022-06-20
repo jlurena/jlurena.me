@@ -6,7 +6,7 @@ import {
   faNewspaper,
   faMapMarkerAlt,
   faHome,
-  faUser
+  faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
 import Burger from './components/burger';
@@ -22,7 +22,7 @@ const App = () => {
     'About Me': { icon: faUser, tab: AboutMe, id: 1 },
     Resume:     { icon: faFileAlt, tab: Home, id: 2 },
     Blog:       { icon: faNewspaper, tab: Home, id: 3 },
-    Contact:    { icon: faMapMarkerAlt, tab: Home, id: 4 }
+    Contact:    { icon: faMapMarkerAlt, tab: Home, id: 4 },
   };
 
   const [selectedTab, setSelectedTab] = useState('Home');

@@ -31,7 +31,7 @@ const SkillBar = ({ skillName, percent }) => {
           className={styles.fill}
           style={
             {
-              width: `${barWidth}%`
+              width: `${barWidth}%`,
             }
           }
         />

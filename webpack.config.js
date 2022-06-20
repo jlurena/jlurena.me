@@ -14,20 +14,20 @@ function styleLoader(isModule) {
       options: {
         modules: isModule && {
           localIdentName:         isDev ? '[path][local]' : '[hash:base64:5]',
-          exportLocalsConvention: 'camelCase'
+          exportLocalsConvention: 'camelCase',
         },
-        sourceMap: true
-      }
+        sourceMap: true,
+      },
     },
     {
-      loader: 'resolve-url-loader'
+      loader: 'resolve-url-loader',
     },
     {
       loader:  'sass-loader',
       options: {
-        sourceMap: true
-      }
-    }
+        sourceMap: true,
+      },
+    },
   ];
 }
 
@@ -37,27 +37,27 @@ const config = {
   target:  'web',
   stats:   {
     preset:      'minimal',
-    performance: true
+    performance: true,
   },
   devServer: {
     hot:         true,
     open:        true,
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
   },
   entry:  path.resolve(__dirname, './src/index.jsx'),
   output: {
     path:     path.resolve(__dirname, 'public'),
-    filename: isDev ? 'assets/[name].js' : 'assets/[contenthash:8].js'
+    filename: isDev ? 'assets/[name].js' : 'assets/[contenthash:8].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename:      isDev ? 'assets/[name]' : 'assets/[contenthash:8].css',
-      chunkFilename: isDev ? 'assets/[name]' : 'assets/[id][contenthash:8].css'
+      chunkFilename: isDev ? 'assets/[name]' : 'assets/[id][contenthash:8].css',
     }),
     new HtmlWebpackPlugin({
       title:    'JLU',
-      filename: 'index.html'
-    })
+      filename: 'index.html',
+    }),
   ],
   module: {
     rules: [
@@ -67,17 +67,17 @@ const config = {
         loader:  require.resolve('babel-loader'),
         options: {
           cacheDirectory: true,
-          plugins:        ['react-hot-loader/babel']
-        }
+          plugins:        ['react-hot-loader/babel'],
+        },
       },
       {
         test:    /\.scss$/,
         exclude: /\.module.scss/,
-        use:     styleLoader(false)
+        use:     styleLoader(false),
       },
       {
         test: /\.module.scss$/,
-        use:  styleLoader(true)
+        use:  styleLoader(true),
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -86,25 +86,25 @@ const config = {
             loader:  'url-loader',
             options: {
               limit: 10000,
-              name:  'assets/[contenthash:8].[ext]'
+              name:  'assets/[contenthash:8].[ext]',
             },
           },
         ],
       },
-    ]
+    ],
   },
   optimization: {
     splitChunks: {
-      chunks: 'all'
-    }
+      chunks: 'all',
+    },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
     alias:      {
       app:          path.resolve(__dirname, 'src'),
-      node_modules: path.resolve(__dirname, 'node_modules')
-    }
-  }
+      node_modules: path.resolve(__dirname, 'node_modules'),
+    },
+  },
 };
 
 if (isDev) {

@@ -8,7 +8,7 @@ const Header = ({
   icon,
   headerText,
   headerStrongText,
-  fontSize
+  fontSize,
 }) => (
   <div className={styles.container} style={{ fontSize }}>
     {icon && <FontAwesomeIcon className={styles.icon} icon={icon} size="lg" /> }
@@ -32,13 +32,13 @@ Header.propTypes = {
       PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.string),
         PropTypes.string,
-        PropTypes.number
-      ])
+        PropTypes.number,
+      ]),
     ),
-    iconName: PropTypes.string
+    iconName: PropTypes.string,
   }),
   headerText:       PropTypes.string.isRequired,
   headerStrongText: PropTypes.string.isRequired,
-  fontSize:         PropTypes.string.isRequired
+  fontSize:         PropTypes.string.isRequired,
 };
 export default Header;
