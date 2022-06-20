@@ -44,8 +44,9 @@
 
 .carouselImages {
   img {
-    // Height comes from src/js/app.module.scss .contentWrapper. 100vh - sameHeight - padding - buttons from lib class
-    max-height: calc(100vh - 115px - 100px - 150px) !important;
+    // Height comes from src/js/app.module.scss .contentWrapper and react-image-gallery
+    // 100vh - .contentWrapper height - padding - buttons from lib class (71px each)
+    max-height: calc(100vh - 115px - 100px - 140px) !important;
   }
 }
 

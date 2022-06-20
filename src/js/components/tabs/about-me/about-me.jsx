@@ -86,6 +86,12 @@ const AboutMe = () => (
                 </div>
               )) }
             </div>
+
+            <div className={styles.aboutMeSubSection}>
+              <p>
+                Interested in my professional experience?
+              </p>
+            </div>
           </div>
         </div>
         <div>
