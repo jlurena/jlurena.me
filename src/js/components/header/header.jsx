@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './header.module.scss';
 
 const Header = ({
-  headerLevel = '1',
+  headerLevel,
   icon,
   headerText,
   headerStrongText,
@@ -38,7 +38,7 @@ Header.propTypes = {
     iconName: PropTypes.string,
   }),
   headerText:       PropTypes.string.isRequired,
-  headerStrongText: PropTypes.string.isRequired,
+  headerStrongText: PropTypes.string,
   fontSize:         PropTypes.string.isRequired,
 };
 export default Header;

@@ -41,9 +41,9 @@ const HOBBIES = [
 
 const AboutMe = () => (
   <div className={styles.wrapper}>
-    <Header icon={faUser} headerText="ABOUT" headerStrongText="ME" fontSize="1.5rem" />
+    <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
     <div className={styles.container}>
-      <Header headerLevel="2" headerText="HEY! NICE TO MEET YOU, I'M" headerStrongText="JEAN" fontSize="18px" />
+      <Header headerLevel="2" headerText="Hey! Nice to meet you, I'm" headerStrongText="Jean" fontSize="18px" />
       <div className={styles.aboutMeWrapper}>
         <div>
           <div className={styles.aboutMeSubSection}>
@@ -61,13 +61,13 @@ const AboutMe = () => (
               {' '}
               are some adjectives that can be used to describe me.
               At the end of the day however, I am a simple tech nerd &nbsp;
-              <FontAwesomeIcon icon={faGlasses} size="md" />
+              <FontAwesomeIcon icon={faGlasses} size="1x" />
               &nbsp; that enjoys programming, learning new technologies, experimenting with tech and
               teaching others all I know!
             </p>
           </div>
           <div className={styles.aboutMeSubSection}>
-            <Header headerLevel="2" headerText="HOBBIES & INTERESTS" fontSize="18px" />
+            <Header headerLevel="2" headerText="Hobbies & Interests" fontSize="18px" />
             <p>
               Of course, I have many other
               {' '}
@@ -80,18 +80,31 @@ const AboutMe = () => (
             </p>
             <div className={styles.aboutMeHobbiesSection}>
               { HOBBIES.map(i => (
-                <div className={styles.hobby}>
+                <div className={styles.hobby} key={i.text}>
                   <FontAwesomeIcon icon={i.icon} size="lg" />
                   {i.text}
                 </div>
               )) }
             </div>
+          </div>
+          <div className={styles.aboutMeSubSection}>
+            <Header headerLevel="2" headerText="Interested in my professional experience?" fontSize="18px" />
+            <div className={styles.aboutMeProfessional}>
+              <div
+                className="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="small"
+                data-theme="dark"
+                data-type="VERTICAL"
+                data-vanity="jlurena"
+                data-version="v1"
+              />
+              <div>
+                <a className={styles.download} target="_blank" href="./resume.html">View Resume</a>
 
-            <div className={styles.aboutMeSubSection}>
-              <p>
-                Interested in my professional experience?
-              </p>
+              </div>
             </div>
+
           </div>
         </div>
         <div>
