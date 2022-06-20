@@ -14,9 +14,12 @@ const Header = ({
     {icon && <FontAwesomeIcon className={styles.icon} icon={icon} size="lg" /> }
     <h1 className={`${styles.header} ${styles[`level${headerLevel}`] || ''}`}>
       {headerText}
+      {headerStrongText
+      && (
       <span className={styles.strong}>
         {` ${headerStrongText}`}
       </span>
+      )}
     </h1>
   </div>
 );

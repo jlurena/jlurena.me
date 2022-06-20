@@ -13,16 +13,43 @@
 
 .aboutMeWrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+
+  & > div {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+.aboutMeSubSection {
+  margin-bottom: 3rem;
+}
+
+.aboutMeHobbiesSection {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .hobby {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 25%;
+    align-items: center;
+  }
+}
+
+.carouselImages {
+  img {
+    // Height comes from src/js/app.module.scss .contentWrapper. 100vh - sameHeight - padding - buttons from lib class
+    max-height: calc(100vh - 115px - 100px - 150px) !important;
+  }
 }
 
 .contactInformationContainer {
   display: flex;
   justify-content: space-between;
-}
-
-.containerSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
