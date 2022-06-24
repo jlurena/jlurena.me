@@ -1,5 +1,5 @@
-build/*
-public/*
-node_modules/*
+build
+public
+node_modules
 src/serviceWorker.js
-vendor/*
+vendor
