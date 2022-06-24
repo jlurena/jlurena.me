@@ -18,7 +18,7 @@ import Header from '../../header';
 import styles from './about-me.module.scss';
 import '../../../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
-import useScript from '../../../lib/useScript';
+import useTag from '../../../lib/use-tag';
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
 
 const IMAGES = [
@@ -42,7 +42,21 @@ const HOBBIES = [
 ];
 
 const AboutMe = () => {
-  useScript(linkedinBadgeScript, { async: true, defer: true });
+  useTag(
+    () => document.body,
+    'script',
+    {
+      src: linkedinBadgeScript, type: 'text/javascript', async: true, defer: true,
+    },
+  );
+  // Need to use Observation to see when the iframe got placed
+  // useTag(
+  //   () => document.querySelector('iframe').contentWindow.document.head,
+  //   'style',
+  //   {
+  //     innerHtml: '.profile-badge {width: 100%;}', type: 'text/css',
+  //   },
+  // );
   return (
     <div className={styles.wrapper}>
       <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
@@ -91,27 +105,6 @@ const AboutMe = () => {
                 )) }
               </div>
             </div>
-            <div className={styles.aboutMeSubSection}>
-              <Header headerLevel="2" headerText="Interested in my professional experience?" fontSize="18px" />
-              <div className={styles.aboutMeProfessional}>
-                <div>
-                  <div
-                    className="badge-base LI-profile-badge"
-                    data-locale="en_US"
-                    data-size="medium"
-                    data-theme="dark"
-                    data-type="HORIZONTAL"
-                    data-vanity="jlurena"
-                    data-version="v1"
-                  />
-                </div>
-                <div>
-                  <a className={styles.download} target="_blank" href="./resume.html">View Resume</a>
-
-                </div>
-              </div>
-
-            </div>
           </div>
           <div>
             <div>
@@ -122,6 +115,27 @@ const AboutMe = () => {
                 showFullscreenButton={false}
                 showBullets
               />
+            </div>
+          </div>
+
+        </div>
+        <div className={styles.aboutMeSubSection}>
+          <Header headerLevel="2" headerText="Interested in my professional experience?" fontSize="18px" />
+          <div className={styles.aboutMeProfessional}>
+            <div>
+              <div
+                className="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="dark"
+                data-type="HORIZONTAL"
+                data-vanity="jlurena"
+                data-version="v1"
+              />
+            </div>
+            <div>
+              <a className={styles.download} target="_blank" href="./resume.html">View Resume</a>
+
             </div>
           </div>
 

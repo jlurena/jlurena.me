@@ -1,6 +1,7 @@
 @import '../../../../scss/breakpoints';
 @import '../../../../scss/variables';
 
+
 .wrapper {
   height: 100%;
 }
@@ -14,13 +15,17 @@
 
 .aboutMeWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1.5rem;
   justify-content: space-evenly;
 
   & > div {
     flex: 1 1 0;
     min-width: 0;
+  }
+
+  @include screen-lg {
+    flex-direction: row;
   }
 }
 
@@ -54,6 +59,7 @@
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
 
   .hobby {
     display: flex;
