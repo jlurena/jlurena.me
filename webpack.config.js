@@ -91,6 +91,13 @@ const config = {
           },
         ],
       },
+      {
+        test:    /vendor\/.*.js$/,
+        loader:  'file-loader',
+        options: {
+          name: 'vendor/[name]-[contenthash:8].[ext]',
+        },
+      },
     ],
   },
   optimization: {
