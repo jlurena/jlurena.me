@@ -32,8 +32,13 @@
 .aboutMeProfessional {
   display: flex;
   justify-content: center;
+  gap: 1.5rem;
 
   & > div {
+    &:nth-child(1) {
+      order: -1;
+    }
+
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
@@ -52,6 +57,18 @@
 
 .aboutMeSubSection {
   margin-bottom: 3rem;
+}
+
+.separator {
+  // display: flex;
+  &::before {
+    content: "OR";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    font-weight: 700;
+  }
 }
 
 .aboutMeHobbiesSection {

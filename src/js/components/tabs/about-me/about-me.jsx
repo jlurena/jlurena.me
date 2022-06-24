@@ -121,7 +121,7 @@ const AboutMe = () => {
         </div>
         <div className={styles.aboutMeSubSection}>
           <Header headerLevel="2" headerText="Interested in my professional experience?" fontSize="18px" />
-          <div className={styles.aboutMeProfessional}>
+          <div className={`${styles.aboutMeProfessional} ${styles.separator}`}>
             <div>
               <div
                 className="badge-base LI-profile-badge"
