@@ -12,7 +12,7 @@
   margin: 0 2%;
 }
 
-.aboutMeWrapper {
+.about-me-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -28,7 +28,7 @@
   }
 }
 
-.aboutMeProfessional {
+.about-me-professional {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -67,7 +67,7 @@
   }
 }
 
-.aboutMeSubSection {
+.about-me-sub-section {
   margin: 3rem 0;
 }
 
@@ -83,7 +83,7 @@
   }
 }
 
-.aboutMeHobbiesSection {
+.about-me-hobbies-section {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -99,15 +99,10 @@
   }
 }
 
-.carouselImages {
+.carousel-images {
   img {
     // Height comes from src/js/app.module.scss .contentWrapper and react-image-gallery
     // 100vh - .contentWrapper height - padding - buttons from lib class (71px each)
     max-height: calc(100vh - 115px - 100px - 140px) !important;
   }
-}
-
-.contactInformationContainer {
-  display: flex;
-  justify-content: space-between;
 }

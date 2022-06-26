@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.barContainer {
+.bar-container {
   border: 2px solid $primary-color;
 
   .fill {
@@ -17,7 +17,7 @@
   }
 }
 
-.titleContainer {
+.title-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
