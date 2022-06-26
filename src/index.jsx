@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import * as serviceWorker from './serviceWorker';
 import App from './js/app';
 
@@ -7,11 +7,10 @@ import './scss/antispam.scss';
 import './scss/reset.scss';
 import './scss/base.scss';
 
-ReactDOM.render(
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root'),
 );
 
 serviceWorker.unregister();

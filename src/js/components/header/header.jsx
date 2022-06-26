@@ -29,15 +29,15 @@ function Header({
 Header.propTypes = {
   headerLevel: PropTypes.string,
   icon:        PropTypes.shape({
-    prefix: PropTypes.string,
-    icon:   PropTypes.arrayOf(
+    icon: PropTypes.arrayOf(
       PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.string),
-        PropTypes.string,
         PropTypes.number,
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
       ]),
-    ),
-    iconName: PropTypes.string,
+    ).isRequired,
+    iconName: PropTypes.string.isRequired,
+    prefix:   PropTypes.string,
   }),
   headerText:       PropTypes.string.isRequired,
   headerStrongText: PropTypes.string,

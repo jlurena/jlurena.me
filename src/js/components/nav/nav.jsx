@@ -15,8 +15,18 @@ export function Icon({ ariaLabel, icon, onClick }) {
 
 Icon.propTypes = {
   ariaLabel: PropTypes.string.isRequired,
-  icon:      PropTypes.node.isRequired,
-  onClick:   PropTypes.func.isRequired,
+  icon:      PropTypes.shape({
+    icon: PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+      ]),
+    ).isRequired,
+    iconName: PropTypes.string.isRequired,
+    prefix:   PropTypes.string,
+  }).isRequired,
+  onClick: PropTypes.func.isRequired,
 
 };
 
@@ -57,9 +67,19 @@ Nav.propTypes = {
   selectedTab: PropTypes.string.isRequired,
   onTabClick:  PropTypes.func.isRequired,
   tabs:        PropTypes.objectOf(PropTypes.shape({
-    icon: PropTypes.node.isRequired,
-    tab:  PropTypes.element.isRequired,
-    id:   PropTypes.number.isRequired,
+    icon: PropTypes.shape({
+      icon: PropTypes.arrayOf(
+        PropTypes.oneOfType([
+          PropTypes.number,
+          PropTypes.string,
+          PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+        ]),
+      ).isRequired,
+      iconName: PropTypes.string.isRequired,
+      prefix:   PropTypes.string,
+    }).isRequired,
+    tab: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
+    id:  PropTypes.number.isRequired,
   })),
 };
 
