@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './skill-bar.module.scss';
 
-const SkillBar = ({ skillName, percent }) => {
+function SkillBar({ skillName, percent }) {
   const [barWidth, setBarWidth] = useState(0);
   const [percentNumber, setPercentNumber] = useState(0);
   const [isAnimationDelayed, setAnimationIsDelayed] = useState(true);
@@ -39,7 +39,7 @@ const SkillBar = ({ skillName, percent }) => {
       </div>
     </div>
   );
-};
+}
 
 SkillBar.propTypes = {
   skillName: PropTypes.string.isRequired,

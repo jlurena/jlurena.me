@@ -7,7 +7,7 @@ import JeanPic from '../../../../images/jean/webslidepic1.jpg';
 
 import WordCarousel from '../../word-carousel/word-carousel';
 
-const Home = () => {
+function Home() {
   const words = ['Leader', 'Software Engineer', 'Student', 'Car Enthusiast', 'Hiker', 'Coffee Fanatic'];
   const imageAlt = 'Picture of Jean Luis Urena';
   return (
@@ -40,6 +40,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Home;

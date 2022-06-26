@@ -3,26 +3,28 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './header.module.scss';
 
-const Header = ({
+function Header({
   headerLevel,
   icon,
   headerText,
   headerStrongText,
   fontSize,
-}) => (
-  <div className={styles.container} style={{ fontSize }}>
-    {icon && <FontAwesomeIcon className={styles.icon} icon={icon} size="lg" /> }
-    <h1 className={`${styles.header} ${styles[`level${headerLevel}`] || ''}`}>
-      {headerText}
-      {headerStrongText
+}) {
+  return (
+    <div className={styles.container} style={{ fontSize }}>
+      {icon && <FontAwesomeIcon className={styles.icon} icon={icon} size="lg" /> }
+      <h1 className={`${styles.header} ${styles[`level${headerLevel}`] || ''}`}>
+        {headerText}
+        {headerStrongText
       && (
       <span className={styles.strong}>
         {` ${headerStrongText}`}
       </span>
       )}
-    </h1>
-  </div>
-);
+      </h1>
+    </div>
+  );
+}
 
 Header.propTypes = {
   headerLevel: PropTypes.string,

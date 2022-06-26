@@ -39,10 +39,13 @@ const config = {
     preset:      'minimal',
     performance: true,
   },
+  performance: {
+    hints: false,
+  },
   devServer: {
-    hot:         true,
-    open:        true,
-    contentBase: path.join(__dirname, 'public'),
+    hot:    true,
+    open:   true,
+    static: path.join(__dirname, 'public'),
   },
   entry:  path.resolve(__dirname, './src/index.jsx'),
   output: {

@@ -16,7 +16,7 @@ import {
 import ImageGallery from 'react-image-gallery';
 import Header from '../../header';
 import styles from './about-me.module.scss';
-import '../../../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
+import 'react-image-gallery/styles/scss/image-gallery.scss';
 import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
 import useTag from '../../../lib/use-tag';
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
@@ -41,7 +41,7 @@ const HOBBIES = [
   { icon: faUtensils, text: 'Eating Out' },
 ];
 
-const AboutMe = () => {
+function AboutMe() {
   const iframeContainerDiv = useRef(null);
 
   // HACK: This is because the LinkedIn Badge has their own styles which isn't responsive
@@ -165,5 +165,5 @@ const AboutMe = () => {
 
     </div>
   );
-};
+}
 export default AboutMe;

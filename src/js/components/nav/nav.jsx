@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './nav.module.scss';
 
-export const Icon = ({ ariaLabel, icon, onClick }) => (
-  <button type="button" aria-label={ariaLabel} className={styles.tab} onClick={onClick}>
-    <FontAwesomeIcon icon={icon} size="lg" />
-  </button>
-);
+export function Icon({ ariaLabel, icon, onClick }) {
+  return (
+    <button type="button" aria-label={ariaLabel} className={styles.tab} onClick={onClick}>
+      <FontAwesomeIcon icon={icon} size="lg" />
+    </button>
+  );
+}
 
 Icon.propTypes = {
   ariaLabel: PropTypes.string.isRequired,
@@ -18,9 +20,9 @@ Icon.propTypes = {
 
 };
 
-const Nav = ({
+function Nav({
   isMobileNav, selectedTab, onTabClick, tabs,
-}) => {
+}) {
   const navOptions = Object.keys(tabs).map(k => (
     <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
       <Icon ariaLabel={k} icon={tabs[k].icon} onClick={() => onTabClick(k)} />
@@ -48,7 +50,7 @@ const Nav = ({
       </div>
     </>
   );
-};
+}
 
 Nav.propTypes = {
   isMobileNav: PropTypes.bool.isRequired,

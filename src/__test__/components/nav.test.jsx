@@ -21,8 +21,12 @@ describe('<Icon/>', () => {
 });
 
 describe('<Nav/>', () => {
-  const FooComponent = () => <div>Hello Foo!</div>;
-  const BarComponent = () => <div>Hello Bar!</div>;
+  function FooComponent() {
+    return <div>Hello Foo!</div>;
+  }
+  function BarComponent() {
+    return <div>Hello Bar!</div>;
+  }
 
   const tabs = {
     Foo: { icon: faHome, tab: FooComponent },

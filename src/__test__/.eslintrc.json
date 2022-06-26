@@ -7,7 +7,18 @@
     "airbnb"
   ],
   "settings": {
-    "import/resolver": "webpack"
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ],
+        "paths": [
+          "node_modules/",
+          "./src"
+        ]
+      }
+    }
   },
   "globals": {
     "document": true,

@@ -16,7 +16,7 @@ import AboutMe from './components/tabs/about-me';
 
 import styles from './app.module.scss';
 
-const App = () => {
+function App() {
   const tabs = {
     Home:       { icon: faHome, tab: Home, id: 0 },
     'About Me': { icon: faUser, tab: AboutMe, id: 1 },
@@ -27,11 +27,9 @@ const App = () => {
 
   const [selectedTab, setSelectedTab] = useState('Home');
   const [isShowingMobileNav, showMobileNav] = useState(false);
-  // const [direction, setClickDirection] = useState(1);
+  // const [direction, setClickDirection] = useState(1);z
 
-  const TestContent = () => <div>Hello</div>;
-
-  const Content = tabs[selectedTab].tab || TestContent;
+  const Content = tabs[selectedTab].tab;
   const onNavClick = t => {
     // const inferencedDirection = tabs[selectedTab].id > tabs[t].id ? -1 : 1;
     // setClickDirection(inferencedDirection);
@@ -57,6 +55,6 @@ const App = () => {
       </section>
     </>
   );
-};
+}
 
 export default hot(module)(App);
