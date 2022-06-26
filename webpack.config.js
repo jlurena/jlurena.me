@@ -47,7 +47,7 @@ const config = {
     open:   true,
     static: path.join(__dirname, 'public'),
   },
-  entry:  path.resolve(__dirname, './src/index.jsx'),
+  entry:  ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
   output: {
     path:     path.resolve(__dirname, 'public'),
     filename: isDev ? 'assets/[name].js' : 'assets/[contenthash:8].js',
