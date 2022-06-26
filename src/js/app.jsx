@@ -27,14 +27,14 @@ const App = () => {
 
   const [selectedTab, setSelectedTab] = useState('Home');
   const [isShowingMobileNav, showMobileNav] = useState(false);
-  const [direction, setClickDirection] = useState(1);
+  // const [direction, setClickDirection] = useState(1);
 
   const TestContent = () => <div>Hello</div>;
 
   const Content = tabs[selectedTab].tab || TestContent;
   const onNavClick = t => {
-    const inferencedDirection = tabs[selectedTab].id > tabs[t].id ? -1 : 1;
-    setClickDirection(inferencedDirection);
+    // const inferencedDirection = tabs[selectedTab].id > tabs[t].id ? -1 : 1;
+    // setClickDirection(inferencedDirection);
     setSelectedTab(t);
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './skill-bar.module.scss';
 
 const SkillBar = ({ skillName, percent }) => {
@@ -38,6 +39,11 @@ const SkillBar = ({ skillName, percent }) => {
       </div>
     </div>
   );
+};
+
+SkillBar.propTypes = {
+  skillName: PropTypes.string.isRequired,
+  percent:   PropTypes.number.isRequired,
 };
 
 export default SkillBar;

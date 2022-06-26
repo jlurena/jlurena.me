@@ -1,4 +1,6 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './nav.module.scss';
@@ -8,6 +10,13 @@ export const Icon = ({ ariaLabel, icon, onClick }) => (
     <FontAwesomeIcon icon={icon} size="lg" />
   </button>
 );
+
+Icon.propTypes = {
+  ariaLabel: PropTypes.string.isRequired,
+  icon:      PropTypes.node.isRequired,
+  onClick:   PropTypes.func.isRequired,
+
+};
 
 const Nav = ({
   isMobileNav, selectedTab, onTabClick, tabs,
@@ -39,6 +48,17 @@ const Nav = ({
       </div>
     </>
   );
+};
+
+Nav.propTypes = {
+  isMobileNav: PropTypes.bool.isRequired,
+  selectedTab: PropTypes.string.isRequired,
+  onTabClick:  PropTypes.func.isRequired,
+  tabs:        PropTypes.objectOf(PropTypes.shape({
+    icon: PropTypes.node.isRequired,
+    tab:  PropTypes.element.isRequired,
+    id:   PropTypes.number.isRequired,
+  })),
 };
 
 export default Nav;

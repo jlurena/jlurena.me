@@ -14,7 +14,7 @@
     "fetch": true,
     "MutationObserver": true,
     "React": true,
-    "window": true,
+    "window": true
   },
   "rules": {
     "arrow-parens": [

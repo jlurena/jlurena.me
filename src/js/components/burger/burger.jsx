@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import styles from './burger.module.scss';
 
 const Burger = ({ onClick }) => (
@@ -12,5 +12,9 @@ const Burger = ({ onClick }) => (
     </button>
   </div>
 );
+
+Burger.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Burger;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCar,
@@ -48,11 +48,8 @@ const AboutMe = () => {
   useEffect(() => {
     const observer = new MutationObserver(mutationList => {
       mutationList.forEach(m => {
-        console.log("mutation");
         m.addedNodes.forEach(n => {
-          console.log('changse');
           if (n.tagName === 'IFRAME') { // Only one iframe here
-            
             const contentHead = n.contentWindow.document.head;
             const style = document.createElement('style');
             style.setAttribute('type', 'text/css');
@@ -62,7 +59,7 @@ const AboutMe = () => {
           }
         });
       });
-    });  
+    });
 
     if (iframeContainerDiv) {
       observer.observe(iframeContainerDiv.current, { childList: true, subtree: true });
@@ -70,7 +67,7 @@ const AboutMe = () => {
 
     return () => observer.disconnect();
   }, []);
-  
+
   useTag(
     () => document.body,
     'script',
