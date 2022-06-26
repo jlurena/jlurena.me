@@ -16,13 +16,26 @@ import AboutMe from './components/tabs/about-me';
 
 import styles from './app.module.scss';
 
+const COMPONENT_TYPE = 'component';
+const FUNCTION_TYPE = 'function';
+
 function App() {
   const tabs = {
-    Home:       { icon: faHome, tab: Home, id: 0 },
-    'About Me': { icon: faUser, tab: AboutMe, id: 1 },
-    Resume:     { icon: faFileAlt, tab: Home, id: 2 },
-    Blog:       { icon: faNewspaper, tab: Home, id: 3 },
-    Contact:    { icon: faMapMarkerAlt, tab: Home, id: 4 },
+    Home: {
+      icon: faHome, tab: Home, type: COMPONENT_TYPE, id: 0,
+    },
+    'About Me': {
+      icon: faUser, tab: AboutMe, type: COMPONENT_TYPE, id: 1,
+    },
+    Resume: {
+      icon: faFileAlt, tab: () => window.open('https://google.com', '_blank'), type: FUNCTION_TYPE, id: 2,
+    },
+    Blog: {
+      icon: faNewspaper, tab: Home, type: FUNCTION_TYPE, id: 3,
+    },
+    Contact: {
+      icon: faMapMarkerAlt, tab: Home, type: COMPONENT_TYPE, id: 4,
+    },
   };
 
   const [selectedTab, setSelectedTab] = useState('Home');
@@ -30,7 +43,8 @@ function App() {
 
   const Content = tabs[selectedTab].tab;
   const onNavClick = t => {
-    setSelectedTab(t);
+    if (tabs[t].type === COMPONENT_TYPE) setSelectedTab(t);
+    if (tabs[t].type === FUNCTION_TYPE) tabs[t].tab();
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };
 
