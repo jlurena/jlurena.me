@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCar,
@@ -42,6 +42,35 @@ const HOBBIES = [
 ];
 
 const AboutMe = () => {
+  const iframeContainerDiv = useRef(null);
+
+  // HACK: This is because the LinkedIn Badge has their own styles which isn't responsive
+  useEffect(() => {
+    const observer = new MutationObserver(mutationList => {
+      mutationList.forEach(m => {
+        console.log("mutation");
+        m.addedNodes.forEach(n => {
+          console.log('changse');
+          if (n.tagName === 'IFRAME') { // Only one iframe here
+            
+            const contentHead = n.contentWindow.document.head;
+            const style = document.createElement('style');
+            style.setAttribute('type', 'text/css');
+            style.innerHTML = 'body>*{width:100%!important;}';
+
+            contentHead.appendChild(style);
+          }
+        });
+      });
+    });  
+
+    if (iframeContainerDiv) {
+      observer.observe(iframeContainerDiv.current, { childList: true, subtree: true });
+    }
+
+    return () => observer.disconnect();
+  }, []);
+  
   useTag(
     () => document.body,
     'script',
@@ -49,14 +78,7 @@ const AboutMe = () => {
       src: linkedinBadgeScript, type: 'text/javascript', async: true, defer: true,
     },
   );
-  // Need to use Observation to see when the iframe got placed
-  // useTag(
-  //   () => document.querySelector('iframe').contentWindow.document.head,
-  //   'style',
-  //   {
-  //     innerHtml: '.profile-badge {width: 100%;}', type: 'text/css',
-  //   },
-  // );
+
   return (
     <div className={styles.wrapper}>
       <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
@@ -124,6 +146,7 @@ const AboutMe = () => {
           <div className={`${styles.aboutMeProfessional} ${styles.separator}`}>
             <div>
               <div
+                ref={iframeContainerDiv}
                 className="badge-base LI-profile-badge"
                 data-locale="en_US"
                 data-size="medium"

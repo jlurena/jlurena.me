@@ -1,7 +1,6 @@
 @import '../../../../scss/breakpoints';
 @import '../../../../scss/variables';
 
-
 .wrapper {
   height: 100%;
 }
@@ -33,6 +32,11 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  flex-direction: column;
+
+  @include screen-sm {
+    flex-direction: row;
+  }
 
   & > div {
     &:nth-child(1) {
@@ -43,6 +47,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    @include screen-lg {
+      max-width: 300px;
+    }
+
+    iframe {
+      width: 100%;
+    }
   }
 
   .download {
@@ -56,7 +68,7 @@
 }
 
 .aboutMeSubSection {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .separator {
