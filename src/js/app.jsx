@@ -13,28 +13,29 @@ import Burger from './components/burger';
 import Home from './components/tabs/home';
 import Nav from './components/nav';
 import AboutMe from './components/tabs/about-me';
+import Resume from './components/tabs/resume';
 
 import styles from './app.module.scss';
 
-const COMPONENT_TYPE = 'component';
+const CONTENT_TYPE = 'content';
 const FUNCTION_TYPE = 'function';
 
 function App() {
   const tabs = {
     Home: {
-      icon: faHome, tab: Home, type: COMPONENT_TYPE, id: 0,
+      icon: faHome, tab: Home, type: CONTENT_TYPE,
     },
     'About Me': {
-      icon: faUser, tab: AboutMe, type: COMPONENT_TYPE, id: 1,
+      icon: faUser, tab: AboutMe, type: CONTENT_TYPE,
     },
     Resume: {
-      icon: faFileAlt, tab: () => window.open('https://google.com', '_blank'), type: FUNCTION_TYPE, id: 2,
+      icon: faFileAlt, tab: Resume, type: CONTENT_TYPE,
     },
     Blog: {
-      icon: faNewspaper, tab: Home, type: FUNCTION_TYPE, id: 3,
+      icon: faNewspaper, tab: Home, type: FUNCTION_TYPE,
     },
     Contact: {
-      icon: faMapMarkerAlt, tab: Home, type: COMPONENT_TYPE, id: 4,
+      icon: faMapMarkerAlt, tab: Home, type: CONTENT_TYPE,
     },
   };
 
@@ -43,7 +44,7 @@ function App() {
 
   const Content = tabs[selectedTab].tab;
   const onNavClick = t => {
-    if (tabs[t].type === COMPONENT_TYPE) setSelectedTab(t);
+    if (tabs[t].type === CONTENT_TYPE) setSelectedTab(t);
     if (tabs[t].type === FUNCTION_TYPE) tabs[t].tab();
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };

@@ -80,7 +80,12 @@ function AboutMe() {
     <div className={styles.wrapper}>
       <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
       <div className={styles.container}>
-        <Header headerLevel="2" headerText="Hey! Nice to meet you, I'm" headerStrongText="Jean" fontSize="18px" />
+        <Header
+          headerLevel="2"
+          headerText="Hey! Nice to meet you, I'm Jean Luis, but you can call me"
+          headerStrongText="Jean"
+          fontSize="18px"
+        />
         <div className={styles.aboutMeWrapper}>
           <div>
             <div className={styles.aboutMeSubSection}>

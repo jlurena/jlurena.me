@@ -1,352 +1,316 @@
 import React from 'react';
-import './resume.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGlobe,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faMedium,
+} from '@fortawesome/free-brands-svg-icons';
+import PropTypes from 'prop-types';
+import styles from './resume.module.scss';
+
+// Globe icon="fa-solid fa-globe"
+function IconLink({ icon, url, linkText }) {
+  return (
+    <div className={styles.iconLinkContainer}>
+      <FontAwesomeIcon icon={icon} />
+      <a href={url} target="_blank" rel="noreferrer">{linkText}</a>
+    </div>
+  );
+}
+
+IconLink.propTypes = {
+  icon:     PropTypes.string.isRequired,
+  url:      PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+};
 
 function Resume() {
   return (
-    <div className="wrapper">
-      <div className="preview-box">
-        <div className="container">
-          <div className="container-main">
-            <div className="top-block">
-              <div className="top-block-details">
-                <div className="top-block-name setting-primary-text">
-                  <p>
-                    Jean Luis Urena
-                    <br />
-                    Software Engineer
+    <div className={styles.wrapper}>
+      <div className={styles.resumeHeader}>
+        <div className={styles.main}>
+          <div className={styles.section}>
+            <div className={styles.details}>
+              <p className={styles.name}>Jean Luis Ureña</p>
+              <div className={styles.contact}>
+                <span>
+                  <span>N</span>
+                  <span>Y</span>
+                  <span>C</span>
+                </span>
+                <span className={styles.separator}>·</span>
+                <span>
+                  <span>e</span>
+                  <span>l</span>
+                  <span>j</span>
+                  <span>e</span>
+                  <span>a</span>
+                  <span>n</span>
+                  <span>@</span>
+                  <span>l</span>
+                  <span>i</span>
+                  <span>v</span>
+                  <span>e</span>
+                  <span>.</span>
+                  <span>c</span>
+                  <span>o</span>
+                  <span>m</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.side} />
+      </div>
+      <div className={styles.resumeBody}>
+        <div className={styles.main}>
+          <div className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <span>P</span>
+              <span>R</span>
+              <span>O</span>
+              <span>F</span>
+              <span>I</span>
+              <span>L</span>
+              <span>E</span>
+            </div>
+            <div className={styles.content}>
+              <div className={styles.experience}>
+                <div className={styles.experienceDescription}>
+                  <p className={styles.experienceSummary}>
+                    I focus on designing and implementing smart and scalable solutions with meaningful experiences for the
+                    end users.
                   </p>
                 </div>
-                <div className="top-block-contacts">
-                  <span className="top-block-city">
-                    <span>B</span>
-                    <span>R</span>
-                    <span>O</span>
-                    <span>N</span>
-                    <span>X</span>
-                    <span>,</span>
-                    <span />
-                    <span>N</span>
-                    <span>Y</span>
-                  </span>
-                  <span className="top-block-contacts-sep">·</span>
-                  <span className="top-block-email reverse">moc.evil@naejle</span>
-                </div>
               </div>
             </div>
-            <div className="section">
-              <div className="section-header">
-                <span>P</span>
-                <span>R</span>
-                <span>O</span>
-                <span>F</span>
-                <span>I</span>
-                <span>L</span>
-                <span>E</span>
-              </div>
-              <div className="section-content">
-                <div className="profile">
-                  <p>
-                    I focus on designing and implementing smart and scalable solutions
-                    with meaningful experiences for the end users.
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <span>E</span>
+              <span>D</span>
+              <span>U</span>
+              <span>C</span>
+              <span>A</span>
+              <span>T</span>
+              <span>I</span>
+              <span>O</span>
+              <span>N</span>
             </div>
-            <div className="section">
-              <div className="section-header">
-                <span>E</span>
-                <span>D</span>
-                <span>U</span>
-                <span>C</span>
-                <span>A</span>
-                <span>T</span>
-                <span>I</span>
-                <span>O</span>
-                <span>N</span>
-              </div>
-              <div className="section-content">
-                <div className="experience" style={{ breakInside: 'avoid' }}>
-                  <div className="experience-header">
-                    <div className="experience-header-line">
-                      <div className="experience-title">
-                        Rochester Institute of Technology, B.S in Computer Science
-                      </div>
-                      <div className="experience-date">
-                        Aug 2015 – Dec 2018, Rochester, NY
-                      </div>
+            <div className={styles.content}>
+              <div className={styles.experience}>
+                <div className={styles.experienceContainer}>
+                  <div className={styles.experienceName}><span>Rochester Institute of Technology</span></div>
+                  <div className={styles.experienceHistoryContainer}>
+                    <div className={styles.experienceTitle}>
+                      <span>B.S in Computer Science</span>
+
+                      <span>
+                        August 2015 - December 2018
+                      </span>
                     </div>
-                  </div>
-                  <div className="experience-description" />
-                </div>
-              </div>
-            </div>
-            <div className="section">
-              <div className="section-header">
-                <span>E</span>
-                <span>M</span>
-                <span>P</span>
-                <span>L</span>
-                <span>O</span>
-                <span>Y</span>
-                <span>M</span>
-                <span>E</span>
-                <span>N</span>
-                <span>T</span>
-                <span> </span>
-                <span>H</span>
-                <span>I</span>
-                <span>S</span>
-                <span>T</span>
-                <span>O</span>
-                <span>R</span>
-                <span>Y</span>
-              </div>
-              <div className="section-content">
-                <div className="experience" style={{ breakInside: 'auto' }}>
-                  <div className="experience-header">
-                    <div className="experience-header-line">
-                      <div className="experience-title">
-                        Associate Software Engineer,
-                        <span>Teladoc Health</span>
-                      </div>
-                      <div className="experience-date">
-                        Jan 2018 – Present, Purchase, NY
-                      </div>
-                      <br />
-                      <div
-                        className="experience-date"
-                        style={{ marginLeft: '-2px' }}
-                      >
-                        May 2017 – August 2017, Purchase, NY
-                      </div>
-                    </div>
-                  </div>
-                  <div className="experience-description">
-                    <p>
-                      Work with Ruby on Rails, React, Redux, Elixir with Phoenix and
-                      MySQL to&nbsp;develop, demonstrate and document software
-                      solutions based on user stories, changes and information
-                      needed.&nbsp;
-                    </p>
-                    <p>
-                      - Enhanced video conference experience and video conference
-                      logging. Ultimately, this helped decrease canceled visits due to
-                      technical issues by over 10% and increased our confidence on
-                      detecting and ease to debug/fix future production issues
-                      involving video conferences.
-                    </p>
-                    <p>
-                      - Spearheaded WCAG initiative to help make the member website
-                      accessible to all users irrespective of disability. With this
-                      work we were awarded a WCAG compliance certification with an
-                      overall score of 9/10.&nbsp;
-                    </p>
-                  </div>
-                </div>
-                <div className="experience" style={{ breakInside: 'avoid' }}>
-                  <div className="experience-header">
-                    <div className="experience-header-line">
-                      <div className="experience-title">
-                        Software Engineer (Intern),
-                        {' '}
-                        <span>Ultimate Software</span>
-                      </div>
-                      <div className="experience-date">
-                        Aug 2017 – Dec 2017, Weston, FL
-                      </div>
-                    </div>
-                  </div>
-                  <div className="experience-description">
-                    <p>
-                      Worked with .NET, Ruby and JavaScript to developed and
-                      documented software improvements and changes.&nbsp;
-                    </p>
-                    <p>
-                      Most notably, decoupled various services into modular
-                      micro-services, essentially increasing scalability, improving
-                      performance by over 30% and improving user experience.
-                    </p>
-                  </div>
-                </div>
-                <div className="experience" style={{ breakInside: 'avoid' }}>
-                  <div className="experience-header">
-                    <div className="experience-header-line">
-                      <div className="experience-title">
-                        Quality Assurance Engineer,
-                        {' '}
-                        <span>EarthLink</span>
-                      </div>
-                      <div className="experience-date">
-                        Jan 2017 – Apr 2017, Rochester, NY
-                      </div>
-                    </div>
-                  </div>
-                  <div className="experience-description">
-                    <p>
-                      Using the CUITe testing framework on a .NET application,
-                      implemented automated integration, performance and load tests to
-                      ensure, quality of the application and to provide detailed
-                      reports of quality metrics.
-                    </p>
-                  </div>
-                </div>
-                <div className="experience" style={{ breakInside: 'avoid' }}>
-                  <div className="experience-header">
-                    <div className="experience-header-line">
-                      <div className="experience-title">
-                        Coding Instructor,
-                        {' '}
-                        <span>iCanCode Club</span>
-                      </div>
-                      <div className="experience-date">
-                        Sep 2016 – Jan 2017, Rochester, NY
-                      </div>
-                    </div>
-                  </div>
-                  <div className="experience-description">
-                    <p>
-                      Developed teaching plans to engage and instruct coding students
-                      from ages 5 to 13 on the fundamentals of programming in
-                      JavaScript and MIT Scratch.
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="container-aside">
-            <div className="section section-sidebar">
-              <div className="section-header">
-                <span>L</span>
-                <span>I</span>
-                <span>N</span>
-                <span>K</span>
-                <span>S</span>
-              </div>
-              <div className="section-content">
-                <div className="socials">
-                  <a
-                    className="socials-link setting-primary-text"
-                    href="https://jlurena.me"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Personal Website
-                  </a>
-                </div>
-                <div className="socials">
-                  <a
-                    className="socials-link setting-primary-text"
-                    href="https://github.com/jlurena"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-                <div className="socials">
-                  <a
-                    className="socials-link setting-primary-text"
-                    href="https://medium.com/@jlurena123"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Blog
-                  </a>
-                </div>
-              </div>
+          <div className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <span>E</span>
+              <span>X</span>
+              <span>P</span>
+              <span>E</span>
+              <span>R</span>
+              <span>I</span>
+              <span>E</span>
+              <span>N</span>
+              <span>C</span>
+              <span>E</span>
             </div>
-            <div className="section section-sidebar">
-              <div className="section-header">
-                <span>S</span>
-                <span>K</span>
-                <span>I</span>
-                <span>L</span>
-                <span>L</span>
-                <span>S</span>
-              </div>
-              <div className="section-content">
-                <div className="skill">
-                  <div className="skill-name">JavaScript</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
+            <div className={styles.content}>
+              <div className={styles.experience}>
+                <div className={styles.experienceContainer}>
+                  <div className={styles.experienceName}><span>Teladoc Health</span></div>
+                  <div className={styles.experienceHistoryContainer}>
+                    <div className={styles.experienceTitle}>
+                      <span>Senior Software Engineer</span>
+                      <span>
+                        March 2021 - Present
+                      </span>
+
+                    </div>
+                    <div className={styles.experienceTitle}>
+                      <span>Software Engineer</span>
+                      <span>
+                        March
+                        2020 - March 2021
+                      </span>
+
+                    </div>
+                    <div className={styles.experienceTitle}>
+                      <span>Associate Software Engineer</span>
+
+                      <span>December 2018 - March 2020</span>
+                    </div>
+                    <div className={styles.experienceTitle}>
+                      <span>Software Engineer (Contract)</span>
+
+                      <span>
+                        January 2018 - December 2018
+                      </span>
+
+                    </div>
                   </div>
                 </div>
-                <div className="skill">
-                  <div className="skill-name">React.JS</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Redux</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Ruby</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Ruby on Rails</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">CSS &amp; HTML</div>
-                  <div className="skill-progress">
-                    <div
-                      className="skill-progress-inner"
-                      style={{ width: '100%' }}
-                    />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Java</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Elixir</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Phoenix Framework</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">SQL</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
-                </div>
-                <div className="skill">
-                  <div className="skill-name">Android Development</div>
-                  <div className="skill-progress">
-                    <div className="skill-progress-inner" style={{ width: '80%' }} />
-                  </div>
+                <div className={styles.experienceDescription}>
+                  <span className={styles.experienceHeader}>
+                    <span>O</span>
+                    <span>v</span>
+                    <span>e</span>
+                    <span>r</span>
+                    <span>v</span>
+                    <span>i</span>
+                    <span>e</span>
+                    <span>w</span>
+                  </span>
+                  <p className={styles.experienceSummary}>
+                    Work with a very diverse stack consisting of tech including Ruby on Rails, React.js, MySQL
+                    and GraphQL to demonstrate and document software solutions based on user stories,
+                    changes and information needed.
+                  </p>
+                  <span className={styles.experienceHeader}>
+                    <span>M</span>
+                    <span>a</span>
+                    <span>j</span>
+                    <span>o</span>
+                    <span>r</span>
+                    <span>&nbsp;</span>
+                    <span>A</span>
+                    <span>c</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>l</span>
+                    <span>i</span>
+                    <span>s</span>
+                    <span>h</span>
+                    <span>m</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>s</span>
+                  </span>
+                  <ul className={styles.accomplishmentList}>
+                    <li>
+                      Facilitated major improvements to one of our major codebase that reduced the boilerplate code
+                      necessary
+                      to service newly acquired clients.
+                      This resulted in reduced development time from 2-3 months to 1-2 months, thus servicing
+                      new clients up to two months faster.
+                    </li>
+                    <li>
+                      Lead a team of both in-house and off-shore engineers in a succesful effort to modernize our Member
+                      web application and making it mobile responsive. This lead to an overall usage
+                      increase by over 10% and reduced drop-offs by 15%
+                      (*in users accessing our services through a mobile web browser).
+                    </li>
+                    <li>
+                      Designed and lead an effort in implementing a scalable and configurable solution that allows
+                      software engineering teams to easily create &quot;branded&quot; Telemedicine services.
+                      This helped deliver client deliverables weeks, if not months, faster.
+                    </li>
+                    <li>
+                      Enhanced video conference experience and video conference logging. Ultimately, this helped
+                      decrease canceled visits due to technical issues by over 10% and increased our confidence on
+                      detecting and ease to debug/fix future production issues involving video conferences.
+                    </li>
+                    <li>
+                      Spearheaded WCAG initiative to help make the member website accessible to all users irrespective
+                      of disability. With this work we were awarded a
+                      WCAG compliance certification with an overall score of 9/10.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a
-          className="btn-download"
-          href="./web-resume.pdf"
-          target="_blank"
-          type="button"
-        >
-          Download
-        </a>
+        <div className={styles.side}>
+          <div className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <span>L</span>
+              <span>I</span>
+              <span>N</span>
+              <span>K</span>
+              <span>S</span>
+            </div>
+            <div className={styles.linksContainer}>
+              <IconLink
+                icon={faGlobe}
+                url="https://jlurena.me"
+                linkText="jlurena.me"
+              />
+              <IconLink
+                icon={faGithub}
+                url="https://github.com/jlurena"
+                linkText="github.com/jlurena"
+              />
+              <IconLink
+                icon={faMedium}
+                url="https://medium.com/@jlurena123"
+                linkText="medium.com/@jlurena123"
+              />
+            </div>
+          </div>
+          <div className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <span>S</span>
+              <span>K</span>
+              <span>I</span>
+              <span>L</span>
+              <span>L</span>
+              <span>S</span>
+            </div>
+            <div className={styles.skillsContainer}>
+              <ul className={styles.skillsList}>
+                <li>
+                  <span>Object Oriented Programming</span>
+                  <ul>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>Ruby</li>
+                    <li>Scala</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Libraries & Frameworks</span>
+                  <ul>
+                    <li>Android Studios</li>
+                    <li>Node.js</li>
+                    <li>Play Framework</li>
+                    <li>React.js</li>
+                    <li>Ruby on Rails</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>DevOps & Infrastructure</span>
+                  <ul>
+                    <li>AWS</li>
+                    <li>Azure</li>
+                    <li>Jenkins</li>
+                    <li>Linux/Unix</li>
+                    <li>Shell Scripting</li>
+                  </ul>
+                </li>
+                <li>Project Management & Delivery</li>
+                <li>Fluent in Spanish</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

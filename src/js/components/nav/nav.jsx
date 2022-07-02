@@ -79,7 +79,6 @@ Nav.propTypes = {
       prefix:   PropTypes.string,
     }).isRequired,
     tab: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
-    id:  PropTypes.number.isRequired,
   })),
 };
 

@@ -21,7 +21,7 @@ function Home() {
       />
       <div className={`${styles.introduction}`}>
         <h1>Hello, my name is</h1>
-        <div className={styles.name}>Jean Luis Urena</div>
+        <div className={styles.name}>Jean Luis Ureña</div>
       </div>
 
       <div className={styles.wordsCarousel}>
