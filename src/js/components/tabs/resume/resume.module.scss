@@ -30,10 +30,22 @@ $default-text-description-color: #333;
 .resume-footer {
   margin-bottom: 2rem;
 
-  > div > a {
-    display: flex !important;
-    justify-content: center;
-    gap: 1rem;
+  @media print {
+    button {
+      display: none;
+    }
+  }
+
+  > div {
+    @media print {
+      display: none;
+    }
+
+    a {
+      display: flex !important;
+      justify-content: center;
+      gap: 1rem;
+    }
   }
 }
 

@@ -20,7 +20,7 @@ import 'react-image-gallery/styles/scss/image-gallery.scss';
 import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
 import useTag from '../../../lib/use-tag';
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
-import { LinkButton } from '../../buttons';
+import { Button } from '../../buttons';
 
 const IMAGES = [
   {
@@ -42,7 +42,7 @@ const HOBBIES = [
   { icon: faUtensils, text: 'Eating Out' },
 ];
 
-function AboutMe() {
+function AboutMe({ changeTabFunc }) {
   const iframeContainerDiv = useRef(null);
 
   // HACK: This is because the LinkedIn Badge has their own styles which isn't responsive
@@ -77,6 +77,9 @@ function AboutMe() {
     },
   );
 
+  const resumeBtnClick = () => {
+    changeTabFunc('Resume');
+  };
   return (
     <div className={styles.wrapper}>
       <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
@@ -159,11 +162,11 @@ function AboutMe() {
                 data-version="v1"
               />
             </div>
-            <LinkButton
-              url="./resume.html"
-            >
-              View Resume
-            </LinkButton>
+            <div>
+              <Button onClick={resumeBtnClick}>
+                View Resume
+              </Button>
+            </div>
           </div>
 
         </div>

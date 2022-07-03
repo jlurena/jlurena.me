@@ -57,7 +57,7 @@ function App() {
   };
 
   if (resumeOnlyMode) {
-    return <Resume showPrintButton={false} />;
+    return <Resume showPrintButton />;
   }
   return (
     <>
@@ -71,7 +71,7 @@ function App() {
       <section className={styles.contentWrapper}>
         <div className={styles.container}>
           <div className={styles.content}>
-            <Content />
+            <Content changeTabFunc={onNavClick} />
           </div>
         </div>
       </section>

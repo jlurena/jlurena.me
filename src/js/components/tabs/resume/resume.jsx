@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import PropTypes from 'prop-types';
 import styles from './resume.module.scss';
-import { LinkButton } from '../../buttons';
+import { Button, LinkButton } from '../../buttons';
 
 function IconLink({ icon, url, linkText }) {
   return (
@@ -27,7 +27,8 @@ IconLink.propTypes = {
   linkText: PropTypes.string.isRequired,
 };
 
-function Resume({ showPrintButton = true }) {
+function Resume({ showPrintButton = false }) {
+  const printResumeURL = `${window.location.origin}/?resumeOnly=true`;
   return (
     <div className={styles.wrapper}>
       <div className={styles.resumeHeader}>
@@ -313,11 +314,13 @@ function Resume({ showPrintButton = true }) {
         </div>
       </div>
       <div className={styles.resumeFooter}>
-        { showPrintButton && (
-        <LinkButton url="https://jlurena.me?resumeonly=true">
+        {!showPrintButton && (
+        <LinkButton url={printResumeURL}>
           <FontAwesomeIcon icon={faUpRightFromSquare} />
         </LinkButton>
         ) }
+
+        {showPrintButton && <Button onClick={() => window.print()}>Print</Button>}
       </div>
 
     </div>
