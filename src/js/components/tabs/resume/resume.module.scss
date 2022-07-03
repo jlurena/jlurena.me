@@ -16,13 +16,24 @@ $default-text-description-color: #333;
 }
 
 .resume-header,
-.resume-body {
+.resume-body,
+.resume-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   @include screen-sm {
     flex-direction: row;
+  }
+}
+
+.resume-footer {
+  margin-bottom: 2rem;
+
+  > div > a {
+    display: flex !important;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 

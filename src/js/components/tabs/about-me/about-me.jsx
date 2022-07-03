@@ -20,6 +20,7 @@ import 'react-image-gallery/styles/scss/image-gallery.scss';
 import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
 import useTag from '../../../lib/use-tag';
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
+import { LinkButton } from '../../buttons';
 
 const IMAGES = [
   {
@@ -158,10 +159,11 @@ function AboutMe() {
                 data-version="v1"
               />
             </div>
-            <div>
-              <a className={styles.download} target="_blank" href="./resume.html">View Resume</a>
-
-            </div>
+            <LinkButton
+              url="./resume.html"
+            >
+              View Resume
+            </LinkButton>
           </div>
 
         </div>

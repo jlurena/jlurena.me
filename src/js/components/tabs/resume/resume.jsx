@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGlobe,
+  faUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -9,6 +10,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import PropTypes from 'prop-types';
 import styles from './resume.module.scss';
+import { LinkButton } from '../../buttons';
 
 // Globe icon="fa-solid fa-globe"
 function IconLink({ icon, url, linkText }) {
@@ -80,8 +82,8 @@ function Resume() {
               <div className={styles.experience}>
                 <div className={styles.experienceDescription}>
                   <p className={styles.experienceSummary}>
-                    I focus on designing and implementing smart and scalable solutions with meaningful experiences for the
-                    end users.
+                    I focus on designing and implementing smart and scalable solutions
+                    with meaningful experiences for the end users.
                   </p>
                 </div>
               </div>
@@ -312,6 +314,13 @@ function Resume() {
           </div>
         </div>
       </div>
+      <div className={styles.resumeFooter}>
+        <LinkButton url="https://google.com">
+          Printable Format
+          <FontAwesomeIcon icon={faUpRightFromSquare} />
+        </LinkButton>
+      </div>
+
     </div>
   );
 }
