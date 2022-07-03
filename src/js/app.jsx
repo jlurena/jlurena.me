@@ -56,31 +56,27 @@ function App() {
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };
 
-  let Component;
-
   if (resumeOnlyMode) {
-    Component = <Resume showPrintButton />;
-  } else {
-    Component = (
-      <>
-        <Burger onClick={() => showMobileNav(!isShowingMobileNav)} />
-        <Nav
-          isMobileNav={isShowingMobileNav}
-          onTabClick={onNavClick}
-          selectedTab={selectedTab}
-          tabs={tabs}
-        />
-        <section className={styles.contentWrapper}>
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <Content />
-            </div>
-          </div>
-        </section>
-      </>
-    );
+    return <Resume showPrintButton={false} />;
   }
-  return Component;
+  return (
+    <>
+      <Burger onClick={() => showMobileNav(!isShowingMobileNav)} />
+      <Nav
+        isMobileNav={isShowingMobileNav}
+        onTabClick={onNavClick}
+        selectedTab={selectedTab}
+        tabs={tabs}
+      />
+      <section className={styles.contentWrapper}>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <Content />
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default hot(module)(App);

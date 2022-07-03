@@ -9,10 +9,6 @@ $default-text-description-color: #333;
   display: flex;
   flex-direction: column;
   font-family: "Crimson Text", serif;
-
-  * {
-    font-family: inherit;
-  }
 }
 
 .resume-header,
@@ -21,6 +17,10 @@ $default-text-description-color: #333;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media print {
+    flex-direction: row;
+  }
 
   @include screen-sm {
     flex-direction: row;
@@ -89,8 +89,12 @@ $default-text-description-color: #333;
   font-size: 1rem;
   line-height: 1.5;
 
+  @media print {
+    display: table;
+    line-height: 1;
+  }
+
   .experience {
-    break-inside: avoid;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

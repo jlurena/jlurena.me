@@ -4,9 +4,11 @@
 .content-wrapper {
   padding: 15px 15px 0;
   height: calc(100% - 115px);
+  background-color: $primary-color;
+  color: $primary-color;
 
   @include screen-sm {
-    padding: 50px 50px 50px 0;
+    padding: 50px 50px 100px 0;
     margin-left: 50px;
   }
 

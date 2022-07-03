@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 import styles from './resume.module.scss';
 import { LinkButton } from '../../buttons';
 
-// Globe icon="fa-solid fa-globe"
 function IconLink({ icon, url, linkText }) {
   return (
     <div className={styles.iconLinkContainer}>
@@ -231,8 +230,7 @@ function Resume({ showPrintButton = true }) {
                     </li>
                     <li>
                       Spearheaded WCAG initiative to help make the member website accessible to all users irrespective
-                      of disability. With this work we were awarded a
-                      WCAG compliance certification with an overall score of 9/10.
+                      of disability. With this work Teladoc received a WCAG compliance certification.
                     </li>
                   </ul>
                 </div>
