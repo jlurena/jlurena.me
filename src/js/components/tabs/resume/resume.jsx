@@ -28,7 +28,7 @@ IconLink.propTypes = {
   linkText: PropTypes.string.isRequired,
 };
 
-function Resume() {
+function Resume({ showPrintButton = true }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.resumeHeader}>
@@ -315,14 +315,19 @@ function Resume() {
         </div>
       </div>
       <div className={styles.resumeFooter}>
-        <LinkButton url="https://google.com">
-          Printable Format
+        { showPrintButton && (
+        <LinkButton url="https://jlurena.me?resumeonly=true">
           <FontAwesomeIcon icon={faUpRightFromSquare} />
         </LinkButton>
+        ) }
       </div>
 
     </div>
   );
 }
+
+Resume.propTypes = {
+  showPrintButton: PropTypes.bool,
+};
 
 export default Resume;

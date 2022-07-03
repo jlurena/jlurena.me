@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import React, { useState, useEffect } from 'react';
 import { hot } from 'react-hot-loader';
 import {
   faFileAlt,
@@ -21,6 +20,14 @@ const CONTENT_TYPE = 'content';
 const FUNCTION_TYPE = 'function';
 
 function App() {
+  const [resumeOnlyMode, setResumeOnlyMode] = useState(false);
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+
+    setResumeOnlyMode(!!params.get('resumeOnly'));
+  }, [resumeOnlyMode]);
   const tabs = {
     Home: {
       icon: faHome, tab: Home, type: CONTENT_TYPE,
@@ -49,24 +56,31 @@ function App() {
     if (isShowingMobileNav) showMobileNav(!isShowingMobileNav);
   };
 
-  return (
-    <>
-      <Burger onClick={() => showMobileNav(!isShowingMobileNav)} />
-      <Nav
-        isMobileNav={isShowingMobileNav}
-        onTabClick={onNavClick}
-        selectedTab={selectedTab}
-        tabs={tabs}
-      />
-      <section className={styles.contentWrapper}>
-        <div className={styles.container}>
-          <div className={styles.content}>
-            <Content />
+  let Component;
+
+  if (resumeOnlyMode) {
+    Component = <Resume showPrintButton />;
+  } else {
+    Component = (
+      <>
+        <Burger onClick={() => showMobileNav(!isShowingMobileNav)} />
+        <Nav
+          isMobileNav={isShowingMobileNav}
+          onTabClick={onNavClick}
+          selectedTab={selectedTab}
+          tabs={tabs}
+        />
+        <section className={styles.contentWrapper}>
+          <div className={styles.container}>
+            <div className={styles.content}>
+              <Content />
+            </div>
           </div>
-        </div>
-      </section>
-    </>
-  );
+        </section>
+      </>
+    );
+  }
+  return Component;
 }
 
 export default hot(module)(App);
