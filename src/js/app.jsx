@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { hot } from 'react-hot-loader';
 import {
   faFileAlt,
@@ -28,23 +28,26 @@ function App() {
 
     setResumeOnlyMode(!!params.get('resumeOnly'));
   }, [resumeOnlyMode]);
-  const tabs = {
-    Home: {
-      icon: faHome, tab: Home, type: CONTENT_TYPE,
-    },
-    'About Me': {
-      icon: faUser, tab: AboutMe, type: CONTENT_TYPE,
-    },
-    Resume: {
-      icon: faFileAlt, tab: Resume, type: CONTENT_TYPE,
-    },
-    Blog: {
-      icon: faNewspaper, tab: Home, type: FUNCTION_TYPE,
-    },
-    Contact: {
-      icon: faMapMarkerAlt, tab: Home, type: CONTENT_TYPE,
-    },
-  };
+
+  const tabs = useMemo(() => (
+    {
+      Home: {
+        icon: faHome, tab: Home, type: CONTENT_TYPE,
+      },
+      'About Me': {
+        icon: faUser, tab: AboutMe, type: CONTENT_TYPE,
+      },
+      Resume: {
+        icon: faFileAlt, tab: Resume, type: CONTENT_TYPE,
+      },
+      Blog: {
+        icon: faNewspaper, tab: () => window.open('https://medium.com/@jlurena123', '_blank'), type: FUNCTION_TYPE,
+      },
+      Contact: {
+        icon: faMapMarkerAlt, tab: Home, type: CONTENT_TYPE,
+      },
+    }
+  ));
 
   const [selectedTab, setSelectedTab] = useState('Home');
   const [isShowingMobileNav, showMobileNav] = useState(false);

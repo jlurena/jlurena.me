@@ -21,6 +21,7 @@ import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
 import useTag from '../../../lib/use-tag';
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
 import { Button } from '../../buttons';
+import { RESUME_TAB_KEY } from '../resume';
 
 const IMAGES = [
   {
@@ -54,7 +55,7 @@ function AboutMe({ changeTabFunc }) {
             const contentHead = n.contentWindow.document.head;
             const style = document.createElement('style');
             style.setAttribute('type', 'text/css');
-            style.innerHTML = 'body>*{width:100%!important;}';
+            style.innerHTML = 'html{overflow-x:hidden!important;}body>*{width:100%!important;}';
 
             contentHead.appendChild(style);
           }
@@ -78,7 +79,7 @@ function AboutMe({ changeTabFunc }) {
   );
 
   const resumeBtnClick = () => {
-    changeTabFunc('Resume');
+    changeTabFunc(RESUME_TAB_KEY);
   };
   return (
     <div className={styles.wrapper}>
