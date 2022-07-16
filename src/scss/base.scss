@@ -17,6 +17,7 @@ body {
 
   &[data-resume-only] {
     background-color: #fff;
+    overflow-y: scroll;
   }
 
   @media print {

@@ -95,6 +95,13 @@ const config = {
         ],
       },
       {
+        test:    /\.ya?ml$/,
+        loader:  'file-loader',
+        options: {
+          name: 'configs/[name]-[contenthash:8].[ext]',
+        },
+      },
+      {
         test:    /vendor\/.*.js$/,
         loader:  'file-loader',
         options: {
