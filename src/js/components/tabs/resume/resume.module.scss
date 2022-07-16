@@ -11,6 +11,20 @@ $default-text-description-color: #333;
   font-family: "Crimson Text", serif;
 }
 
+.icon-link-container {
+  display: flex;
+  gap: 1rem;
+
+  svg {
+    min-width: 20px;
+    color: $default-text-color;
+  }
+
+  a {
+    color: $default-text-color;
+  }
+}
+
 .resume-header,
 .resume-body,
 .resume-footer {
@@ -203,19 +217,5 @@ $default-text-description-color: #333;
       padding-left: 1.75rem;
       font-size: 0.75rem;
     }
-  }
-}
-
-.icon-link-container {
-  display: flex;
-  gap: 1rem;
-
-  svg {
-    min-width: 20px;
-    color: $default-text-color;
-  }
-
-  a {
-    color: $default-text-color;
   }
 }

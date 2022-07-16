@@ -1,24 +1,24 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { faHome, faAd } from '@fortawesome/free-solid-svg-icons';
-import Nav, { Icon } from '../../js/components/nav';
+import Nav from '../../js/components/nav';
 
-describe('<Icon/>', () => {
-  const onClickSpy = jest.fn();
-  const component = renderer.create(
-    <Icon ariaLabel="Home" onClick={onClickSpy} icon={faHome} />
-  );
-  const tree = component.toJSON();
+// describe('<Icon/>', () => {
+//   const onClickSpy = jest.fn();
+//   const component = renderer.create(
+//     <Icon ariaLabel="Home" onClick={onClickSpy} icon={faHome} />
+//   );
+//   const tree = component.toJSON();
 
-  test('Rendering', () => {
-    expect(tree).toMatchSnapshot();
-  });
+//   test('Rendering', () => {
+//     expect(tree).toMatchSnapshot();
+//   });
 
-  test('calls onClick handler', () => {
-    component.root.props.onClick();
-    expect(onClickSpy).toHaveBeenCalledTimes(1);
-  });
-});
+//   test('calls onClick handler', () => {
+//     component.root.props.onClick();
+//     expect(onClickSpy).toHaveBeenCalledTimes(1);
+//   });
+// });
 
 describe('<Nav/>', () => {
   function FooComponent() {

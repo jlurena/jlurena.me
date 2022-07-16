@@ -6,11 +6,11 @@ import styles from './nav-button.module.scss';
 
 function NavButton({
   ariaLabel,
+  direction,
   icon,
   labelHelper,
   onClick,
   permanentSelect = false,
-  direction,
 }) {
   return (
     <div className={`${styles.tabWrapper} ${styles[direction]} ${permanentSelect && styles.selected}`}>
@@ -26,6 +26,7 @@ function NavButton({
 
 NavButton.propTypes = {
   ariaLabel: PropTypes.string.isRequired,
+  direction: PropTypes.oneOf(['horizontal']),
   icon:      PropTypes.shape({
     icon: PropTypes.arrayOf(
       PropTypes.oneOfType([
@@ -37,7 +38,10 @@ NavButton.propTypes = {
     iconName: PropTypes.string.isRequired,
     prefix:   PropTypes.string,
   }).isRequired,
-  onClick: PropTypes.func.isRequired,
+  labelHelper:     PropTypes.string.isRequired,
+  onClick:         PropTypes.func.isRequired,
+  permanentSelect: PropTypes.bool,
+
 };
 
 export default NavButton;

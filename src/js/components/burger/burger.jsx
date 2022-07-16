@@ -17,6 +17,7 @@ function Burger({ onClick, onBlur }) {
 
 Burger.propTypes = {
   onClick: PropTypes.func.isRequired,
+  onBlur:  PropTypes.func,
 };
 
 export default Burger;
