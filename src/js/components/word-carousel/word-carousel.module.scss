@@ -1,0 +1,51 @@
+@mixin rotate-words($number-of-words) {
+  @for $i from 2 through $number-of-words {
+    &:nth-child(#{$i}) {
+      animation-delay: ($i - 1) * 3s;
+    }
+  }
+}
+
+@keyframes rotate-word {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  17% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.word {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: rotate-word 18s linear infinite 0s;
+
+  @include rotate-words(6);
+}

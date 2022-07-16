@@ -1,0 +1,9 @@
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.atsymbol::before {
+  // Unicode symbol for @
+  content: "\0040";
+}

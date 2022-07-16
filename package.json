@@ -1,0 +1,113 @@
+{
+  "name": "jlurena.me",
+  "version": "1.0",
+  "author": {
+    "name": "Jean Luis Urena",
+    "email": "eljean@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlurena/jlurena.me"
+  },
+  "private": false,
+  "description": "Personal website for Jean Luis Urena",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --bail --mode production",
+    "dev": "NODE_ENV=development webpack && NODE_ENV=development webpack serve",
+    "prepare": "husky install",
+    "lint": "eslint --fix --ext .js,.jsx ./ && stylelint --fix ./**/*.scss",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "cubic-bezier": "^0.1.2",
+    "fontawesome": "^5.6.3",
+    "js-yaml": "^4.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-loader": "^4.13.0",
+    "react-image-gallery": "^1.2.8",
+    "react-router-dom": "^6.3.0",
+    "snapsvg": "^0.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-jest": "^28.1.3",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.3",
+    "lint-staged": "^13.0.3",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "nyc": "^15.1.0",
+    "react-test-renderer": "^18.2.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-scss": "^4.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html",
+      "text"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./src/__test__/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "snapshotResolver": "./src/__tests__/snapshot-resolver.js",
+    "testMatch": [
+      "**/?(*.)+(test).[jt]s?(x)"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix"
+  }
+}

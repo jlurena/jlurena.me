@@ -1,0 +1,14 @@
+$tablet-width: 575px;
+$desktop-width: 968px;
+
+@mixin screen-sm {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

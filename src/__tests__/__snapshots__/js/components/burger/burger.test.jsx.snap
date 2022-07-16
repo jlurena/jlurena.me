@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burger/> Rendering 1`] = `
+<div
+  className="burgerContainer"
+>
+  <button
+    aria-label="Menu"
+    className="burger"
+    onBlur={[MockFunction]}
+    onClick={[MockFunction]}
+    type="button"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </button>
+</div>
+`;

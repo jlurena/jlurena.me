@@ -1,0 +1,28 @@
+@import "../../../scss/breakpoints";
+@import "../../../scss/variables";
+
+.burger-container {
+  background-color: #fff;
+  height: $mobileNavBarHeight;
+
+  @include screen-sm {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 0;
+    background-color: transparent;
+
+    div {
+      width: 30px;
+      height: 2px;
+      background: #3d4a6e;
+      margin: 2px auto;
+    }
+  }
+}
