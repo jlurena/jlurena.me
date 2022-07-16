@@ -14,6 +14,7 @@ import AboutMe from './components/tabs/about-me';
 import Resume from './components/tabs/resume';
 
 import styles from './app.module.scss';
+import Footer from './components/footer';
 
 const CONTENT_TYPE = 'content';
 const FUNCTION_TYPE = 'function';
@@ -67,13 +68,14 @@ function App() {
         selectedTab={selectedTab}
         tabs={tabs}
       />
-      <section className={styles.contentWrapper}>
+      <div className={styles.contentWrapper}>
         <div className={styles.container}>
-          <div className={styles.content}>
+          <section className={styles.content}>
             <Content changeTabFunc={onNavClick} />
-          </div>
+          </section>
         </div>
-      </section>
+        <Footer />
+      </div>
     </>
   );
 }

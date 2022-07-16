@@ -19,17 +19,6 @@
     opacity: 100;
   }
 
-  button {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-bottom: 0.5px solid rgba(#fff, 0.2);
-
-    ~ em {
-      display: none;
-    }
-  }
-
   div:last-of-type button {
     border-bottom: 0;
   }
@@ -52,8 +41,9 @@
 }
 
 .navigation-slider {
-  div {
+  > div {
     display: flex;
+    flex-direction: column;
     border-top: 1px solid $primary-color;
 
     &:last-child {
@@ -69,20 +59,4 @@
       margin-right: 0;
     }
   }
-
-  .tab-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* stylelint-disable-next-line scss/no-global-function-names */
-    border-top: 1px solid darken($primary-color, 5%);
-
-    &:first-of-type {
-      border-top: 0;
-    }
-  }
-}
-
-.helper-label {
-  font-style: normal;
 }

@@ -9,10 +9,14 @@ function Nav({
   isMobileNavOpen, selectedTab, onTabClick, tabs,
 }) {
   const navOptions = Object.keys(tabs).map(k => (
-    <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
-      <NavButton ariaLabel={k} icon={tabs[k].icon} onClick={() => onTabClick(k)} />
-      <em className={styles.helperLabel}>{k}</em>
-    </div>
+    <NavButton
+      ariaLabel={k}
+      icon={tabs[k].icon}
+      onClick={() => onTabClick(k)}
+      key={k}
+      labelHelper={k}
+      permanentSelect={k === selectedTab}
+    />
   ));
 
   return (

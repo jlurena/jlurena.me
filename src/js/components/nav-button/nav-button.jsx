@@ -4,11 +4,23 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './nav-button.module.scss';
 
-function NavButton({ ariaLabel, icon, onClick }) {
+function NavButton({
+  ariaLabel,
+  icon,
+  labelHelper,
+  onClick,
+  permanentSelect = false,
+  direction,
+}) {
   return (
-    <button type="button" aria-label={ariaLabel} className={styles.tab} onClick={onClick}>
-      <FontAwesomeIcon icon={icon} size="lg" />
-    </button>
+    <div className={`${styles.tabWrapper} ${styles[direction]} ${permanentSelect && styles.selected}`}>
+      <div className={styles.buttonContainer}>
+        <button type="button" aria-label={ariaLabel} className={styles.tab} onClick={onClick}>
+          <FontAwesomeIcon icon={icon} size="lg" />
+        </button>
+        <span className={styles.helperLabel}>{labelHelper}</span>
+      </div>
+    </div>
   );
 }
 
