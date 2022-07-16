@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav/> Rendering desktop web 1`] = `
+Array [
+  <div
+    className="navigationContainer"
+  >
+    <div
+      className="navigationSlider"
+    >
+      <div
+        className="tabWrapper undefined false"
+      >
+        <div
+          className="buttonContainer"
+        >
+          <button
+            aria-label="Foo"
+            className="tab"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-house fa-lg "
+              data-icon="house"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <span
+            className="helperLabel"
+          >
+            Foo
+          </span>
+        </div>
+      </div>
+      <div
+        className="tabWrapper undefined selected"
+      >
+        <div
+          className="buttonContainer"
+        >
+          <button
+            aria-label="Bar"
+            className="tab"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-rectangle-ad fa-lg "
+              data-icon="rectangle-ad"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M208 237.7L229.2 280H186.8L208 237.7zM416 280C416 293.3 405.3 304 392 304C378.7 304 368 293.3 368 280C368 266.7 378.7 256 392 256C405.3 256 416 266.7 416 280zM512 32C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H512zM229.5 173.3C225.4 165.1 217.1 160 208 160C198.9 160 190.6 165.1 186.5 173.3L114.5 317.3C108.6 329.1 113.4 343.5 125.3 349.5C137.1 355.4 151.5 350.6 157.5 338.7L162.8 328H253.2L258.5 338.7C264.5 350.6 278.9 355.4 290.7 349.5C302.6 343.5 307.4 329.1 301.5 317.3L229.5 173.3zM416 212.1C408.5 209.4 400.4 208 392 208C352.2 208 320 240.2 320 280C320 319.8 352.2 352 392 352C403.1 352 413.6 349.5 423 344.1C427.4 349.3 433.4 352 440 352C453.3 352 464 341.3 464 328V184C464 170.7 453.3 160 440 160C426.7 160 416 170.7 416 184V212.1z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <span
+            className="helperLabel"
+          >
+            Bar
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="mobileNavigationContainer false"
+  >
+    <div
+      className="tabWrapper undefined false"
+    >
+      <div
+        className="buttonContainer"
+      >
+        <button
+          aria-label="Foo"
+          className="tab"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-house fa-lg "
+            data-icon="house"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <span
+          className="helperLabel"
+        >
+          Foo
+        </span>
+      </div>
+    </div>
+    <div
+      className="tabWrapper undefined selected"
+    >
+      <div
+        className="buttonContainer"
+      >
+        <button
+          aria-label="Bar"
+          className="tab"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-rectangle-ad fa-lg "
+            data-icon="rectangle-ad"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M208 237.7L229.2 280H186.8L208 237.7zM416 280C416 293.3 405.3 304 392 304C378.7 304 368 293.3 368 280C368 266.7 378.7 256 392 256C405.3 256 416 266.7 416 280zM512 32C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H512zM229.5 173.3C225.4 165.1 217.1 160 208 160C198.9 160 190.6 165.1 186.5 173.3L114.5 317.3C108.6 329.1 113.4 343.5 125.3 349.5C137.1 355.4 151.5 350.6 157.5 338.7L162.8 328H253.2L258.5 338.7C264.5 350.6 278.9 355.4 290.7 349.5C302.6 343.5 307.4 329.1 301.5 317.3L229.5 173.3zM416 212.1C408.5 209.4 400.4 208 392 208C352.2 208 320 240.2 320 280C320 319.8 352.2 352 392 352C403.1 352 413.6 349.5 423 344.1C427.4 349.3 433.4 352 440 352C453.3 352 464 341.3 464 328V184C464 170.7 453.3 160 440 160C426.7 160 416 170.7 416 184V212.1z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <span
+          className="helperLabel"
+        >
+          Bar
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`<Nav/> Rendering mobile web 1`] = `
+Array [
+  <div
+    className="navigationContainer"
+  >
+    <div
+      className="navigationSlider"
+    >
+      <div
+        className="tabWrapper undefined false"
+      >
+        <div
+          className="buttonContainer"
+        >
+          <button
+            aria-label="Foo"
+            className="tab"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-house fa-lg "
+              data-icon="house"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <span
+            className="helperLabel"
+          >
+            Foo
+          </span>
+        </div>
+      </div>
+      <div
+        className="tabWrapper undefined false"
+      >
+        <div
+          className="buttonContainer"
+        >
+          <button
+            aria-label="Bar"
+            className="tab"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-rectangle-ad fa-lg "
+              data-icon="rectangle-ad"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M208 237.7L229.2 280H186.8L208 237.7zM416 280C416 293.3 405.3 304 392 304C378.7 304 368 293.3 368 280C368 266.7 378.7 256 392 256C405.3 256 416 266.7 416 280zM512 32C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H512zM229.5 173.3C225.4 165.1 217.1 160 208 160C198.9 160 190.6 165.1 186.5 173.3L114.5 317.3C108.6 329.1 113.4 343.5 125.3 349.5C137.1 355.4 151.5 350.6 157.5 338.7L162.8 328H253.2L258.5 338.7C264.5 350.6 278.9 355.4 290.7 349.5C302.6 343.5 307.4 329.1 301.5 317.3L229.5 173.3zM416 212.1C408.5 209.4 400.4 208 392 208C352.2 208 320 240.2 320 280C320 319.8 352.2 352 392 352C403.1 352 413.6 349.5 423 344.1C427.4 349.3 433.4 352 440 352C453.3 352 464 341.3 464 328V184C464 170.7 453.3 160 440 160C426.7 160 416 170.7 416 184V212.1z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <span
+            className="helperLabel"
+          >
+            Bar
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="mobileNavigationContainer open"
+  >
+    <div
+      className="tabWrapper undefined false"
+    >
+      <div
+        className="buttonContainer"
+      >
+        <button
+          aria-label="Foo"
+          className="tab"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-house fa-lg "
+            data-icon="house"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <span
+          className="helperLabel"
+        >
+          Foo
+        </span>
+      </div>
+    </div>
+    <div
+      className="tabWrapper undefined false"
+    >
+      <div
+        className="buttonContainer"
+      >
+        <button
+          aria-label="Bar"
+          className="tab"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-rectangle-ad fa-lg "
+            data-icon="rectangle-ad"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M208 237.7L229.2 280H186.8L208 237.7zM416 280C416 293.3 405.3 304 392 304C378.7 304 368 293.3 368 280C368 266.7 378.7 256 392 256C405.3 256 416 266.7 416 280zM512 32C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H512zM229.5 173.3C225.4 165.1 217.1 160 208 160C198.9 160 190.6 165.1 186.5 173.3L114.5 317.3C108.6 329.1 113.4 343.5 125.3 349.5C137.1 355.4 151.5 350.6 157.5 338.7L162.8 328H253.2L258.5 338.7C264.5 350.6 278.9 355.4 290.7 349.5C302.6 343.5 307.4 329.1 301.5 317.3L229.5 173.3zM416 212.1C408.5 209.4 400.4 208 392 208C352.2 208 320 240.2 320 280C320 319.8 352.2 352 392 352C403.1 352 413.6 349.5 423 344.1C427.4 349.3 433.4 352 440 352C453.3 352 464 341.3 464 328V184C464 170.7 453.3 160 440 160C426.7 160 416 170.7 416 184V212.1z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <span
+          className="helperLabel"
+        >
+          Bar
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
