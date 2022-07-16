@@ -49,13 +49,13 @@ const config = {
   },
   entry:  ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
   output: {
-    path:     path.resolve(__dirname, 'public'),
-    filename: isDev ? 'assets/[name].js' : 'assets/[contenthash:8].js',
+    path:     __dirname,
+    filename: isDev ? 'public/assets/[name].js' : 'public,assets/[contenthash:8].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename:      isDev ? 'assets/[name]' : 'assets/[contenthash:8].css',
-      chunkFilename: isDev ? 'assets/[name]' : 'assets/[id][contenthash:8].css',
+      filename:      isDev ? 'public/assets/[name]' : 'public/assets/[contenthash:8].css',
+      chunkFilename: isDev ? 'public/assets/[name]' : 'public/assets/[id][contenthash:8].css',
     }),
     new HtmlWebpackPlugin({
       title:    'JLU',
@@ -89,7 +89,7 @@ const config = {
             loader:  'url-loader',
             options: {
               limit: 10000,
-              name:  'assets/[contenthash:8].[ext]',
+              name:  'public/assets/[contenthash:8].[ext]',
             },
           },
         ],
@@ -98,14 +98,14 @@ const config = {
         test:    /\.ya?ml$/,
         loader:  'file-loader',
         options: {
-          name: 'configs/[name]-[contenthash:8].[ext]',
+          name: 'public/configs/[name]-[contenthash:8].[ext]',
         },
       },
       {
         test:    /vendor\/.*.js$/,
         loader:  'file-loader',
         options: {
-          name: 'vendor/[name]-[contenthash:8].[ext]',
+          name: 'public/vendor/[name]-[contenthash:8].[ext]',
         },
       },
     ],
