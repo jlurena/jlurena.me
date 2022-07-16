@@ -1,5 +1,3 @@
-import Nav, { Icon } from './nav';
+import Nav from './nav';
 
 export default Nav;
-
-export { Icon };

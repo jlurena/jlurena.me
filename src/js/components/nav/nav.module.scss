@@ -1,49 +1,6 @@
 @import "../../../scss/breakpoints";
 @import "../../../scss/variables";
 
-.tab {
-  cursor: pointer;
-  color: white;
-  font-size: 17px;
-  line-height: 46px;
-  padding: 0;
-  border: 0;
-  height: 46px;
-  width: 50px;
-  background-color: transparent;
-  transition: all 0.3s ease-in-out;
-
-  & ~ em {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    background-color: $primary-color;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    left: calc(100% + 45px);
-    min-width: 90px;
-    padding: 14px 0;
-    text-transform: uppercase;
-    transform: translateX(-50%);
-    transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
-    white-space: nowrap;
-  }
-
-  &:hover {
-    background-color: white;
-    color: $primary-color;
-    transition: all 0.3s ease-in-out;
-
-    & ~ em {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(-40%);
-      transition: opacity 0.2s 0s, visibility 0s 0s, transform 0.2s 0s;
-    }
-  }
-}
-
 .mobile-navigation-container {
   background-color: $primary-color;
   position: absolute;
@@ -55,7 +12,7 @@
   width: 50%;
   transition: all 0.2s ease-in-out;
 
-  button.tab {
+  button {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -66,7 +23,7 @@
     }
   }
 
-  div:last-of-type button.tab {
+  div:last-of-type button {
     border-bottom: 0;
   }
 }
@@ -96,7 +53,7 @@
       border-bottom: 1px solid $primary-color;
     }
 
-    &.selected .tab {
+    &.selected button {
       background-color: white;
       color: $primary-color;
     }

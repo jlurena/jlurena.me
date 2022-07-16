@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './js/lib/service-worker';
 import App from './js/app';
 
 import './scss/antispam.scss';

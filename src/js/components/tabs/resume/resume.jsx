@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGlobe,
@@ -28,6 +28,12 @@ IconLink.propTypes = {
 };
 
 function Resume({ showPrintButton = false }) {
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('resumeOnly') === 'true') {
+      document.body.setAttribute('data-resume-only', 'true');
+    }
+  }, []);
+
   const printResumeURL = `${window.location.origin}/?resumeOnly=true`;
   return (
     <div className={styles.wrapper}>
@@ -315,7 +321,7 @@ function Resume({ showPrintButton = false }) {
       </div>
       <div className={styles.resumeFooter}>
         {!showPrintButton && (
-        <LinkButton url={printResumeURL}>
+        <LinkButton anchorProps={{ 'aria-label': 'Open in new tab' }} url={printResumeURL}>
           <FontAwesomeIcon icon={faUpRightFromSquare} />
         </LinkButton>
         ) }

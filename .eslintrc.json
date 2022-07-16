@@ -25,6 +25,7 @@
     "document": true,
     "fetch": true,
     "MutationObserver": true,
+    "navigator": true,
     "React": true,
     "window": true
   },

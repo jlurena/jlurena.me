@@ -13,6 +13,11 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  background-color: $primary-color;
+
+  &[data-resume-only] {
+    background-color: #fff;
+  }
 
   @media print {
     color: #fff;

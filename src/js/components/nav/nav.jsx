@@ -1,41 +1,16 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './nav.module.scss';
-
-export function Icon({ ariaLabel, icon, onClick }) {
-  return (
-    <button type="button" aria-label={ariaLabel} className={styles.tab} onClick={onClick}>
-      <FontAwesomeIcon icon={icon} size="lg" />
-    </button>
-  );
-}
-
-Icon.propTypes = {
-  ariaLabel: PropTypes.string.isRequired,
-  icon:      PropTypes.shape({
-    icon: PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.string,
-        PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
-      ]),
-    ).isRequired,
-    iconName: PropTypes.string.isRequired,
-    prefix:   PropTypes.string,
-  }).isRequired,
-  onClick: PropTypes.func.isRequired,
-
-};
+import NavButton from '../nav-button';
 
 function Nav({
   isMobileNav, selectedTab, onTabClick, tabs,
 }) {
   const navOptions = Object.keys(tabs).map(k => (
     <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
-      <Icon ariaLabel={k} icon={tabs[k].icon} onClick={() => onTabClick(k)} />
+      <NavButton ariaLabel={k} icon={tabs[k].icon} onClick={() => onTabClick(k)} />
       <em className={styles.helperLabel}>{k}</em>
     </div>
   ));

@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './link-button.module.scss';
 
-function LinkButton({ url, target = '_blank', children }) {
+function LinkButton({
+  anchorProps, children, target = '_blank', url,
+}) {
   return (
     <div className={styles.container}>
       <a
+        {...anchorProps}
         target={target}
         href={url}
         rel="noreferrer"
