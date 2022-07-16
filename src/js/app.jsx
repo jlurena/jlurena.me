@@ -3,7 +3,6 @@ import { hot } from 'react-hot-loader';
 import {
   faFileAlt,
   faNewspaper,
-  faMapMarkerAlt,
   faHome,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
@@ -42,9 +41,6 @@ function App() {
       },
       Blog: {
         icon: faNewspaper, tab: () => window.open('https://medium.com/@jlurena123', '_blank'), type: FUNCTION_TYPE,
-      },
-      Contact: {
-        icon: faMapMarkerAlt, tab: Home, type: CONTENT_TYPE,
       },
     }
   ));
