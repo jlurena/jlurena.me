@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import WordCarousel from '../../js/components/word-carousel';
+import WordCarousel from '.';
 
 test('<WordCarousel/> Rendering', () => {
   const words = ['Hello', 'World', 'Goodbye'];

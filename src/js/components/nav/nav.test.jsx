@@ -1,24 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { faHome, faAd } from '@fortawesome/free-solid-svg-icons';
-import Nav from '../../js/components/nav';
-
-// describe('<Icon/>', () => {
-//   const onClickSpy = jest.fn();
-//   const component = renderer.create(
-//     <Icon ariaLabel="Home" onClick={onClickSpy} icon={faHome} />
-//   );
-//   const tree = component.toJSON();
-
-//   test('Rendering', () => {
-//     expect(tree).toMatchSnapshot();
-//   });
-
-//   test('calls onClick handler', () => {
-//     component.root.props.onClick();
-//     expect(onClickSpy).toHaveBeenCalledTimes(1);
-//   });
-// });
+import Nav from '.';
 
 describe('<Nav/>', () => {
   function FooComponent() {
@@ -35,7 +18,7 @@ describe('<Nav/>', () => {
 
   test('Rendering mobile web', () => {
     const component = renderer.create(
-      <Nav isMobileNav onTabClick={jest.fn} selectedTab="Home" tabs={tabs} />
+      <Nav isMobileNavOpen onTabClick={jest.fn} selectedTab="Home" tabs={tabs} />
     );
 
     const tree = component.toJSON();
@@ -45,7 +28,7 @@ describe('<Nav/>', () => {
 
   test('Rendering desktop web', () => {
     const component = renderer.create(
-      <Nav isMobileNav={false} onTabClick={jest.fn} selectedTab="Bar" tabs={tabs} />
+      <Nav isMobileNavOpen={false} onTabClick={jest.fn} selectedTab="Bar" tabs={tabs} />
     );
 
     const tree = component.toJSON();

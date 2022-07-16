@@ -5,8 +5,8 @@ import styles from './button.module.scss';
 function Button(props) {
   const { children, className } = props;
   return (
-    // eslint-disable-next-line react/button-has-type
     <button
+      type="button"
       {...props}
       className={`${className} ${styles.btn}`}
     >
