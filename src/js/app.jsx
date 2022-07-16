@@ -60,9 +60,9 @@ function App() {
   }
   return (
     <>
-      <Burger onClick={() => showMobileNav(!isShowingMobileNav)} />
+      <Burger onClick={() => showMobileNav(!isShowingMobileNav)} onBlur={() => showMobileNav(false)} />
       <Nav
-        isMobileNav={isShowingMobileNav}
+        isMobileNavOpen={isShowingMobileNav}
         onTabClick={onNavClick}
         selectedTab={selectedTab}
         tabs={tabs}

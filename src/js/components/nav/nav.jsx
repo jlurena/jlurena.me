@@ -6,7 +6,7 @@ import styles from './nav.module.scss';
 import NavButton from '../nav-button';
 
 function Nav({
-  isMobileNav, selectedTab, onTabClick, tabs,
+  isMobileNavOpen, selectedTab, onTabClick, tabs,
 }) {
   const navOptions = Object.keys(tabs).map(k => (
     <div className={`${styles.tabWrapper} ${selectedTab === k ? styles.selected : ''}`} key={k}>
@@ -23,13 +23,7 @@ function Nav({
         </div>
       </div>
       <div
-        className={styles.mobileNavigationContainer}
-        style={
-          {
-            visibility: isMobileNav ? 'visible' : 'hidden',
-            opacity:    isMobileNav ? '100' : '0',
-          }
-}
+        className={`${styles.mobileNavigationContainer} ${isMobileNavOpen && styles.open}`}
       >
         {navOptions}
       </div>
@@ -38,10 +32,10 @@ function Nav({
 }
 
 Nav.propTypes = {
-  isMobileNav: PropTypes.bool.isRequired,
-  selectedTab: PropTypes.string.isRequired,
-  onTabClick:  PropTypes.func.isRequired,
-  tabs:        PropTypes.objectOf(PropTypes.shape({
+  isMobileNavOpen: PropTypes.bool.isRequired,
+  selectedTab:     PropTypes.string.isRequired,
+  onTabClick:      PropTypes.func.isRequired,
+  tabs:            PropTypes.objectOf(PropTypes.shape({
     icon: PropTypes.shape({
       icon: PropTypes.arrayOf(
         PropTypes.oneOfType([
