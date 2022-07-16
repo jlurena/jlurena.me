@@ -12,6 +12,7 @@ import Home from './components/tabs/home';
 import Nav from './components/nav';
 import AboutMe from './components/tabs/about-me';
 import Resume from './components/tabs/resume';
+import Footer from './components/footer';
 
 import styles from './app.module.scss';
 
@@ -59,7 +60,7 @@ function App() {
     return <Resume showPrintButton />;
   }
   return (
-    <>
+    <div className={styles.wrapper}>
       <Burger onClick={() => showMobileNav(!isShowingMobileNav)} onBlur={() => showMobileNav(false)} />
       <Nav
         isMobileNavOpen={isShowingMobileNav}
@@ -74,7 +75,8 @@ function App() {
           </div>
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 }
 
