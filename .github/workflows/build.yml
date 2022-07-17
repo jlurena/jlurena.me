@@ -4,31 +4,37 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - deploy
-    types: [closed]
+env:
+  NODE_ENV: production
+  HUSKY: 0
 jobs:
   build:
     name: Build and Push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18.4
+
       - uses: bahmutov/npm-install@v1
         with:
           install-command: yarn install --frozen-lockfile
       
+      - name: Delete old build files
+        run: rm -rf public index.html
+      
       - name: Build
         run: yarn build
+      
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -f public index.html
-          HUSKY=O git commit --no-verify -m "Build - by Github Actions"
+          git commit -m "Build - by Github Actions"
+      
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
