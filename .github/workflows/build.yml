@@ -12,7 +12,7 @@ on:
     types: [closed]
 jobs:
   build:
-    name: Test
+    name: Build and Push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
