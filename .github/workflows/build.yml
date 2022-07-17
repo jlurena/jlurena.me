@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Build and Push
 
 on:
   push:
@@ -30,7 +28,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -f public index.html
-          git commit -m "Build - by Github Actions"
+          HUSKY=O git commit -m --no-verify "Build - by Github Actions"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
