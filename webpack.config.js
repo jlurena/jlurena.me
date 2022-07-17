@@ -50,7 +50,7 @@ const config = {
   entry:  ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
   output: {
     path:     __dirname,
-    filename: isDev ? 'public/assets/[name].js' : 'public,assets/[contenthash:8].js',
+    filename: isDev ? 'public/assets/[name].js' : 'public/assets/[contenthash:8].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
