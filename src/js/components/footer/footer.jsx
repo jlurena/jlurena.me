@@ -9,11 +9,13 @@ import styles from './footer.module.scss';
 
 function Footer() {
   return (
-    <footer className={styles.container}>
-      <NavButton icon={faGithub} ariaLabel="Github Profile" labelHelper="Github" direction="horizontal" />
-      <NavButton icon={faLinkedin} ariaLabel="LinkedIn Profile" labelHelper="LinkedIn" direction="horizontal" />
-      <NavButton icon={faMedium} ariaLabel="Medium Blog Profile" labelHelper="Medium" direction="horizontal" />
-    </footer>
+    <div className={styles.wrapper}>
+      <footer className={styles.container}>
+        <NavButton icon={faGithub} ariaLabel="Github Profile" labelHelper="Github" direction="horizontal" />
+        <NavButton icon={faLinkedin} ariaLabel="LinkedIn Profile" labelHelper="LinkedIn" direction="horizontal" />
+        <NavButton icon={faMedium} ariaLabel="Medium Blog Profile" labelHelper="Medium" direction="horizontal" />
+      </footer>
+    </div>
   );
 }
 
