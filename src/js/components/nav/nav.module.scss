@@ -17,6 +17,7 @@
   &.open {
     visibility: visible;
     opacity: 100;
+    z-index: 999;
   }
 
   div:last-of-type button {
@@ -27,7 +28,7 @@
 .navigation-container {
   display: none;
   position: absolute;
-  z-index: 999;
+  z-index: 9999;
   text-align: center;
   background-color: $primary-color;
   height: 100%;

@@ -74,8 +74,8 @@ function App() {
             <Content changeTabFunc={onNavClick} />
           </section>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
