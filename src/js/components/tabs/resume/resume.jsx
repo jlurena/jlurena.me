@@ -123,9 +123,8 @@ function Resume({ showPrintButton = false }) {
                   <div className={styles.experienceHistoryContainer}>
                     <div className={styles.experienceTitle}>
                       <span>B.S in Computer Science</span>
-
                       <span>
-                        August 2015 - December 2018
+                        Class of 2018
                       </span>
                     </div>
                   </div>

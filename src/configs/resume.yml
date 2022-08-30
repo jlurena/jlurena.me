@@ -23,11 +23,11 @@ experiences:
       managing project resourcing and operations.
     accomplishments:
       - >
-        Lead a team of over 8 engineers to successfully launch a massive project that single handedly 
+        Lead a team of 7 engineers to successfully launch a massive project that single handedly 
         changed the fundamental relationship between a 
         Teladoc Health Member (the users that speak with our doctors over our virtual mediums) 
         and their benefits (products, ie Virtual Mental Health visits, a Member has access to). 
-        This project, at launch, improved the user experience of over 25% of Teladoc Health Members and set the 
+        This project has a positive impact on over 25% of Teladoc Health Members and set the 
         pavement for smarter and improved scalable integrations with all of Teladoc Health's acquisitions.
       - > 
         Facilitated major improvements to one of our major codebase that reduced the 
@@ -39,9 +39,9 @@ experiences:
         software engineering teams to easily create "branded" Telemedicine services. 
         This helped deliver client deliverables weeks, if not months, faster.
       - >
-        Enhanced video conference experience and video conference logging. Ultimately, this helped 
-        decrease canceled visits due to technical issues by over 10% and increased our confidence on 
-        detecting and ease to debug/fix future production issues involving video conferences.
+        Improved video conferencing logging so that technical issues encountered by Members would be easier to debug 
+        and more promptly fixed. Additionally, it further eliminated potential visibility into PII 
+        (personable identifiable information), by having logs identified by randomly generated characters.
       - >
         Spearheaded WCAG initiative to help make the member website accessible to all users irrespective 
         of disability. With this work Teladoc received a WCAG compliance certification.
@@ -71,6 +71,12 @@ skills:
       - Play Framework
       - React.js
       - Ruby on Rails
+  - name: Data Stores
+    examples:
+      - ElasticSearch
+      - MySQL
+      - PostgreSQL
+      - Redis/Memcached
   - name: Devops & Infrastructure
     examples:
       - AWS
