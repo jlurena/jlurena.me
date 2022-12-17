@@ -1,0 +1,90 @@
+---
+profile_summary: >
+  Software Engineering Lead focused on empowering and guiding teams on executing and delivering 
+  quality, smart and scalable solutions that benefit all.
+experiences:
+  - experience_name: Teladoc Health
+    experience_titles:
+      - title: Software Engineering Manager
+        start: 10/2022
+        end: null
+      - title: Senior Software Engineer,
+        start: 03/2021,
+        end: 10/2022
+      - title: Software Engineer,
+        start: 03/2020,
+        end: 03/2021
+      - title: Associate Software Engineer,
+        start: 12/2018,
+        end: 03/2020
+      - title: Software Engineer (Contract),
+        start: 01/2018,
+        end: 12/2018
+    summary: > 
+      Direct and guide software engineers in software design and architecture, 
+      lead and mentor, ensure delivery and execution of cross functional projects. Work
+      across various departments to ensure technological business needs are met end to end.
+    accomplishments:
+      - >
+        Lead a team of 7 engineers to successfully launch a massive project that single handedly 
+        changed the fundamental relationship between a 
+        Teladoc Health Member (our users)
+        and their benefits (products, ie Virtual Mental Health visits, a Member has access to). 
+        This project has a positive impact on over 25% of Teladoc Health Members and set the 
+        pavement for smarter and improved scalable integrations with all of Teladoc Health's acquisitions
+      - > 
+        Facilitated major improvements to one of our major codebase that reduced the 
+        boilerplate code necessary to service newly acquired clients. This resulted 
+        in reduced development time from 2-3 months to 1-2 months, 
+        thus servicing new clients up to two months faster
+      - >
+        Designed and lead an effort in implementing a scalable and configurable solution that allows 
+        software engineering teams to easily create "branded" Telemedicine services. 
+        This helped deliver client deliverables weeks, if not months, faster
+      - >
+        Improved video conferencing logging so that technical issues encountered by Members would be easier to debug 
+        and more promptly fixed. Additionally, it further eliminated potential visibility into PII 
+        (personable identifiable information), by having logs identified by randomly generated characters
+  - experience_name: NuCamp Bootcamp
+    experience_titles:
+      - title: Code Instructor
+        start: 02/2022
+        end: null
+    summary: >
+      Code instructor at NuCamp Bootcamp, a technical "bootcamp" for adults looking to become Software Engineers
+    accomplishments:
+      - >
+        Taught over 5 courses ranging from "HTML, CSS and Javacript" to more advanced courses like "React" averaging
+        a student rating over 4.6/5
+skills:
+  - name: Object Oriented Programming
+    examples:
+      - Java
+      - Javascript
+      - Python
+      - Ruby
+      - Scala
+  - name: Libraries & Framework
+    examples:
+      - Android Studios
+      - Node.js
+      - Play Framework
+      - React.js
+      - Ruby on Rails
+  - name: Data Stores
+    examples:
+      - ElasticSearch
+      - MySQL
+      - PostgreSQL
+      - Redis/Memcached
+  - name: Devops & Infrastructure
+    examples:
+      - AWS
+      - Azure
+      - Jenkins
+      - Linux/Unix
+      - Shell Scripting
+  - name: Project Management
+    examples: null
+  - name: Fluent in Spanish
+    examples: null
