@@ -87,6 +87,10 @@ $default-text-description-color: #333;
 }
 
 .section > .details {
+  @media print {
+    margin-left: -12px; // For some reason when printing, its off
+  }
+
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
