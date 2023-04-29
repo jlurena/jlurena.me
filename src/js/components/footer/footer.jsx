@@ -11,9 +11,27 @@ function Footer() {
   return (
     <div className={styles.wrapper}>
       <footer className={styles.container}>
-        <NavButton icon={faGithub} ariaLabel="Github Profile" labelHelper="Github" direction="horizontal" />
-        <NavButton icon={faLinkedin} ariaLabel="LinkedIn Profile" labelHelper="LinkedIn" direction="horizontal" />
-        <NavButton icon={faMedium} ariaLabel="Medium Blog Profile" labelHelper="Medium" direction="horizontal" />
+        <NavButton
+          icon={faGithub}
+          ariaLabel="Github Profile"
+          labelHelper="Github"
+          direction="horizontal"
+          onClick={() => window.open('https://github.com/jlurena', '_blank')}
+        />
+        <NavButton
+          icon={faLinkedin}
+          ariaLabel="LinkedIn Profile"
+          labelHelper="LinkedIn"
+          direction="horizontal"
+          onClick={() => window.open('https://linkedin.com/in/jlurena', '_blank')}
+        />
+        <NavButton
+          icon={faMedium}
+          ariaLabel="Medium Blog Profile"
+          labelHelper="Medium"
+          direction="horizontal"
+          onClick={() => window.open('https://medium.com/@jlurena123', '_blank')}
+        />
       </footer>
     </div>
   );
