@@ -147,12 +147,12 @@ function Resume({ showPrintButton = false }) {
             </div>
             <div className={styles.content}>
               {resumeConfig.experiences.map(experience => (
-                <div className={styles.experience}>
+                <div className={styles.experience} key={experience.experience_name}>
                   <div className={styles.experienceContainer}>
                     <div className={styles.experienceName}><span>{experience.experience_name}</span></div>
                     <div className={styles.experienceHistoryContainer}>
                       {experience.experience_titles.map(titles => (
-                        <div className={styles.experienceTitle}>
+                        <div className={styles.experienceTitle} key={titles.title}>
                           <span>{titles.title}</span>
                           <span>
                             {`${titles.start} - ${titles.end || 'Present'}`}
@@ -175,36 +175,46 @@ function Resume({ showPrintButton = false }) {
                     <p className={styles.experienceSummary}>
                       {experience.summary}
                     </p>
-                    <span className={styles.experienceHeader}>
-                      <span>M</span>
-                      <span>a</span>
-                      <span>j</span>
-                      <span>o</span>
-                      <span>r</span>
-                      <span>&nbsp;</span>
-                      <span>A</span>
-                      <span>c</span>
-                      <span>c</span>
-                      <span>o</span>
-                      <span>m</span>
-                      <span>p</span>
-                      <span>l</span>
-                      <span>i</span>
-                      <span>s</span>
-                      <span>h</span>
-                      <span>m</span>
-                      <span>e</span>
-                      <span>n</span>
-                      <span>t</span>
-                      <span>s</span>
-                    </span>
-                    <ul className={styles.accomplishmentList}>
-                      {experience.accomplishments.map(accomplishment => (
-                        <li>
-                          {accomplishment}
-                        </li>
-                      ))}
-                    </ul>
+                    {
+                      experience.accomplishments
+                      && (
+                      <span className={styles.experienceHeader}>
+                        <span>M</span>
+                        <span>a</span>
+                        <span>j</span>
+                        <span>o</span>
+                        <span>r</span>
+                        <span>&nbsp;</span>
+                        <span>A</span>
+                        <span>c</span>
+                        <span>c</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>p</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>s</span>
+                        <span>h</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>s</span>
+                      </span>
+                      )
+                    }
+                    {
+                      experience.accomplishments
+                      && (
+                      <ul className={styles.accomplishmentList}>
+                        {experience.accomplishments.map(accomplishment => (
+                          <li key={accomplishment.substring(0, 32)}>
+                            {accomplishment}
+                          </li>
+                        ))}
+                      </ul>
+                      )
+                    }
                   </div>
                 </div>
               ))}
@@ -250,12 +260,12 @@ function Resume({ showPrintButton = false }) {
             <div className={styles.skillsContainer}>
               <ul className={styles.skillsList}>
                 {resumeConfig.skills.map(skill => (
-                  <li>
+                  <li key={skill.name}>
                     <span>{skill.name}</span>
                     {skill.examples && (
                     <ul>
                       {skill.examples.map(example => (
-                        <li>{example}</li>
+                        <li key={example}>{example}</li>
                       ))}
                     </ul>
                     )}
