@@ -41,6 +41,15 @@ experiences:
         boilerplate code necessary to service newly acquired whitelabeled/branded clients. This resulted 
         in reduced development time from 2-3 months to 1-2 months, 
         thus servicing new clients up to two months faster
+  - experience_name: Research Foundation City University of New York
+    experience_titles:
+      - title: Teacher Assistant
+        start: 06/2023
+        end: null
+    summary: >
+      Teacher assistant at the RF CUNY Coding Bootcamp. A technical bootcamp for adults looking to become software engineers. 
+      Here I help students to break down the concepts they learned in class, support students with their workload and
+      review and grade the assignments submitted by the students
   - experience_name: NuCamp Bootcamp
     experience_titles:
       - title: Code Instructor
