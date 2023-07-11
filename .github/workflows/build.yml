@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - deploy
+    types: [closed]
 jobs:
   build:
     name: Build and Push
