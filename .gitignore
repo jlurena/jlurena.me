@@ -76,7 +76,5 @@ Temporary Items
 .env.*.local
 build
 npm-debug.log*
-.eslintcache
-.stylelintcache
 public
 index.html
