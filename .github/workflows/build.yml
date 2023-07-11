@@ -1,11 +1,14 @@
 name: Build and Push
 
 on:
-  push:
+  pull_request_target:
+    types:
+      - closed
     branches:
       - master
 jobs:
   build:
+    if: github.event.pull_request.merged == true
     name: Build and Push
     runs-on: ubuntu-latest
     steps:
