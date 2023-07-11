@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './link-button.module.scss';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styles from './link-button.module.scss'
 
-function LinkButton({
-  anchorProps, children, target = '_blank', url,
+function LinkButton ({
+  anchorProps, children, target = '_blank', url
 }) {
   return (
     <div className={styles.container}>
@@ -11,19 +11,19 @@ function LinkButton({
         {...anchorProps}
         target={target}
         href={url}
-        rel="noreferrer"
+        rel='noreferrer'
       >
         {children}
       </a>
     </div>
-  );
+  )
 }
 
 LinkButton.propTypes = {
   anchorProps: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.func])),
-  target:      PropTypes.string,
-  url:         PropTypes.string.isRequired,
-  children:    PropTypes.node.isRequired,
-};
+  target: PropTypes.string,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+}
 
-export default LinkButton;
+export default LinkButton

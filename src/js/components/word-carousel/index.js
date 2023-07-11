@@ -1,3 +1,3 @@
-import WordCarousel from './word-carousel';
+import WordCarousel from './word-carousel'
 
-export default WordCarousel;
+export default WordCarousel

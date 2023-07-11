@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-import styles from './nav.module.scss';
-import NavButton from '../nav-button';
+import styles from './nav.module.scss'
+import NavButton from '../nav-button'
 
-function Nav({
-  isMobileNavOpen, selectedTab, onTabClick, tabs,
+function Nav ({
+  isMobileNavOpen, selectedTab, handleOnTabClick, tabs
 }) {
   const navOptions = Object.keys(tabs).map(k => (
     <NavButton
       ariaLabel={k}
       icon={tabs[k].icon}
-      onClick={() => onTabClick(k)}
+      onClick={() => handleOnTabClick(k)}
       key={k}
       labelHelper={k}
       permanentSelect={k === selectedTab}
     />
-  ));
+  ))
 
   return (
     <>
@@ -32,27 +32,27 @@ function Nav({
         {navOptions}
       </div>
     </>
-  );
+  )
 }
 
 Nav.propTypes = {
   isMobileNavOpen: PropTypes.bool.isRequired,
-  selectedTab:     PropTypes.string.isRequired,
-  onTabClick:      PropTypes.func.isRequired,
-  tabs:            PropTypes.objectOf(PropTypes.shape({
+  selectedTab: PropTypes.string.isRequired,
+  handleOnTabClick: PropTypes.func.isRequired,
+  tabs: PropTypes.objectOf(PropTypes.shape({
     icon: PropTypes.shape({
       icon: PropTypes.arrayOf(
         PropTypes.oneOfType([
           PropTypes.number,
           PropTypes.string,
-          PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
-        ]),
+          PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
+        ])
       ).isRequired,
       iconName: PropTypes.string.isRequired,
-      prefix:   PropTypes.string,
+      prefix: PropTypes.string
     }).isRequired,
-    tab: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
-  })),
-};
+    tab: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired
+  }))
+}
 
-export default Nav;
+export default Nav

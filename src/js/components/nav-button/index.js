@@ -1,3 +1,3 @@
-import NavButton from './nav-button';
+import NavButton from './nav-button'
 
-export default NavButton;
+export default NavButton

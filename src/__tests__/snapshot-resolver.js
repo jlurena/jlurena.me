@@ -6,5 +6,5 @@ module.exports = {
   resolveTestPath: (snapshotFilePath, snapshotExtension) => snapshotFilePath
     .replace('__snapshots__/', 'src/')
     .slice(0, -snapshotExtension.length),
-  testPathForConsistencyCheck: 'some-test.js',
-};
+  testPathForConsistencyCheck: 'some-test.js'
+}
