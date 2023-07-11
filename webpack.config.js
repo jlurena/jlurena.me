@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const path = require('path')
 const webpack = require('webpack')
 
@@ -47,7 +48,7 @@ const config = {
     open: true,
     static: path.join(__dirname, 'public')
   },
-  entry: ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
+  entry: path.resolve(__dirname, './src/index.jsx'),
   output: {
     path: __dirname,
     filename: isDev ? 'public/assets/[name].js' : 'public/assets/[contenthash:8].js'
@@ -60,8 +61,9 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'JLU',
       filename: 'index.html'
-    })
-  ],
+    }),
+    isDev && new ReactRefreshWebpackPlugin()
+  ].filter(Boolean),
   module: {
     rules: [
       {
@@ -70,7 +72,7 @@ const config = {
         loader: require.resolve('babel-loader'),
         options: {
           cacheDirectory: true,
-          plugins: ['react-hot-loader/babel']
+          plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean)
         }
       },
       {
