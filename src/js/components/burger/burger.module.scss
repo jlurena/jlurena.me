@@ -3,7 +3,7 @@
 
 .burger-container {
   background-color: #fff;
-  height: $mobileNavBarHeight;
+  height: $mobile-nav-bar-height;
 
   @include screen-sm {
     display: none;

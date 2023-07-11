@@ -1,6 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+/* global MutationObserver */
+
+import React, { useEffect, useRef } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
 import {
   faCar,
   faCocktail,
@@ -12,25 +14,25 @@ import {
   faHiking,
   faPlane,
   faUser,
-  faUtensils,
-} from '@fortawesome/free-solid-svg-icons';
-import ImageGallery from 'react-image-gallery';
-import Header from '../../header';
-import styles from './about-me.module.scss';
-import 'react-image-gallery/styles/scss/image-gallery.scss';
-import HikingImage from '../../../../images/jean/carousel/hiking.jpeg';
-import useTag from '../../../lib/use-tag';
-import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min';
-import { Button } from '../../buttons';
-import { RESUME_TAB_KEY } from '../resume';
+  faUtensils
+} from '@fortawesome/free-solid-svg-icons'
+import ImageGallery from 'react-image-gallery'
+import Header from '../../header'
+import styles from './about-me.module.scss'
+import 'react-image-gallery/styles/scss/image-gallery.scss'
+import HikingImage from '../../../../images/jean/carousel/hiking.jpeg'
+import useTag from '../../../lib/use-tag'
+import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min'
+import { Button } from '../../buttons'
+import { RESUME_TAB_KEY } from '../resume'
 
 const IMAGES = [
   {
-    original:      HikingImage,
+    original: HikingImage,
     originalClass: styles.carouselImages,
-    originalAlt:   'Jean Hiking next a mountain that with craters forming a smiling face',
-  },
-];
+    originalAlt: 'Jean Hiking next a mountain that with craters forming a smiling face'
+  }
+]
 
 const HOBBIES = [
   { icon: faCar, text: 'Cars' },
@@ -41,11 +43,11 @@ const HOBBIES = [
   { icon: faGamepad, text: 'Video Games' },
   { icon: faHiking, text: 'Hiking' },
   { icon: faPlane, text: 'Travel' },
-  { icon: faUtensils, text: 'Eating Out' },
-];
+  { icon: faUtensils, text: 'Eating Out' }
+]
 
-function AboutMe({ changeTabFunc }) {
-  const iframeContainerDiv = useRef(null);
+function AboutMe ({ changeTabFunc }) {
+  const iframeContainerDiv = useRef(null)
 
   // HACK: This is because the LinkedIn Badge has their own styles which isn't responsive
   useEffect(() => {
@@ -53,44 +55,44 @@ function AboutMe({ changeTabFunc }) {
       mutationList.forEach(m => {
         m.addedNodes.forEach(n => {
           if (n.tagName === 'IFRAME') { // Only one iframe here
-            const contentHead = n.contentWindow.document.head;
-            const style = document.createElement('style');
-            style.setAttribute('type', 'text/css');
-            style.innerHTML = 'html{overflow-x:hidden!important;}body>*{width:100%!important;}';
+            const contentHead = n.contentWindow.document.head
+            const style = document.createElement('style')
+            style.setAttribute('type', 'text/css')
+            style.innerHTML = 'html{overflow-x:hidden!important;}body>*{width:100%!important;}'
 
-            contentHead.appendChild(style);
+            contentHead.appendChild(style)
           }
-        });
-      });
-    });
+        })
+      })
+    })
 
     if (iframeContainerDiv) {
-      observer.observe(iframeContainerDiv.current, { childList: true, subtree: true });
+      observer.observe(iframeContainerDiv.current, { childList: true, subtree: true })
     }
 
-    return () => observer.disconnect();
-  }, []);
+    return () => observer.disconnect()
+  }, [])
 
   useTag(
     () => document.body,
     'script',
     {
-      src: linkedinBadgeScript, type: 'text/javascript', async: true, defer: true,
-    },
-  );
+      src: linkedinBadgeScript, type: 'text/javascript', async: true, defer: true
+    }
+  )
 
   const resumeBtnClick = () => {
-    changeTabFunc(RESUME_TAB_KEY);
-  };
+    changeTabFunc(RESUME_TAB_KEY)
+  }
   return (
     <div className={styles.wrapper}>
-      <Header headerLevel="1" icon={faUser} headerText="About" headerStrongText="Me" fontSize="1.5rem" />
+      <Header headerLevel='1' icon={faUser} headerText='About' headerStrongText='Me' fontSize='1.5rem' />
       <div className={styles.container}>
         <Header
-          headerLevel="2"
+          headerLevel='2'
           headerText="Hey! Nice to meet you, I'm Jean Luis, but you can call me"
-          headerStrongText="Jean"
-          fontSize="18px"
+          headerStrongText='Jean'
+          fontSize='18px'
         />
         <div className={styles.aboutMeWrapper}>
           <div>
@@ -109,13 +111,13 @@ function AboutMe({ changeTabFunc }) {
                 {' '}
                 are some adjectives that can be used to describe me.
                 At the end of the day however, I am a simple tech nerd &nbsp;
-                <FontAwesomeIcon icon={faGlasses} size="1x" />
+                <FontAwesomeIcon icon={faGlasses} size='1x' />
                 &nbsp; that enjoys programming, learning new technologies, experimenting with tech and
                 teaching others all I know!
               </p>
             </div>
             <div className={styles.aboutMeSubSection}>
-              <Header headerLevel="2" headerText="Hobbies & Interests" fontSize="18px" />
+              <Header headerLevel='2' headerText='Hobbies & Interests' fontSize='18px' />
               <p>
                 Of course, I have many other
                 {' '}
@@ -127,12 +129,12 @@ function AboutMe({ changeTabFunc }) {
                 . Most notably though I&apos;m really into
               </p>
               <div className={styles.aboutMeHobbiesSection}>
-                { HOBBIES.map(i => (
+                {HOBBIES.map(i => (
                   <div className={styles.hobby} key={i.text}>
-                    <FontAwesomeIcon icon={i.icon} size="lg" />
+                    <FontAwesomeIcon icon={i.icon} size='lg' />
                     {i.text}
                   </div>
-                )) }
+                ))}
               </div>
             </div>
           </div>
@@ -150,18 +152,18 @@ function AboutMe({ changeTabFunc }) {
 
         </div>
         <div className={styles.aboutMeSubSection}>
-          <Header headerLevel="2" headerText="Interested in my professional experience?" fontSize="18px" />
+          <Header headerLevel='2' headerText='Interested in my professional experience?' fontSize='18px' />
           <div className={`${styles.aboutMeProfessional} ${styles.separator}`}>
             <div>
               <div
                 ref={iframeContainerDiv}
-                className="badge-base LI-profile-badge"
-                data-locale="en_US"
-                data-size="medium"
-                data-theme="dark"
-                data-type="HORIZONTAL"
-                data-vanity="jlurena"
-                data-version="v1"
+                className='badge-base LI-profile-badge'
+                data-locale='en_US'
+                data-size='medium'
+                data-theme='dark'
+                data-type='HORIZONTAL'
+                data-vanity='jlurena'
+                data-version='v1'
               />
             </div>
             <div>
@@ -176,11 +178,11 @@ function AboutMe({ changeTabFunc }) {
       </div>
 
     </div>
-  );
+  )
 }
 
 AboutMe.propTypes = {
-  changeTabFunc: PropTypes.func.isRequired,
-};
+  changeTabFunc: PropTypes.func.isRequired
+}
 
-export default AboutMe;
+export default AboutMe

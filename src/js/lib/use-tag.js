@@ -1,20 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 const useTag = (parentNodeFinderCb, tag, options) => {
   useEffect(() => {
-    const el = document.createElement(tag);
+    const el = document.createElement(tag)
 
     Object.keys(options).forEach(k => {
-      el[k] = options[k];
-    });
+      el[k] = options[k]
+    })
 
-    const parentNode = parentNodeFinderCb();
-    parentNode.appendChild(el);
+    const parentNode = parentNodeFinderCb()
+    parentNode.appendChild(el)
 
     return () => {
-      parentNode.removeChild(el);
-    };
-  }, []);
-};
+      parentNode.removeChild(el)
+    }
+  }, [])
+}
 
-export default useTag;
+export default useTag

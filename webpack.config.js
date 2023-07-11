@@ -1,131 +1,131 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
+const webpack = require('webpack')
 
-const isDev = process.env.NODE_ENV === 'development';
-const mode = isDev ? 'development' : 'production';
+const isDev = process.env.NODE_ENV === 'development'
+const mode = isDev ? 'development' : 'production'
 
-function styleLoader(isModule) {
+function styleLoader (isModule) {
   return [
     isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
     {
-      loader:  'css-loader',
+      loader: 'css-loader',
       options: {
         modules: isModule && {
-          localIdentName:         isDev ? '[path][local]' : '[hash:base64:5]',
-          exportLocalsConvention: 'camelCase',
+          localIdentName: isDev ? '[path][local]' : '[hash:base64:5]',
+          exportLocalsConvention: 'camelCase'
         },
-        sourceMap: true,
-      },
+        sourceMap: true
+      }
     },
     {
-      loader: 'resolve-url-loader',
+      loader: 'resolve-url-loader'
     },
     {
-      loader:  'sass-loader',
+      loader: 'sass-loader',
       options: {
-        sourceMap: true,
-      },
-    },
-  ];
+        sourceMap: true
+      }
+    }
+  ]
 }
 
 const config = {
   mode,
   context: __dirname,
-  target:  'web',
-  stats:   {
-    preset:      'minimal',
-    performance: true,
+  target: 'web',
+  stats: {
+    preset: 'minimal',
+    performance: true
   },
   performance: {
-    hints: false,
+    hints: false
   },
   devServer: {
-    hot:    true,
-    open:   true,
-    static: path.join(__dirname, 'public'),
+    hot: true,
+    open: true,
+    static: path.join(__dirname, 'public')
   },
-  entry:  ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
+  entry: ['react-hot-loader/patch', path.resolve(__dirname, './src/index.jsx')],
   output: {
-    path:     __dirname,
-    filename: isDev ? 'public/assets/[name].js' : 'public/assets/[contenthash:8].js',
+    path: __dirname,
+    filename: isDev ? 'public/assets/[name].js' : 'public/assets/[contenthash:8].js'
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename:      isDev ? 'public/assets/[name]' : 'public/assets/[contenthash:8].css',
-      chunkFilename: isDev ? 'public/assets/[name]' : 'public/assets/[id][contenthash:8].css',
+      filename: isDev ? 'public/assets/[name]' : 'public/assets/[contenthash:8].css',
+      chunkFilename: isDev ? 'public/assets/[name]' : 'public/assets/[id][contenthash:8].css'
     }),
     new HtmlWebpackPlugin({
-      title:    'JLU',
-      filename: 'index.html',
-    }),
+      title: 'JLU',
+      filename: 'index.html'
+    })
   ],
   module: {
     rules: [
       {
-        test:    /\.jsx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader:  require.resolve('babel-loader'),
+        loader: require.resolve('babel-loader'),
         options: {
           cacheDirectory: true,
-          plugins:        ['react-hot-loader/babel'],
-        },
+          plugins: ['react-hot-loader/babel']
+        }
       },
       {
-        test:    /\.scss$/,
+        test: /\.scss$/,
         exclude: /\.module.scss/,
-        use:     styleLoader(false),
+        use: styleLoader(false)
       },
       {
         test: /\.module.scss$/,
-        use:  styleLoader(true),
+        use: styleLoader(true)
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use:  [
+        use: [
           {
-            loader:  'url-loader',
+            loader: 'url-loader',
             options: {
               limit: 10000,
-              name:  'public/assets/[contenthash:8].[ext]',
-            },
-          },
-        ],
+              name: 'public/assets/[contenthash:8].[ext]'
+            }
+          }
+        ]
       },
       {
-        test:    /\.ya?ml$/,
-        loader:  'file-loader',
+        test: /\.ya?ml$/,
+        loader: 'file-loader',
         options: {
-          name: 'public/configs/[name]-[contenthash:8].[ext]',
-        },
+          name: 'public/configs/[name]-[contenthash:8].[ext]'
+        }
       },
       {
-        test:    /vendor\/.*.js$/,
-        loader:  'file-loader',
+        test: /vendor\/.*.js$/,
+        loader: 'file-loader',
         options: {
-          name: 'public/vendor/[name]-[contenthash:8].[ext]',
-        },
-      },
-    ],
+          name: 'public/vendor/[name]-[contenthash:8].[ext]'
+        }
+      }
+    ]
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
-    },
+      chunks: 'all'
+    }
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    alias:      {
-      app:          path.resolve(__dirname, 'src'),
-      node_modules: path.resolve(__dirname, 'node_modules'),
-    },
-  },
-};
-
-if (isDev) {
-  config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    alias: {
+      app: path.resolve(__dirname, 'src'),
+      node_modules: path.resolve(__dirname, 'node_modules')
+    }
+  }
 }
 
-module.exports = config;
+if (isDev) {
+  config.plugins.push(new webpack.HotModuleReplacementPlugin())
+}
+
+module.exports = config

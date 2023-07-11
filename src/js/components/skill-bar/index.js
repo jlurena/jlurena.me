@@ -1,3 +1,3 @@
-import SkillBar from './skill-bar';
+import SkillBar from './skill-bar'
 
-export default SkillBar;
+export default SkillBar
