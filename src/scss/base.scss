@@ -31,10 +31,6 @@ body {
   opacity: 1;
 }
 
-::input-placeholder {
-  color: $primary-color;
-}
-
 a,
 button {
   &:focus {
