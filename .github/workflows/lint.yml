@@ -26,7 +26,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git commit --no-verify -m "[skip ci] Lint files" || echo "Nothing to commit"
+          git commit -m "[skip ci] Lint - By Github Actions" || echo "Nothing to commit"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
