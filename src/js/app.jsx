@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { hot } from 'react-hot-loader'
 import {
   faFileAlt,
   faNewspaper,
@@ -80,4 +79,4 @@ function App () {
   )
 }
 
-export default hot(module)(App)
+export default App
