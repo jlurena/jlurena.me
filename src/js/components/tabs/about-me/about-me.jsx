@@ -24,7 +24,7 @@ import HikingImage from '../../../../images/jean/carousel/hiking.jpeg'
 import useTag from '../../../lib/use-tag'
 import linkedinBadgeScript from '../../../../vendor/linkedin-badge.min'
 import { Button } from '../../buttons'
-import { RESUME_TAB_KEY } from '../resume'
+import { RESUME_TAB_KEY } from '../resume';
 
 const IMAGES = [
   {
