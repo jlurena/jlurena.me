@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
 
@@ -62,7 +61,7 @@ const config = {
       title: 'JLU',
       filename: 'index.html'
     }),
-    isDev && new ReactRefreshWebpackPlugin()
+    isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))
   ].filter(Boolean),
   module: {
     rules: [
