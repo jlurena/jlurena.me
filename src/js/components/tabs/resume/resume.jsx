@@ -8,7 +8,6 @@ import {
   faGithub,
   faMedium
 } from '@fortawesome/free-brands-svg-icons'
-import PropTypes from 'prop-types'
 import jsyaml from 'js-yaml'
 import styles from './resume.module.scss'
 import { Button, LinkButton } from '../../buttons'
@@ -21,12 +20,6 @@ function IconLink ({ icon, url, linkText }) {
       <a href={url} target='_blank' rel='noreferrer'>{linkText}</a>
     </div>
   )
-}
-
-IconLink.propTypes = {
-  icon: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired
 }
 
 function Resume ({ showPrintButton = false }) {
@@ -290,10 +283,6 @@ function Resume ({ showPrintButton = false }) {
       </div>
       )
     : null
-}
-
-Resume.propTypes = {
-  showPrintButton: PropTypes.bool
 }
 
 export default Resume

@@ -1,7 +1,4 @@
 import React from 'react'
-
-import PropTypes from 'prop-types'
-
 import styles from './nav.module.scss'
 import NavButton from '../nav-button'
 
@@ -33,26 +30,6 @@ function Nav ({
       </div>
     </>
   )
-}
-
-Nav.propTypes = {
-  isMobileNavOpen: PropTypes.bool.isRequired,
-  selectedTab: PropTypes.string.isRequired,
-  handleOnTabClick: PropTypes.func.isRequired,
-  tabs: PropTypes.objectOf(PropTypes.shape({
-    icon: PropTypes.shape({
-      icon: PropTypes.arrayOf(
-        PropTypes.oneOfType([
-          PropTypes.number,
-          PropTypes.string,
-          PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
-        ])
-      ).isRequired,
-      iconName: PropTypes.string.isRequired,
-      prefix: PropTypes.string
-    }).isRequired,
-    tab: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired
-  }))
 }
 
 export default Nav

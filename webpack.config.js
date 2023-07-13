@@ -61,7 +61,7 @@ const config = {
       title: 'JLU',
       filename: 'index.html'
     }),
-    isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))
+    isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))()
   ].filter(Boolean),
   module: {
     rules: [
