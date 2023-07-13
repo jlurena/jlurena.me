@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 const mode = isDev ? 'development' : 'production'
@@ -36,7 +37,7 @@ const config = {
   context: __dirname,
   target: 'web',
   stats: {
-    preset: 'minimal',
+    preset: 'normal',
     performance: true
   },
   performance: {
@@ -61,7 +62,13 @@ const config = {
       title: 'JLU',
       filename: 'index.html'
     }),
-    isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))
+    !isDev && new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      swDest: 'public/assets/service-worker.js'
+    }),
+    isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))(),
+    isDev && new webpack.HotModuleReplacementPlugin()
   ].filter(Boolean),
   module: {
     rules: [
@@ -71,7 +78,10 @@ const config = {
         loader: require.resolve('babel-loader'),
         options: {
           cacheDirectory: true,
-          plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean)
+          plugins: [
+            isDev && require.resolve('react-refresh/babel'),
+            !isDev && 'transform-remove-console'
+          ].filter(Boolean)
         }
       },
       {
@@ -123,10 +133,6 @@ const config = {
       node_modules: path.resolve(__dirname, 'node_modules')
     }
   }
-}
-
-if (isDev) {
-  config.plugins.push(new webpack.HotModuleReplacementPlugin())
 }
 
 module.exports = config

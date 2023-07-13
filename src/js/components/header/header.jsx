@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './header.module.scss'
 
@@ -26,21 +25,4 @@ function Header ({
   )
 }
 
-Header.propTypes = {
-  headerLevel: PropTypes.string,
-  icon: PropTypes.shape({
-    icon: PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.string,
-        PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
-      ])
-    ).isRequired,
-    iconName: PropTypes.string.isRequired,
-    prefix: PropTypes.string
-  }),
-  headerText: PropTypes.string.isRequired,
-  headerStrongText: PropTypes.string,
-  fontSize: PropTypes.string.isRequired
-}
 export default Header

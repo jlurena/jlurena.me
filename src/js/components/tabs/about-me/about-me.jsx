@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import PropTypes from 'prop-types'
 import {
   faCar,
   faCocktail,
@@ -179,10 +178,6 @@ function AboutMe ({ changeTabFunc }) {
 
     </div>
   )
-}
-
-AboutMe.propTypes = {
-  changeTabFunc: PropTypes.func.isRequired
 }
 
 export default AboutMe

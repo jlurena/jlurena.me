@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styles from './burger.module.scss'
 
 function Burger ({ onClick, onBlur }) {
@@ -13,11 +12,6 @@ function Burger ({ onClick, onBlur }) {
       </button>
     </div>
   )
-}
-
-Burger.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  onBlur: PropTypes.func
 }
 
 export default Burger

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styles from './button.module.scss'
 
 function Button (props) {
@@ -13,11 +12,6 @@ function Button (props) {
       {children}
     </button>
   )
-}
-
-Button.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string
 }
 
 export default Button

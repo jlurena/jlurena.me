@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './home.module.scss'
-import JeanPic from '../../../../images/jean/webslidepic1.jpg'
+import JeanPic from '../../../../images/jean/webslidepic1.jpeg'
 
 import WordCarousel from '../../word-carousel/word-carousel'
 
