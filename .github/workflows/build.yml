@@ -1,16 +1,14 @@
 name: Build and Push
 
 on:
-  pull_request_target:
-    types: closed
-    branches: main
   workflow_dispatch:
+  push:
+    branches: main
 concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
   build:
-    if: github.event.pull_request.merged == true
     name: Build and Push
     runs-on: ubuntu-latest
     steps:
