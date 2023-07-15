@@ -1,4 +1,4 @@
-name: Build and Push
+name: Build and Deploy
 
 on:
   workflow_dispatch:
@@ -7,9 +7,13 @@ on:
 concurrency:
   group: pages
   cancel-in-progress: false
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
-    name: Build and Push
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -34,6 +38,7 @@ jobs:
           branch: ${{ github.ref }}
   deploy:
     needs: build
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
