@@ -272,7 +272,7 @@ function Resume ({ showPrintButton = false }) {
         </div>
         <div className={styles.resumeFooter}>
           {!showPrintButton && (
-            <LinkButton anchorProps={{ 'aria-label': 'Open in new tab' }} url={printResumeURL}>
+            <LinkButton aria-label='Open in new tab' href={printResumeURL} target='_blank'>
               <FontAwesomeIcon icon={faUpRightFromSquare} />
             </LinkButton>
           )}

@@ -18,14 +18,18 @@ describe('<Nav/>', () => {
     Bar: { icon: faAd, tab: BarComponent }
   }
 
+  const onTabClickSpy = jest.fn()
+
   test('Rendering mobile web', () => {
     const component = renderer.create(
-      <Nav isMobileNavOpen handleOnTabClick={jest.fn} selectedTab='Home' tabs={tabs} />
+      <Nav isMobileNavOpen handleOnTabClick={onTabClickSpy} selectedTab='Home' tabs={tabs} />
     )
-
     const tree = component.toJSON()
 
     expect(tree).toMatchSnapshot()
+
+    component.root.findAllByType('button')[0].props.onClick()
+    expect(onTabClickSpy).toHaveBeenCalledWith('Foo')
   })
 
   test('Rendering desktop web', () => {
