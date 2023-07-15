@@ -3,7 +3,7 @@ name: Test and Lint
 on:
   push:
     branches-ignore:
-      - master
+      - main
 jobs:
   build:
     name: Test and Lint
