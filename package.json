@@ -20,7 +20,7 @@
     "build": "rm -rf public/assets/* && NODE_ENV=production webpack --bail --mode production",
     "start": "NODE_ENV=development webpack && NODE_ENV=development webpack serve",
     "test": "jest",
-    "lint": "npx standard && npx stylelint \"**/*.scss\" --fix"
+    "lint": "npx standard --fix && npx stylelint \"**/*.scss\" --fix"
   },
   "dependencies": {
     "@babel/core": "^7.22.8",
@@ -98,7 +98,6 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./src/__test__/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy"
     },
-    "snapshotResolver": "./src/__tests__/snapshot-resolver.js",
     "testMatch": [
       "**/?(*.)+(test).[jt]s?(x)"
     ]

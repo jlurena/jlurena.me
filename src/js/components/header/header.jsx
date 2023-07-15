@@ -12,7 +12,7 @@ function Header ({
   return (
     <div className={styles.container} style={{ fontSize }}>
       {icon && <FontAwesomeIcon className={styles.icon} icon={icon} size='lg' />}
-      <h1 className={`${styles.header} ${styles[`level${headerLevel}`] || ''}`}>
+      <h1 className={`${styles.header} ${styles[`level${headerLevel}`]}`}>
         {headerText}
         {headerStrongText &&
       (
