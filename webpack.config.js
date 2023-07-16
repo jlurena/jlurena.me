@@ -100,7 +100,7 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 10000,
+              limit: 8192,
               name: 'public/assets/[contenthash:8].[ext]'
             }
           }

@@ -37,7 +37,6 @@
     "file-loader": "^6.2.0",
     "fontawesome": "^5.6.3",
     "html-webpack-plugin": "^5.5.0",
-    "js-yaml": "^4.1.0",
     "mini-css-extract-plugin": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

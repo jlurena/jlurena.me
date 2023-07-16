@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGlobe,
@@ -8,10 +8,9 @@ import {
   faGithub,
   faMedium
 } from '@fortawesome/free-brands-svg-icons'
-import jsyaml from 'js-yaml'
+import resumeConfig from '../../../../configs/resume.json'
 import styles from './resume.module.scss'
 import { Button, LinkButton } from '../../buttons'
-import resumeConfigFile from '../../../../configs/resume.yml'
 
 function IconLink ({ icon, url, linkText }) {
   return (
@@ -23,19 +22,11 @@ function IconLink ({ icon, url, linkText }) {
 }
 
 function Resume ({ showPrintButton = false }) {
-  const [resumeConfigContent, setResumeConfigContent] = useState(null)
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get('resumeOnly') === 'true') {
       document.body.setAttribute('data-resume-only', 'true')
     }
   }, [])
-
-  useEffect(() => {
-    fetch(resumeConfigFile)
-      .then(content => content.text().then(c => setResumeConfigContent(c)))
-  }, [])
-
-  const resumeConfig = useMemo(() => jsyaml.load(resumeConfigContent))
 
   const printResumeURL = `${window.location.origin}/?resumeOnly=true`
   return resumeConfig
