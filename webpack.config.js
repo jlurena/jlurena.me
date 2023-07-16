@@ -37,11 +37,12 @@ const config = {
   context: __dirname,
   target: 'web',
   stats: {
-    preset: 'normal',
-    performance: true
+    preset: 'errors-warnings',
+    performance: true,
+    logging: 'warn'
   },
   performance: {
-    hints: false
+    hints: 'warning'
   },
   devServer: {
     hot: true,
