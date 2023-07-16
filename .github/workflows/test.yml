@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.2.0
+          cache: 'npm'
       - name: Install NPM Dependencies
         run: npm install
       - name: Lint
