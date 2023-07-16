@@ -4,8 +4,7 @@ on:
   pull_request:
 jobs:
   build:
-    run_if:
-      if:  ${{ github.head_ref != 'main' }}
+    if:  ${{ github.head_ref != 'main' }}
     name: Test and Lint
     runs-on: ubuntu-latest
     steps:
