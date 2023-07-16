@@ -37,11 +37,12 @@ const config = {
   context: __dirname,
   target: 'web',
   stats: {
-    preset: 'normal',
-    performance: true
+    preset: 'errors-warnings',
+    performance: true,
+    logging: 'warn'
   },
   performance: {
-    hints: false
+    hints: 'warning'
   },
   devServer: {
     hot: true,
@@ -99,7 +100,7 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 10000,
+              limit: 8192,
               name: 'public/assets/[contenthash:8].[ext]'
             }
           }
