@@ -29,12 +29,14 @@ jobs:
         run: npm install --production
       - name: Build
         run: npm run build
+      - name: Clean up
+        run: rm -rf .babelrc .git .github .gitignore .stylelintrc.json README.md coverage node_modules package-lock.json package.json src webpack.config.js
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'public/'
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
