@@ -61,7 +61,7 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       title: 'JLU',
-      filename: 'public/index.html'
+      filename: 'index.html'
     }),
     !isDev && new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
