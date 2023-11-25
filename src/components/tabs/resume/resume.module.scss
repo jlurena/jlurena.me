@@ -1,0 +1,225 @@
+@import "../../../scss/breakpoints";
+/* stylelint-disable-next-line import-notation */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+$default-text-color: #212121;
+$default-text-description-color: #333;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Crimson Text", serif;
+}
+
+.iconLinkContainer {
+  display: flex;
+  gap: 1rem;
+
+  svg {
+    min-width: 20px;
+    color: $default-text-color;
+  }
+
+  a {
+    color: $default-text-color;
+  }
+}
+
+.resumeHeader,
+.resumeBody,
+.resumeFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media print {
+    flex-direction: row;
+  }
+
+  @include screen-sm {
+    flex-direction: row;
+  }
+}
+
+.resumeFooter {
+  margin-bottom: 2rem;
+
+  @media print {
+    button {
+      display: none;
+    }
+  }
+
+  > div {
+    @media print {
+      display: none;
+    }
+
+    a {
+      display: flex !important;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.sectionHeader {
+  color: $default-text-color;
+  font-size: 1.25rem;
+
+  span {
+    margin-right: 0.2rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-basis: 60%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.section > .details {
+  @media print {
+    margin-left: -12px; // For some reason when printing, its off
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .name {
+    font-size: 2rem;
+    color: #2196f3;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+    color: #757575;
+
+    span {
+      margin-right: 0.2rem;
+    }
+
+    span.separator {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.main > .section > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: $default-text-color;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media print {
+    line-height: 1;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @media print {
+      break-inside: avoid;
+    }
+  }
+
+  .experience > .experienceDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: $default-text-description-color;
+
+    .experienceHeader {
+      font-size: 1.15rem;
+    }
+
+    .accomplishmentList {
+      list-style: circle;
+      list-style-position: outside;
+      padding-left: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .experienceSummary {
+      font-size: 0.9rem;
+    }
+
+    .experienceHeader > span {
+      font-size: 0.9rem;
+      margin-right: 0.2rem;
+    }
+  }
+
+  .experience > .experienceContainer {
+    .experienceHistoryContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .experienceName {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .experienceTitle {
+      display: flex;
+      font-size: 1rem;
+      color: #757575;
+    }
+
+    .experienceTitle > span:nth-child(1) {
+      font-weight: 800;
+      flex-basis: 50%;
+
+      @include screen-sm {
+        flex-basis: 30%;
+      }
+    }
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  gap: 0.5rem;
+}
+
+.side .linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.side .skillsContainer {
+  display: flex;
+  flex-direction: column;
+  color: $default-text-description-color;
+
+  > .skillsList {
+    list-style: circle;
+    list-style-position: outside;
+    padding-left: 2rem;
+    font-size: 0.9rem;
+
+    ul {
+      list-style: circle;
+      list-style-position: outside;
+      padding-left: 1.75rem;
+      font-size: 0.75rem;
+    }
+  }
+}

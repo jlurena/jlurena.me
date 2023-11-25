@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WordCarousel/> Rendering 1`] = `
+Array [
+  <span
+    className="word"
+  >
+    Hello
+  </span>,
+  <span
+    className="word"
+  >
+    World
+  </span>,
+  <span
+    className="word"
+  >
+    Goodbye
+  </span>,
+]
+`;

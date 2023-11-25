@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  .icon {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.header {
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  font-family: Montserrat, sans-serif;
+
+  &::after {
+    content: " ";
+    border: solid 2px $primary-color;
+    display: block;
+    width: 20px;
+  }
+
+  &.level1 {
+    border-bottom: 4px solid $primary-color;
+
+    &::after {
+      transform: rotate(-90deg);
+      margin: 20px auto 10px;
+    }
+  }
+
+  &.level2::after {
+    width: 30px;
+    margin: 20px auto;
+  }
+}
+
+.strong {
+  font-weight: 700;
+}
