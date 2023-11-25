@@ -51,13 +51,13 @@ const config = {
   },
   entry: path.resolve(__dirname, './src/index.jsx'),
   output: {
-    path: __dirname,
-    filename: isDev ? 'public/assets/[name].js' : 'public/assets/[contenthash:8].js'
+    path: path.resolve(__dirname, 'public'),
+    filename: isDev ? 'assets/[name].js' : 'assets/[contenthash:8].js'
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: isDev ? 'public/assets/[name]' : 'public/assets/[contenthash:8].css',
-      chunkFilename: isDev ? 'public/assets/[name]' : 'public/assets/[id][contenthash:8].css'
+      filename: isDev ? 'assets/[name]' : 'assets/[contenthash:8].css',
+      chunkFilename: isDev ? 'assets/[name]' : 'assets/[id][contenthash:8].css'
     }),
     new HtmlWebpackPlugin({
       title: 'JLU',
@@ -66,7 +66,7 @@ const config = {
     !isDev && new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-      swDest: 'public/assets/service-worker.js'
+      swDest: 'assets/service-worker.js'
     }),
     isDev && new (require('@pmmmwh/react-refresh-webpack-plugin'))(),
     isDev && new webpack.HotModuleReplacementPlugin()
@@ -101,23 +101,16 @@ const config = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: 'public/assets/[contenthash:8].[ext]'
+              name: 'assets/[contenthash:8].[ext]'
             }
           }
         ]
       },
       {
-        test: /\.ya?ml$/,
-        loader: 'file-loader',
-        options: {
-          name: 'public/configs/[name]-[contenthash:8].[ext]'
-        }
-      },
-      {
         test: /vendor\/.*.js$/,
         loader: 'file-loader',
         options: {
-          name: 'public/vendor/[name]-[contenthash:8].[ext]'
+          name: 'vendor/[name]-[contenthash:8].[ext]'
         }
       }
     ]
