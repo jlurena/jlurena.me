@@ -24,7 +24,7 @@ import useTag from '../../../lib/use-tag'
 import { Button } from '../../buttons'
 import { RESUME_TAB_KEY } from '../resume'
 
-const LINKED_IN_BADGE_SRC = 'https://platform.linkedin.com/badges/js/profile.js'
+const LINKED_IN_BADGE_SRC = `${process.env.PUBLIC_URL}/vendor/linkedin-badge.min.js`
 const IMAGES = [
   {
     original: HikingImage,
