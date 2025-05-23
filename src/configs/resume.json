@@ -27,21 +27,20 @@
       ],
       "summary": "Manage, direct and guide software engineers in software design and architecture,  lead and mentor, ensure delivery and execution of cross functional projects. Work across various departments to ensure technological business needs are met, end to end.\n",
       "accomplishments": [
-        "Launched a service in which underpayments from users were identified,  users would be notified, and balance collected. At most, over $5MM of underpayments per year can be recovered\n",
         "Delivered a massive project that single handedly  changed the fundamental relationship between the users  and their benefits (products, ie Virtual Mental Health visits, a user has access to).  This allowed about 25% of users, to retain a single login account for all of their benefits,  despite the multiple benefits the user may have had from Teladoc Health's multiple acquisitions.  It also set the pavement for better new/extension of client contracts,  as well as smarter and improved scalable integrations with all of Teladoc Health's acquisitions\n",
         "Facilitated major improvements to one of our major codebase that reduced the  boilerplate code necessary to service newly acquired whitelabeled/branded clients. This resulted  in reduced development time from 2-3 months to 1-2 months,  thus servicing new clients up to two months faster\n"
       ]
     },
     {
-      "experience_name": "Research Foundation City University of New York",
+      "experience_name": "Flatiron School",
       "experience_titles": [
         {
-          "title": "Teacher Assistant",
-          "start": "06/2023",
-          "end": "08/2023"
+          "title": "Course Facilitator",
+          "start": "02/2025",
+          "end": null
         }
       ],
-      "summary": "Teacher assistant at the RF CUNY Coding Bootcamp. A technical bootcamp for adults looking to become software engineers.  Here I help students to break down the concepts they learned in class, support students with their workload and review and grade the assignments submitted by the students\n",
+      "summary": "Code instructor at NuCamp Bootcamp, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
       "accomplishments": null
     },
     {
@@ -54,9 +53,19 @@
         }
       ],
       "summary": "Code instructor at NuCamp Bootcamp, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
-      "accomplishments": [
-        "Taught over 10 courses ranging from \"HTML, CSS and Javacript\" to more advanced courses like \"React\" averaging a student rating over 4.6/5\n"
-      ]
+      "accomplishments": null
+    },
+    {
+      "experience_name": "Research Foundation City University of New York",
+      "experience_titles": [
+        {
+          "title": "Teacher Assistant",
+          "start": "06/2023",
+          "end": "08/2023"
+        }
+      ],
+      "summary": "Teacher assistant at the RF CUNY Coding Bootcamp. A technical bootcamp for adults looking to become software engineers.  Here I help students to break down the concepts they learned in class, support students with their workload and review and grade the assignments submitted by the students\n",
+      "accomplishments": null
     }
   ],
   "skills": [
