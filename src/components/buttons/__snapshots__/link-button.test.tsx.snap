@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<LinkButton /> > renders correctly (snapshot) 1`] = `
+<DocumentFragment>
+  <div
+    class="_container_1af848"
+  >
+    <a
+      aria-label="Open in new tab"
+      href="https://example.com"
+      target="_blank"
+    >
+      Hello
+    </a>
+  </div>
+</DocumentFragment>
+`;

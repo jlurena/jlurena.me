@@ -1,5 +1,6 @@
-@import "../../scss/breakpoints";
-@import "../../scss/variables";
+@use "sass:color";
+@use "../../scss/breakpoints";
+@use "../../scss/variables";
 
 /* stylelint-disable scss/no-global-function-names */
 .tabWrapper {
@@ -9,14 +10,14 @@
 
   &.selected button {
     background-color: white;
-    color: $primary-color;
+    color: variables.$primary-color;
   }
 
   &:not(:last-child) {
-    @include screen-sm {
+    @include breakpoints.screen-sm {
       &::after {
         content: "";
-        background: darken($primary-color, 5%);
+        background: color.adjust(variables.$primary-color, $lightness: -5%);
         width: 100%;
         height: 1px;
       }
@@ -52,7 +53,7 @@
     display: none;
     visibility: hidden;
     opacity: 0;
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: white;
     font-size: 12px;
     font-weight: 600;
@@ -62,14 +63,14 @@
     transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
     white-space: nowrap;
 
-    @include screen-sm {
+    @include breakpoints.screen-sm {
       display: inline;
     }
   }
 
   &:hover {
     background-color: white;
-    color: $primary-color;
+    color: variables.$primary-color;
     transition: all 0.3s ease-in-out;
 
     & ~ span {
@@ -82,7 +83,7 @@
 
 .tabWrapper.horizontal {
   &:not(:last-child) {
-    @include screen-sm {
+    @include breakpoints.screen-sm {
       &::after {
         width: 1px;
         height: 100%;

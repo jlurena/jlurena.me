@@ -1,13 +1,13 @@
-@import "scss/variables";
-@import "scss/breakpoints";
+@use "scss/variables";
+@use "scss/breakpoints";
 
 .contentWrapper {
   padding: 15px 15px 0;
   height: calc(100vh - 115px);
-  background-color: $primary-color;
-  color: $primary-color;
+  background-color: variables.$primary-color;
+  color: variables.$primary-color;
 
-  @include screen-sm {
+  @include breakpoints.screen-sm {
     padding: 50px 50px 100px 0;
     margin-left: 50px;
   }

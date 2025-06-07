@@ -1,4 +1,4 @@
-@import "../../../scss/breakpoints";
+@use "../../../scss/breakpoints";
 /* stylelint-disable-next-line import-notation */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
@@ -36,7 +36,7 @@ $default-text-description-color: #333;
     flex-direction: row;
   }
 
-  @include screen-sm {
+  @include breakpoints.screen-sm {
     flex-direction: row;
   }
 }
@@ -87,13 +87,13 @@ $default-text-description-color: #333;
 }
 
 .section > .details {
-  @media print {
-    margin-left: -12px; // For some reason when printing, its off
-  }
-
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  @media print {
+    margin-left: -12px; // For some reason when printing, its off
+  }
 
   .name {
     font-size: 2rem;
@@ -184,7 +184,7 @@ $default-text-description-color: #333;
       font-weight: 800;
       flex-basis: 50%;
 
-      @include screen-sm {
+      @include breakpoints.screen-sm {
         flex-basis: 30%;
       }
     }

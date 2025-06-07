@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<SkillBar /> > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="_container_04f45f"
+  >
+    <div
+      class="_titleContainer_04f45f"
+    >
+      <div
+        class="_title_04f45f"
+      >
+        <span>
+          HTML
+        </span>
+      </div>
+      <div
+        class="_title_04f45f _percent_04f45f"
+      >
+        0%
+      </div>
+    </div>
+    <div
+      class="_barContainer_04f45f"
+    >
+      <div
+        class="_fill_04f45f"
+        style="width: 70%;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

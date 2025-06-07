@@ -1,0 +1,799 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AboutMe > injects responsive CSS into the LinkedIn badge iframe 1`] = `
+<DocumentFragment>
+  <div
+    class="_wrapper_921ed1"
+  >
+    <div
+      class="_container_57bb28"
+      style="font-size: 1.5rem;"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-user fa-lg _icon_57bb28"
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+          fill="currentColor"
+        />
+      </svg>
+      <h1
+        class="_header_57bb28 _level1_57bb28"
+      >
+        About
+        <span
+          class="_strong_57bb28"
+        >
+           Me
+        </span>
+      </h1>
+    </div>
+    <div
+      class="_container_921ed1"
+    >
+      <div
+        class="_container_57bb28"
+        style="font-size: 18px;"
+      >
+        <h2
+          class="_header_57bb28 _level2_57bb28"
+        >
+          Hey! Nice to meet you, I'm Jean Luis, but you can call me
+          <span
+            class="_strong_57bb28"
+          >
+             Jean
+          </span>
+        </h2>
+      </div>
+      <div
+        class="_aboutMeWrapper_921ed1"
+      >
+        <div>
+          <div
+            class="_aboutMeSubSection_921ed1"
+          >
+            <p>
+              <b>
+                Software Engineer
+              </b>
+              , 
+              <b>
+                Leader
+              </b>
+              , 
+              <b>
+                Student
+              </b>
+              , 
+              <b>
+                Teacher
+              </b>
+               are some adjectives that can be used to describe me. At the end of the day however, I am a simple tech nerd  
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-glasses fa-1x "
+                data-icon="glasses"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M118.6 80c-11.5 0-21.4 7.9-24 19.1L57 260.3c20.5-6.2 48.3-12.3 78.7-12.3c32.3 0 61.8 6.9 82.8 13.5c10.6 3.3 19.3 6.7 25.4 9.2c3.1 1.3 5.5 2.4 7.3 3.2c.9 .4 1.6 .7 2.1 1l.6 .3 .2 .1c0 0 .1 0 .1 0c0 0 0 0 0 0s0 0 0 0L247.9 288s0 0 0 0l6.3-12.7c5.8 2.9 10.4 7.3 13.5 12.7l40.6 0c3.1-5.3 7.7-9.8 13.5-12.7l6.3 12.7s0 0 0 0c-6.3-12.7-6.3-12.7-6.3-12.7s0 0 0 0s0 0 0 0c0 0 .1 0 .1 0l.2-.1 .6-.3c.5-.2 1.2-.6 2.1-1c1.8-.8 4.2-1.9 7.3-3.2c6.1-2.6 14.8-5.9 25.4-9.2c21-6.6 50.4-13.5 82.8-13.5c30.4 0 58.2 6.1 78.7 12.3L481.4 99.1c-2.6-11.2-12.6-19.1-24-19.1c-3.1 0-6.2 .6-9.2 1.8L416.9 94.3c-12.3 4.9-26.3-1.1-31.2-13.4s1.1-26.3 13.4-31.2l31.3-12.5c8.6-3.4 17.7-5.2 27-5.2c33.8 0 63.1 23.3 70.8 56.2l43.9 188c1.7 7.3 2.9 14.7 3.5 22.1c.3 1.9 .5 3.8 .5 5.7l0 6.7 0 41.3 0 16c0 61.9-50.1 112-112 112l-44.3 0c-59.4 0-108.5-46.4-111.8-105.8L306.6 352l-37.2 0-1.2 22.2C264.9 433.6 215.8 480 156.3 480L112 480C50.1 480 0 429.9 0 368l0-16 0-41.3L0 304c0-1.9 .2-3.8 .5-5.7c.6-7.4 1.8-14.8 3.5-22.1l43.9-188C55.5 55.3 84.8 32 118.6 32c9.2 0 18.4 1.8 27 5.2l31.3 12.5c12.3 4.9 18.3 18.9 13.4 31.2s-18.9 18.3-31.2 13.4L127.8 81.8c-2.9-1.2-6-1.8-9.2-1.8zM64 325.4L64 368c0 26.5 21.5 48 48 48l44.3 0c25.5 0 46.5-19.9 47.9-45.3l2.5-45.6c-2.3-.8-4.9-1.7-7.5-2.5c-17.2-5.4-39.9-10.5-63.6-10.5c-23.7 0-46.2 5.1-63.2 10.5c-3.1 1-5.9 1.9-8.5 2.9zM512 368l0-42.6c-2.6-.9-5.5-1.9-8.5-2.9c-17-5.4-39.5-10.5-63.2-10.5c-23.7 0-46.4 5.1-63.6 10.5c-2.7 .8-5.2 1.7-7.5 2.5l2.5 45.6c1.4 25.4 22.5 45.3 47.9 45.3l44.3 0c26.5 0 48-21.5 48-48z"
+                  fill="currentColor"
+                />
+              </svg>
+                that enjoys programming, learning new technologies, experimenting with tech and teaching others all I know!
+            </p>
+          </div>
+          <div
+            class="_aboutMeSubSection_921ed1"
+          >
+            <div
+              class="_container_57bb28"
+              style="font-size: 18px;"
+            >
+              <h2
+                class="_header_57bb28 _level2_57bb28"
+              >
+                Hobbies & Interests
+              </h2>
+            </div>
+            <p>
+              Of course, I have many other 
+              <b>
+                hobbies
+              </b>
+               and 
+              <b>
+                interests
+              </b>
+              . Most notably though I'm really into
+            </p>
+            <div
+              class="_aboutMeHobbiesSection_921ed1"
+            >
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-car fa-lg "
+                  data-icon="car"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Cars
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-martini-glass-citrus fa-lg "
+                  data-icon="martini-glass-citrus"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M432 240c53 0 96-43 96-96s-43-96-96-96c-35.5 0-66.6 19.3-83.2 48l-52.6 0C316 40.1 369.3 0 432 0c79.5 0 144 64.5 144 144s-64.5 144-144 144c-27.7 0-53.5-7.8-75.5-21.3l35.4-35.4c12.2 5.6 25.8 8.7 40.1 8.7zM1.8 142.8C5.5 133.8 14.3 128 24 128l368 0c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-177 177L232 464l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-88 0-88 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-118.1L7 169c-6.9-6.9-8.9-17.2-5.2-26.2z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Lounges & Bars
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-code fa-lg "
+                  data-icon="code"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Code
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-mug-saucer fa-lg "
+                  data-icon="mug-saucer"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M96 64c0-17.7 14.3-32 32-32l320 0 64 0c70.7 0 128 57.3 128 128s-57.3 128-128 128l-32 0c0 53-43 96-96 96l-192 0c-53 0-96-43-96-96L96 64zM480 224l32 0c35.3 0 64-28.7 64-64s-28.7-64-64-64l-32 0 0 128zM32 416l512 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Cafes & Brunch
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-desktop fa-lg "
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Tech
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-gamepad fa-lg "
+                  data-icon="gamepad"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Video Games
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-person-hiking fa-lg "
+                  data-icon="person-hiking"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 384 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9l0 89.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208l30.9 0 0-24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 55.8c0 .1 0 .2 0 .2s0 .2 0 .2L384 488c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-216-39.4 0c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59l4.2 0c15.6 0 27.1 14.7 23.3 29.8z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Hiking
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-plane fa-lg "
+                  data-icon="plane"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Travel
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-utensils fa-lg "
+                  data-icon="utensils"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M416 0C400 0 288 32 288 176l0 112c0 35.3 28.7 64 64 64l32 0 0 128c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 0-112 0-208c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7L80 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-224.4c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16l0 134.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8L64 16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Eating Out
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              aria-live="polite"
+              class="image-gallery"
+            >
+              <div
+                class="image-gallery-content  image-gallery-thumbnails-bottom"
+              >
+                <div
+                  class="image-gallery-slide-wrapper  image-gallery-thumbnails-bottom"
+                >
+                  <div
+                    class="image-gallery-slides"
+                  >
+                    <div
+                      aria-label="Go to Slide 1"
+                      class="image-gallery-slide  image-gallery-center  _carouselImages_921ed1"
+                      role="button"
+                      style="display: inherit; transform: translate3d(0%, 0, 0);"
+                      tabindex="-1"
+                    >
+                      <img
+                        alt="Jean Hiking next a mountain that with craters forming a smiling face"
+                        class="image-gallery-image"
+                        src="/src/assets/images/jean/carousel/hiking.jpeg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="image-gallery-bullets"
+                  >
+                    <div
+                      aria-label="Bullet Navigation"
+                      class="image-gallery-bullets-container"
+                      role="navigation"
+                    >
+                      <button
+                        aria-label="Go to Slide 1"
+                        aria-pressed="true"
+                        class="image-gallery-bullet active"
+                        type="button"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="_aboutMeSubSection_921ed1"
+      >
+        <div
+          class="_container_57bb28"
+          style="font-size: 18px;"
+        >
+          <h2
+            class="_header_57bb28 _level2_57bb28"
+          >
+            Interested in my professional experience?
+          </h2>
+        </div>
+        <div
+          class="_aboutMeProfessional_921ed1 _separator_921ed1"
+        >
+          <div>
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="en_US"
+              data-size="medium"
+              data-theme="dark"
+              data-type="HORIZONTAL"
+              data-vanity="jlurena"
+              data-version="v1"
+            >
+              <iframe />
+            </div>
+          </div>
+          <div>
+            <button
+              class=" _btn_9c2c4d"
+              type="button"
+            >
+              View Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AboutMe > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="_wrapper_921ed1"
+  >
+    <div
+      class="_container_57bb28"
+      style="font-size: 1.5rem;"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-user fa-lg _icon_57bb28"
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+          fill="currentColor"
+        />
+      </svg>
+      <h1
+        class="_header_57bb28 _level1_57bb28"
+      >
+        About
+        <span
+          class="_strong_57bb28"
+        >
+           Me
+        </span>
+      </h1>
+    </div>
+    <div
+      class="_container_921ed1"
+    >
+      <div
+        class="_container_57bb28"
+        style="font-size: 18px;"
+      >
+        <h2
+          class="_header_57bb28 _level2_57bb28"
+        >
+          Hey! Nice to meet you, I'm Jean Luis, but you can call me
+          <span
+            class="_strong_57bb28"
+          >
+             Jean
+          </span>
+        </h2>
+      </div>
+      <div
+        class="_aboutMeWrapper_921ed1"
+      >
+        <div>
+          <div
+            class="_aboutMeSubSection_921ed1"
+          >
+            <p>
+              <b>
+                Software Engineer
+              </b>
+              , 
+              <b>
+                Leader
+              </b>
+              , 
+              <b>
+                Student
+              </b>
+              , 
+              <b>
+                Teacher
+              </b>
+               are some adjectives that can be used to describe me. At the end of the day however, I am a simple tech nerd  
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-glasses fa-1x "
+                data-icon="glasses"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M118.6 80c-11.5 0-21.4 7.9-24 19.1L57 260.3c20.5-6.2 48.3-12.3 78.7-12.3c32.3 0 61.8 6.9 82.8 13.5c10.6 3.3 19.3 6.7 25.4 9.2c3.1 1.3 5.5 2.4 7.3 3.2c.9 .4 1.6 .7 2.1 1l.6 .3 .2 .1c0 0 .1 0 .1 0c0 0 0 0 0 0s0 0 0 0L247.9 288s0 0 0 0l6.3-12.7c5.8 2.9 10.4 7.3 13.5 12.7l40.6 0c3.1-5.3 7.7-9.8 13.5-12.7l6.3 12.7s0 0 0 0c-6.3-12.7-6.3-12.7-6.3-12.7s0 0 0 0s0 0 0 0c0 0 .1 0 .1 0l.2-.1 .6-.3c.5-.2 1.2-.6 2.1-1c1.8-.8 4.2-1.9 7.3-3.2c6.1-2.6 14.8-5.9 25.4-9.2c21-6.6 50.4-13.5 82.8-13.5c30.4 0 58.2 6.1 78.7 12.3L481.4 99.1c-2.6-11.2-12.6-19.1-24-19.1c-3.1 0-6.2 .6-9.2 1.8L416.9 94.3c-12.3 4.9-26.3-1.1-31.2-13.4s1.1-26.3 13.4-31.2l31.3-12.5c8.6-3.4 17.7-5.2 27-5.2c33.8 0 63.1 23.3 70.8 56.2l43.9 188c1.7 7.3 2.9 14.7 3.5 22.1c.3 1.9 .5 3.8 .5 5.7l0 6.7 0 41.3 0 16c0 61.9-50.1 112-112 112l-44.3 0c-59.4 0-108.5-46.4-111.8-105.8L306.6 352l-37.2 0-1.2 22.2C264.9 433.6 215.8 480 156.3 480L112 480C50.1 480 0 429.9 0 368l0-16 0-41.3L0 304c0-1.9 .2-3.8 .5-5.7c.6-7.4 1.8-14.8 3.5-22.1l43.9-188C55.5 55.3 84.8 32 118.6 32c9.2 0 18.4 1.8 27 5.2l31.3 12.5c12.3 4.9 18.3 18.9 13.4 31.2s-18.9 18.3-31.2 13.4L127.8 81.8c-2.9-1.2-6-1.8-9.2-1.8zM64 325.4L64 368c0 26.5 21.5 48 48 48l44.3 0c25.5 0 46.5-19.9 47.9-45.3l2.5-45.6c-2.3-.8-4.9-1.7-7.5-2.5c-17.2-5.4-39.9-10.5-63.6-10.5c-23.7 0-46.2 5.1-63.2 10.5c-3.1 1-5.9 1.9-8.5 2.9zM512 368l0-42.6c-2.6-.9-5.5-1.9-8.5-2.9c-17-5.4-39.5-10.5-63.2-10.5c-23.7 0-46.4 5.1-63.6 10.5c-2.7 .8-5.2 1.7-7.5 2.5l2.5 45.6c1.4 25.4 22.5 45.3 47.9 45.3l44.3 0c26.5 0 48-21.5 48-48z"
+                  fill="currentColor"
+                />
+              </svg>
+                that enjoys programming, learning new technologies, experimenting with tech and teaching others all I know!
+            </p>
+          </div>
+          <div
+            class="_aboutMeSubSection_921ed1"
+          >
+            <div
+              class="_container_57bb28"
+              style="font-size: 18px;"
+            >
+              <h2
+                class="_header_57bb28 _level2_57bb28"
+              >
+                Hobbies & Interests
+              </h2>
+            </div>
+            <p>
+              Of course, I have many other 
+              <b>
+                hobbies
+              </b>
+               and 
+              <b>
+                interests
+              </b>
+              . Most notably though I'm really into
+            </p>
+            <div
+              class="_aboutMeHobbiesSection_921ed1"
+            >
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-car fa-lg "
+                  data-icon="car"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Cars
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-martini-glass-citrus fa-lg "
+                  data-icon="martini-glass-citrus"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M432 240c53 0 96-43 96-96s-43-96-96-96c-35.5 0-66.6 19.3-83.2 48l-52.6 0C316 40.1 369.3 0 432 0c79.5 0 144 64.5 144 144s-64.5 144-144 144c-27.7 0-53.5-7.8-75.5-21.3l35.4-35.4c12.2 5.6 25.8 8.7 40.1 8.7zM1.8 142.8C5.5 133.8 14.3 128 24 128l368 0c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-177 177L232 464l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-88 0-88 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-118.1L7 169c-6.9-6.9-8.9-17.2-5.2-26.2z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Lounges & Bars
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-code fa-lg "
+                  data-icon="code"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Code
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-mug-saucer fa-lg "
+                  data-icon="mug-saucer"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M96 64c0-17.7 14.3-32 32-32l320 0 64 0c70.7 0 128 57.3 128 128s-57.3 128-128 128l-32 0c0 53-43 96-96 96l-192 0c-53 0-96-43-96-96L96 64zM480 224l32 0c35.3 0 64-28.7 64-64s-28.7-64-64-64l-32 0 0 128zM32 416l512 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Cafes & Brunch
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-desktop fa-lg "
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Tech
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-gamepad fa-lg "
+                  data-icon="gamepad"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Video Games
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-person-hiking fa-lg "
+                  data-icon="person-hiking"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 384 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9l0 89.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208l30.9 0 0-24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 55.8c0 .1 0 .2 0 .2s0 .2 0 .2L384 488c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-216-39.4 0c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59l4.2 0c15.6 0 27.1 14.7 23.3 29.8z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Hiking
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-plane fa-lg "
+                  data-icon="plane"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Travel
+              </div>
+              <div
+                class="_hobby_921ed1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-utensils fa-lg "
+                  data-icon="utensils"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M416 0C400 0 288 32 288 176l0 112c0 35.3 28.7 64 64 64l32 0 0 128c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 0-112 0-208c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7L80 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-224.4c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16l0 134.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8L64 16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Eating Out
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              aria-live="polite"
+              class="image-gallery"
+            >
+              <div
+                class="image-gallery-content  image-gallery-thumbnails-bottom"
+              >
+                <div
+                  class="image-gallery-slide-wrapper  image-gallery-thumbnails-bottom"
+                >
+                  <div
+                    class="image-gallery-slides"
+                  >
+                    <div
+                      aria-label="Go to Slide 1"
+                      class="image-gallery-slide  image-gallery-center  _carouselImages_921ed1"
+                      role="button"
+                      style="display: inherit; transform: translate3d(0%, 0, 0);"
+                      tabindex="-1"
+                    >
+                      <img
+                        alt="Jean Hiking next a mountain that with craters forming a smiling face"
+                        class="image-gallery-image"
+                        src="/src/assets/images/jean/carousel/hiking.jpeg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="image-gallery-bullets"
+                  >
+                    <div
+                      aria-label="Bullet Navigation"
+                      class="image-gallery-bullets-container"
+                      role="navigation"
+                    >
+                      <button
+                        aria-label="Go to Slide 1"
+                        aria-pressed="true"
+                        class="image-gallery-bullet active"
+                        type="button"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="_aboutMeSubSection_921ed1"
+      >
+        <div
+          class="_container_57bb28"
+          style="font-size: 18px;"
+        >
+          <h2
+            class="_header_57bb28 _level2_57bb28"
+          >
+            Interested in my professional experience?
+          </h2>
+        </div>
+        <div
+          class="_aboutMeProfessional_921ed1 _separator_921ed1"
+        >
+          <div>
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="en_US"
+              data-size="medium"
+              data-theme="dark"
+              data-type="HORIZONTAL"
+              data-vanity="jlurena"
+              data-version="v1"
+            />
+          </div>
+          <div>
+            <button
+              class=" _btn_9c2c4d"
+              type="button"
+            >
+              View Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

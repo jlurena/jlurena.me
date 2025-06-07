@@ -1,14 +1,14 @@
-@import "../../scss/variables";
+@use "../../scss/variables";
 
 .btn {
   min-height: 2.5rem;
   background: transparent;
-  border-color: $primary-color;
-  color: $primary-color;
+  border-color: variables.$primary-color;
+  color: variables.$primary-color;
 
   &:hover,
   &:focus {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: #fff;
     border-color: #fff;
   }
