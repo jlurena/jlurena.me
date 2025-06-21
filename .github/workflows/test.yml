@@ -1,4 +1,6 @@
 name: Test and Lint
+permissions:
+  contents: write
 
 on:
   pull_request:
