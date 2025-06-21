@@ -1,4 +1,4 @@
-@import "../../../scss//variables.scss";
+@use "../../scss/variables";
 
 .container {
   display: flex;
@@ -7,10 +7,10 @@
 }
 
 .barContainer {
-  border: 2px solid $primary-color;
+  border: 2px solid variables.$primary-color;
 
   .fill {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     height: 10px;
     transition: 1s ease-out;
     transition-delay: 0.5s;
@@ -25,7 +25,7 @@
 
 .title {
   font-size: 12px;
-  color: $primary-color;
+  color: variables.$primary-color;
   font-weight: 600;
 
   &.percent {

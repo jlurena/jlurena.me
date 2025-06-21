@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<WordCarousel /> > renders correctly (snapshot) 1`] = `
+<DocumentFragment>
+  <span
+    class="_word_6729c1"
+  >
+    Hello
+  </span>
+  <span
+    class="_word_6729c1"
+  >
+    World
+  </span>
+  <span
+    class="_word_6729c1"
+  >
+    Goodbye
+  </span>
+</DocumentFragment>
+`;

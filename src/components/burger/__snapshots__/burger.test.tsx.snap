@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Burger /> > renders correctly (snapshot) 1`] = `
+<DocumentFragment>
+  <div
+    class="_burgerContainer_a465a2"
+  >
+    <button
+      aria-label="Menu"
+      class="_burger_a465a2"
+      type="button"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+    </button>
+  </div>
+</DocumentFragment>
+`;

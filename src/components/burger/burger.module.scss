@@ -1,11 +1,11 @@
-@import "../../scss/breakpoints";
-@import "../../scss/variables";
+@use "../../scss/breakpoints";
+@use "../../scss/variables";
 
 .burgerContainer {
   background-color: #fff;
-  height: $mobile-nav-bar-height;
+  height: variables.$mobile-nav-bar-height;
 
-  @include screen-sm {
+  @include breakpoints.screen-sm {
     display: none;
   }
 

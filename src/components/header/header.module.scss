@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@use "../../scss/variables";
 
 .container {
   margin-left: auto;
@@ -18,13 +18,13 @@
 
   &::after {
     content: " ";
-    border: solid 2px $primary-color;
+    border: solid 2px variables.$primary-color;
     display: block;
     width: 20px;
   }
 
   &.level1 {
-    border-bottom: 4px solid $primary-color;
+    border-bottom: 4px solid variables.$primary-color;
 
     &::after {
       transform: rotate(-90deg);

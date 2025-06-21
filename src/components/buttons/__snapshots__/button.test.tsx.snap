@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Button /> > renders correctly (snapshot) 1`] = `
+<DocumentFragment>
+  <button
+    class="someclass _btn_9c2c4d"
+    type="button"
+  >
+    <p>
+      Hello
+    </p>
+  </button>
+</DocumentFragment>
+`;

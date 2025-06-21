@@ -1,4 +1,4 @@
-@import "./variables";
+@use "variables";
 
 .root {
   width: 100%;
@@ -13,7 +13,7 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
 
   &[data-resume-only] {
     background-color: #fff;
@@ -27,7 +27,7 @@ body {
 }
 
 ::placeholder {
-  color: $primary-color;
+  color: variables.$primary-color;
   opacity: 1;
 }
 
