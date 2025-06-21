@@ -6,15 +6,11 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
-  publicDir: '__public__',
   plugins: [
     react(), 
     tsconfigPaths(), 
     svgr()
   ],
-  build: {
-    outDir: 'public'
-  },
   test: {
     environment: 'jsdom',
     globals: true,
