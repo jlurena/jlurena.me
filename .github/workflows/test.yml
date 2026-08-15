@@ -17,7 +17,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: 24.1.0
+          node-version: 26.2.0
           cache: 'npm'
       - name: Install NPM Dependencies
         run: npm install
@@ -36,4 +36,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref }}
-

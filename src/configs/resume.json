@@ -1,13 +1,18 @@
 {
-  "profile_summary": "Software Engineering Lead focused on empowering and guiding teams on executing and delivering  quality, smart and scalable solutions that benefit all.\n",
+  "profile_summary": "Sr. Software Engineering Manager with 10+ years scaling teams and delivering measurable business impact - currently leading 18+ engineers at Teladoc Health. Focused on mentoring managers and engineers, driving cross-functional delivery, and championing AI-augmented engineering practices to improve team velocity and code quality.\n",
   "experiences": [
     {
       "experience_name": "Teladoc Health",
       "experience_titles": [
         {
+          "title": "Sr. Manager, Software Engineering",
+          "start": "03/2026",
+          "end": null
+        },
+        {
           "title": "Software Engineering Manager",
           "start": "03/2022",
-          "end": null
+          "end": "03/2026"
         },
         {
           "title": "Senior Software Engineer,",
@@ -25,10 +30,12 @@
           "end": "03/2020"
         }
       ],
-      "summary": "Manage, direct and guide software engineers in software design and architecture,  lead and mentor, ensure delivery and execution of cross functional projects. Work across various departments to ensure technological business needs are met, end to end.\n",
+      "summary": "Sr. Manager, Software Engineering leading a team of 18+ engineers across multiple product pillars. Direct software design, architecture, and delivery execution while mentoring managers and senior engineers. Partner cross-functionally to ensure technology decisions meet business needs end to end.\n",
       "accomplishments": [
-        "Delivered a massive project that single handedly  changed the fundamental relationship between the users  and their benefits (products, ie Virtual Mental Health visits, a user has access to).  This allowed about 25% of users, to retain a single login account for all of their benefits,  despite the multiple benefits the user may have had from Teladoc Health's multiple acquisitions.  It also set the pavement for better new/extension of client contracts,  as well as smarter and improved scalable integrations with all of Teladoc Health's acquisitions\n",
-        "Facilitated major improvements to one of our major codebase that reduced the  boilerplate code necessary to service newly acquired whitelabeled/branded clients. This resulted  in reduced development time from 2-3 months to 1-2 months,  thus servicing new clients up to two months faster\n"
+        "Introduced and implemented a new Teladoc Health user registration experience that increased conversion by 12%, translating to $18M in annualized revenue.",
+        "Led delivery of a foundational identity and benefits-access initiative that unified user access across products (including Virtual Mental Health), enabling about 25% of users to retain a single login across multiple acquired platforms - eliminating duplicate authentication systems, reducing recurring support/maintenance labor, and improving login SLA reliability across the platform.",
+        "Drove major codebase improvements that cut boilerplate required to onboard newly acquired white-labeled/branded clients, reducing delivery timelines from 2-3 months to 1-2 months - saving engineering labor per client launch and tightening time-to-launch SLAs for new acquisitions.",
+        "Led org-wide adoption of AI coding assistants (Claude Code, GitHub Copilot, Atlassian Rovo) across the engineering team, including building custom internal plugins/skills to fit team workflows; drove reports' onboarding onto these tools, improving code quality and delivery velocity as reflected in SLO/SLA adherence and system uptime."
       ]
     },
     {
@@ -40,8 +47,10 @@
           "end": null
         }
       ],
-      "summary": "Code instructor at NuCamp Bootcamp, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
-      "accomplishments": null
+      "summary": "Course facilitator at Flatiron School, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
+      "accomplishments": [
+        "Design and deliver software engineering curriculum for cohorts of up to 5 adult learners transitioning into tech careers; mentor students 1:1 through technical problem-solving, code review, and career readiness, including guiding students on effective use of AI coding assistants in their workflow."
+      ]
     },
     {
       "experience_name": "NuCamp Bootcamp",
@@ -53,7 +62,9 @@
         }
       ],
       "summary": "Code instructor at NuCamp Bootcamp, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
-      "accomplishments": null
+      "accomplishments": [
+        "Designed and delivered software engineering curriculum for cohorts of up to 5 adult learners transitioning into tech careers; mentored students 1:1 through technical problem-solving, code review, and career readiness, including guiding students on effective use of AI coding assistants in their workflow."
+      ]
     },
     {
       "experience_name": "Research Foundation City University of New York",
@@ -65,28 +76,60 @@
         }
       ],
       "summary": "Teacher assistant at the RF CUNY Coding Bootcamp. A technical bootcamp for adults looking to become software engineers.  Here I help students to break down the concepts they learned in class, support students with their workload and review and grade the assignments submitted by the students\n",
-      "accomplishments": null
+      "accomplishments": [
+        "Supported a cohort of 20 bootcamp students by breaking down complex technical concepts, reviewing and grading assignments, and providing structured feedback on project work."
+      ]
     }
   ],
   "skills": [
     {
-      "name": "Object Oriented Programming",
+      "name": "Leadership & People Management",
+      "examples": [
+        "Direct team leadership (18+ reports)",
+        "Hiring & performance management",
+        "Mentorship & coaching",
+        "Org scaling"
+      ]
+    },
+    {
+      "name": "AI-Augmented Engineering Leadership",
+      "examples": [
+        "Claude Code",
+        "GitHub Copilot",
+        "Atlassian Rovo",
+        "Custom AI plugin/skill development",
+        "Team AI-adoption strategy"
+      ]
+    },
+    {
+      "name": "Technical Program Management",
+      "examples": [
+        "Cross-functional delivery",
+        "Roadmap planning",
+        "Agile/Scrum"
+      ]
+    },
+    {
+      "name": "Technical Strategy & Architecture",
+      "examples": [
+        "System design oversight",
+        "Code quality standards",
+        "Technical due diligence"
+      ]
+    },
+    {
+      "name": "Engineering Background",
       "examples": [
         "Java",
         "Javascript",
         "Python",
         "Ruby",
-        "Scala"
-      ]
-    },
-    {
-      "name": "Libraries & Framework",
-      "examples": [
-        "Android Studios",
-        "Node.js",
-        "Play Framework",
+        "Scala",
         "React.js",
-        "Ruby on Rails"
+        "Node.js",
+        "Ruby on Rails",
+        "AWS",
+        "Azure"
       ]
     },
     {
@@ -97,20 +140,6 @@
         "PostgreSQL",
         "Redis/Memcached"
       ]
-    },
-    {
-      "name": "Devops & Infrastructure",
-      "examples": [
-        "AWS",
-        "Azure",
-        "Jenkins",
-        "Linux/Unix",
-        "Shell Scripting"
-      ]
-    },
-    {
-      "name": "Project Management",
-      "examples": null
     },
     {
       "name": "Fluent in Spanish",
