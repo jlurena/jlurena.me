@@ -52,11 +52,10 @@ describe('<App/>', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Resume' }))
     
     // Expect Resume content to be displayed
-    expect(screen.getByRole('heading', { level: 2, name: 'PROFILE'})).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: 'EDUCATION'})).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: 'EXPERIENCE'})).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: 'SKILLS'})).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: 'LINKS'})).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Summary'})).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Experience'})).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Education'})).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Skills'})).toBeInTheDocument()
     expect(asFragment()).toMatchSnapshot('Resume-tab');
 
     /* ─────────────────────────── 3. click “Home” ──────────────────────────── */

@@ -9,7 +9,7 @@ exports[`Resume > renders correctly and matches snapshot 1`] = `
       <h1
         class="_name_c6a955"
       >
-        Jean Luis Ureña
+        Jean Luis Urena
       </h1>
       <p
         class="_contact_c6a955"
@@ -385,7 +385,7 @@ exports[`Resume > renders with resumeOnly=true in URL and matches snapshot 1`] =
       <h1
         class="_name_c6a955"
       >
-        Jean Luis Ureña
+        Jean Luis Urena
       </h1>
       <p
         class="_contact_c6a955"
@@ -761,7 +761,7 @@ exports[`Resume > renders with showPrintButton=true and matches snapshot 1`] = `
       <h1
         class="_name_c6a955"
       >
-        Jean Luis Ureña
+        Jean Luis Urena
       </h1>
       <p
         class="_contact_c6a955"

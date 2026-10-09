@@ -2,6 +2,20 @@ import { render, screen } from '@testing-library/react'
 import { vi } from 'vitest'
 import Resume from './resume'
 
+const mockConfig = vi.hoisted(() => ({ current: undefined as unknown }))
+
+vi.mock('../../../configs/resume.json', async importOriginal => {
+  const original = await importOriginal<{ default: object }>()
+  return {
+    default: new Proxy(original.default, {
+      get: (target, prop, receiver) =>
+        mockConfig.current && prop in (mockConfig.current as object)
+          ? (mockConfig.current as Record<string | symbol, unknown>)[prop]
+          : Reflect.get(target, prop, receiver)
+    })
+  }
+})
+
 describe('Resume', () => {
   it('renders correctly and matches snapshot', () => {
     const { container } = render(<Resume />)
@@ -42,5 +56,23 @@ describe('Resume', () => {
       value: originalLocation,
       writable: true,
     })
+  })
+
+  it('renders experience-level summary and accomplishments', () => {
+    mockConfig.current = {
+      experiences: [
+        {
+          experience_name: 'Acme',
+          experience_titles: [],
+          summary: 'Acme summary',
+          accomplishments: ['Did a thing at Acme']
+        }
+      ]
+    }
+    render(<Resume />)
+    mockConfig.current = undefined
+
+    expect(screen.getByText('Acme summary')).toBeInTheDocument()
+    expect(screen.getByText('Did a thing at Acme')).toBeInTheDocument()
   })
 })
