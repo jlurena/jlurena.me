@@ -115,7 +115,7 @@ exports[`Resume > renders correctly and matches snapshot 1`] = `
               Grew the team from 3 to 8 engineers.
             </li>
             <li>
-              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems.
+              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.
             </li>
             <li>
               Cut eligibility lookup time by 50% by introducing a more reliable caching system.
@@ -494,7 +494,7 @@ exports[`Resume > renders with resumeOnly=true in URL and matches snapshot 1`] =
               Grew the team from 3 to 8 engineers.
             </li>
             <li>
-              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems.
+              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.
             </li>
             <li>
               Cut eligibility lookup time by 50% by introducing a more reliable caching system.
@@ -873,7 +873,7 @@ exports[`Resume > renders with showPrintButton=true and matches snapshot 1`] = `
               Grew the team from 3 to 8 engineers.
             </li>
             <li>
-              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems.
+              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.
             </li>
             <li>
               Cut eligibility lookup time by 50% by introducing a more reliable caching system.

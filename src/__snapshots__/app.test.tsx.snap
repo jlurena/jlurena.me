@@ -1582,7 +1582,7 @@ exports[`<App/> > Re-renders screens when changing tabs > Resume-tab 1`] = `
               Summary
             </h2>
             <p>
-              Sr. Software Engineering Manager with 10+ years of experience scaling teams and delivering measurable business impact, including a registration redesign worth $18M in annualized revenue. Currently lead 18+ engineers at Teladoc Health, mentoring managers and driving cross-functional delivery. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.
+              Sr. Software Engineering Manager with 10+ years of experience, promoted 4 times at Teladoc Health from Associate Engineer to Sr. Manager. Scaled an engineering org from 3 to 18+, led teams through ~80x traffic growth, and delivered an $18M annualized revenue lift from a registration redesign. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.
 
             </p>
           </section>
@@ -1624,20 +1624,17 @@ exports[`<App/> > Re-renders screens when changing tabs > Resume-tab 1`] = `
                     03/2026 – Present
                   </span>
                 </div>
-                <p>
-                  Lead 18+ engineers across multiple product areas, including 2 managers and 8 direct-report engineers. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.
-                </p>
                 <ul
                   class="_accomplishmentList_c6a955"
                 >
                   <li>
-                    Increased registration conversion 12% (+$18M annualized revenue) by launching a redesigned Teladoc Health user registration experience.
+                    Lead an 18+ person engineering org across multiple product areas: 10 direct reports (2 engineering managers and 8 engineers) plus their teams. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.
                   </li>
                   <li>
-                    Made delivery faster and safer by leading team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows.
+                    Led implementation and launch of the redesigned Teladoc Health user registration experience, increasing conversion 12% (+$18M annualized revenue).
                   </li>
                   <li>
-                    Grew the team to 18+ engineers through 4 hires and re-org consolidations.
+                    Grew the org from 8 to 18+ people through 4 external hires and absorbing teams in re-orgs.
                   </li>
                 </ul>
               </div>
@@ -1660,13 +1657,19 @@ exports[`<App/> > Re-renders screens when changing tabs > Resume-tab 1`] = `
                   class="_accomplishmentList_c6a955"
                 >
                   <li>
-                    Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems and reduced support/maintenance effort.
+                    Grew the team from 3 to 8 engineers.
+                  </li>
+                  <li>
+                    Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.
                   </li>
                   <li>
                     Cut eligibility lookup time by 50% by introducing a more reliable caching system.
                   </li>
                   <li>
-                    Stabilized a degraded system that was causing reputational damage and financial losses, by establishing structure, runbooks, and data hygiene.
+                    Modernized a legacy system that was causing reputational damage and financial losses, rebuilding it to auto-scale and perform reliably, and cutting support tickets requiring engineering or technical support by ~40%.
+                  </li>
+                  <li>
+                    Led team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows; team consistently met tight delivery deadlines.
                   </li>
                 </ul>
               </div>
@@ -1715,7 +1718,7 @@ exports[`<App/> > Re-renders screens when changing tabs > Resume-tab 1`] = `
                   class="_accomplishmentList_c6a955"
                 >
                   <li>
-                    Led teams to handle ~80x traffic growth during the COVID-19 surge through software and system optimizations and scalable, auto-scaling service design, not hardware alone.
+                    Led teams through ~80x COVID-19 traffic growth with software and system optimizations and auto-scaling service design.
                   </li>
                   <li>
                     Introduced code standards and conventions that the department later adopted.
@@ -1857,7 +1860,7 @@ exports[`<App/> > Re-renders screens when changing tabs > Resume-tab 1`] = `
                 <strong>
                   Leadership & People Management
                 </strong>
-                : Direct team leadership (18+ reports), Hiring & performance management, Mentorship & coaching, Org scaling
+                : Org leadership (18+ person org, incl. 2 managers), Hiring & performance management, Mentorship & coaching, Org scaling
               </li>
               <li>
                 <strong>
@@ -3280,7 +3283,7 @@ exports[`<App/> > whend isplaying only resume > ResumeOnly-mode 1`] = `
         Summary
       </h2>
       <p>
-        Sr. Software Engineering Manager with 10+ years of experience scaling teams and delivering measurable business impact, including a registration redesign worth $18M in annualized revenue. Currently lead 18+ engineers at Teladoc Health, mentoring managers and driving cross-functional delivery. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.
+        Sr. Software Engineering Manager with 10+ years of experience, promoted 4 times at Teladoc Health from Associate Engineer to Sr. Manager. Scaled an engineering org from 3 to 18+, led teams through ~80x traffic growth, and delivered an $18M annualized revenue lift from a registration redesign. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.
 
       </p>
     </section>
@@ -3322,20 +3325,17 @@ exports[`<App/> > whend isplaying only resume > ResumeOnly-mode 1`] = `
               03/2026 – Present
             </span>
           </div>
-          <p>
-            Lead 18+ engineers across multiple product areas, including 2 managers and 8 direct-report engineers. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.
-          </p>
           <ul
             class="_accomplishmentList_c6a955"
           >
             <li>
-              Increased registration conversion 12% (+$18M annualized revenue) by launching a redesigned Teladoc Health user registration experience.
+              Lead an 18+ person engineering org across multiple product areas: 10 direct reports (2 engineering managers and 8 engineers) plus their teams. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.
             </li>
             <li>
-              Made delivery faster and safer by leading team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows.
+              Led implementation and launch of the redesigned Teladoc Health user registration experience, increasing conversion 12% (+$18M annualized revenue).
             </li>
             <li>
-              Grew the team to 18+ engineers through 4 hires and re-org consolidations.
+              Grew the org from 8 to 18+ people through 4 external hires and absorbing teams in re-orgs.
             </li>
           </ul>
         </div>
@@ -3358,13 +3358,19 @@ exports[`<App/> > whend isplaying only resume > ResumeOnly-mode 1`] = `
             class="_accomplishmentList_c6a955"
           >
             <li>
-              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems and reduced support/maintenance effort.
+              Grew the team from 3 to 8 engineers.
+            </li>
+            <li>
+              Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.
             </li>
             <li>
               Cut eligibility lookup time by 50% by introducing a more reliable caching system.
             </li>
             <li>
-              Stabilized a degraded system that was causing reputational damage and financial losses, by establishing structure, runbooks, and data hygiene.
+              Modernized a legacy system that was causing reputational damage and financial losses, rebuilding it to auto-scale and perform reliably, and cutting support tickets requiring engineering or technical support by ~40%.
+            </li>
+            <li>
+              Led team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows; team consistently met tight delivery deadlines.
             </li>
           </ul>
         </div>
@@ -3413,7 +3419,7 @@ exports[`<App/> > whend isplaying only resume > ResumeOnly-mode 1`] = `
             class="_accomplishmentList_c6a955"
           >
             <li>
-              Led teams to handle ~80x traffic growth during the COVID-19 surge through software and system optimizations and scalable, auto-scaling service design, not hardware alone.
+              Led teams through ~80x COVID-19 traffic growth with software and system optimizations and auto-scaling service design.
             </li>
             <li>
               Introduced code standards and conventions that the department later adopted.
@@ -3555,7 +3561,7 @@ exports[`<App/> > whend isplaying only resume > ResumeOnly-mode 1`] = `
           <strong>
             Leadership & People Management
           </strong>
-          : Direct team leadership (18+ reports), Hiring & performance management, Mentorship & coaching, Org scaling
+          : Org leadership (18+ person org, incl. 2 managers), Hiring & performance management, Mentorship & coaching, Org scaling
         </li>
         <li>
           <strong>
