@@ -1,5 +1,5 @@
 {
-  "profile_summary": "Sr. Software Engineering Manager with 10+ years of experience scaling teams and delivering measurable business impact, including a registration redesign worth $18M in annualized revenue. Currently lead 18+ engineers at Teladoc Health, mentoring managers and driving cross-functional delivery. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.\n",
+  "profile_summary": "Sr. Software Engineering Manager with 10+ years of experience, promoted 4 times at Teladoc Health from Associate Engineer to Sr. Manager. Scaled an engineering org from 3 to 18+, led teams through ~80x traffic growth, and delivered an $18M annualized revenue lift from a registration redesign. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.\n",
   "experiences": [
     {
       "experience_name": "Teladoc Health",
@@ -8,11 +8,10 @@
           "title": "Sr. Manager, Software Engineering",
           "start": "03/2026",
           "end": null,
-          "summary": "Lead 18+ engineers across multiple product areas, including 2 managers and 8 direct-report engineers. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.",
           "accomplishments": [
-            "Increased registration conversion 12% (+$18M annualized revenue) by launching a redesigned Teladoc Health user registration experience.",
-            "Made delivery faster and safer by leading team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows.",
-            "Grew the team to 18+ engineers through 4 hires and re-org consolidations."
+            "Lead an 18+ person engineering org across multiple product areas: 10 direct reports (2 engineering managers and 8 engineers) plus their teams. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.",
+            "Led implementation and launch of the redesigned Teladoc Health user registration experience, increasing conversion 12% (+$18M annualized revenue).",
+            "Grew the org from 8 to 18+ people through 4 external hires and absorbing teams in re-orgs."
           ]
         },
         {
@@ -20,9 +19,11 @@
           "start": "03/2022",
           "end": "03/2026",
           "accomplishments": [
-            "Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login; retired duplicate authentication systems and reduced support/maintenance effort.",
+            "Grew the team from 3 to 8 engineers.",
+            "Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.",
             "Cut eligibility lookup time by 50% by introducing a more reliable caching system.",
-            "Stabilized a degraded system that was causing reputational damage and financial losses, by establishing structure, runbooks, and data hygiene."
+            "Modernized a legacy system that was causing reputational damage and financial losses, rebuilding it to auto-scale and perform reliably, and cutting support tickets requiring engineering or technical support by ~40%.",
+            "Led team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows; team consistently met tight delivery deadlines."
           ]
         },
         {
@@ -39,7 +40,7 @@
           "start": "03/2020",
           "end": "03/2021",
           "accomplishments": [
-            "Led teams to handle ~80x traffic growth during the COVID-19 surge through software and system optimizations and scalable, auto-scaling service design, not hardware alone.",
+            "Led teams through ~80x COVID-19 traffic growth with software and system optimizations and auto-scaling service design.",
             "Introduced code standards and conventions that the department later adopted."
           ]
         },
@@ -81,7 +82,7 @@
     {
       "name": "Leadership & People Management",
       "examples": [
-        "Direct team leadership (18+ reports)",
+        "Org leadership (18+ person org, incl. 2 managers)",
         "Hiring & performance management",
         "Mentorship & coaching",
         "Org scaling"
