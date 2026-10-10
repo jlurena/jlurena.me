@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import {
   faFileAlt,
   faNewspaper,
@@ -20,14 +20,12 @@ import { NAV_CONTENT_TYPE, NAV_FUNCTION_TYPE } from './components/tabs/tab.d'
 
 
 function App() {
-  const [resumeOnlyMode, setResumeOnlyMode] = useState(false)
-
-  useEffect(() => {
+  const [resumeOnlyMode] = useState(() => {
     const url = new URL(window.location.href)
     const params = new URLSearchParams(url.search)
 
-    setResumeOnlyMode(!!params.get('resumeOnly'))
-  }, [])
+    return !!params.get('resumeOnly')
+  })
 
   const tabs: NavTabs = useMemo(() => (
     {

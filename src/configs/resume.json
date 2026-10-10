@@ -1,5 +1,5 @@
 {
-  "profile_summary": "Sr. Software Engineering Manager with 10+ years scaling teams and delivering measurable business impact - currently leading 18+ engineers at Teladoc Health. Focused on mentoring managers and engineers, driving cross-functional delivery, and championing AI-augmented engineering practices to improve team velocity and code quality.\n",
+  "profile_summary": "Sr. Software Engineering Manager with 10+ years of experience, promoted 4 times at Teladoc Health from Associate Engineer to Sr. Manager. Scaled an engineering org from 3 to 18+, led teams through ~80x traffic growth, and delivered an $18M annualized revenue lift from a registration redesign. Champion of AI-augmented engineering (Claude Code, Copilot, Rovo) to raise team velocity and code quality.\n",
   "experiences": [
     {
       "experience_name": "Teladoc Health",
@@ -7,85 +7,82 @@
         {
           "title": "Sr. Manager, Software Engineering",
           "start": "03/2026",
-          "end": null
+          "end": null,
+          "accomplishments": [
+            "Lead an 18+ person engineering org across multiple product areas: 10 direct reports (2 engineering managers and 8 engineers) plus their teams. Own architecture, delivery, and roadmap trade-offs; mentor managers and senior engineers; partner with Product and Business to align technology decisions to outcomes.",
+            "Led implementation and launch of the redesigned Teladoc Health user registration experience, increasing conversion 12% (+$18M annualized revenue).",
+            "Grew the org from 8 to 18+ people through 4 external hires and absorbing teams in re-orgs."
+          ]
         },
         {
           "title": "Software Engineering Manager",
           "start": "03/2022",
-          "end": "03/2026"
+          "end": "03/2026",
+          "accomplishments": [
+            "Grew the team from 3 to 8 engineers.",
+            "Extended member accounts from one account per payer to one account across many payers, so ~25% of members keep a single login.",
+            "Cut eligibility lookup time by 50% by introducing a more reliable caching system.",
+            "Modernized a legacy system that was causing reputational damage and financial losses, rebuilding it to auto-scale and perform reliably, and cutting support tickets requiring engineering or technical support by ~40%.",
+            "Led team-wide adoption of Claude Code, GitHub Copilot, and Atlassian Rovo, including custom internal plugins/skills built for team workflows; team consistently met tight delivery deadlines."
+          ]
         },
         {
-          "title": "Senior Software Engineer,",
-          "start": "03/2021,",
-          "end": "03/2022"
+          "title": "Senior Software Engineer",
+          "start": "03/2021",
+          "end": "03/2022",
+          "accomplishments": [
+            "Cut private-label client onboarding from 4–6 months to 2 months by leading the team that eliminated boilerplate in the shared codebase.",
+            "Grew junior engineers into their roles by mentoring them through the intern program."
+          ]
         },
         {
-          "title": "Software Engineer,",
-          "start": "03/2020,",
-          "end": "03/2021"
+          "title": "Software Engineer",
+          "start": "03/2020",
+          "end": "03/2021",
+          "accomplishments": [
+            "Led teams through ~80x COVID-19 traffic growth with software and system optimizations and auto-scaling service design.",
+            "Introduced code standards and conventions that the department later adopted."
+          ]
         },
         {
-          "title": "Associate Software Engineer,",
-          "start": "01/2018,",
-          "end": "03/2020"
+          "title": "Associate Software Engineer",
+          "start": "01/2018",
+          "end": "03/2020",
+          "accomplishments": [
+            "Sped up project delivery by helping migrate Member web from Rails templates to React."
+          ]
         }
       ],
-      "summary": "Sr. Manager, Software Engineering leading a team of 18+ engineers across multiple product pillars. Direct software design, architecture, and delivery execution while mentoring managers and senior engineers. Partner cross-functionally to ensure technology decisions meet business needs end to end.\n",
-      "accomplishments": [
-        "Introduced and implemented a new Teladoc Health user registration experience that increased conversion by 12%, translating to $18M in annualized revenue.",
-        "Led delivery of a foundational identity and benefits-access initiative that unified user access across products (including Virtual Mental Health), enabling about 25% of users to retain a single login across multiple acquired platforms - eliminating duplicate authentication systems, reducing recurring support/maintenance labor, and improving login SLA reliability across the platform.",
-        "Drove major codebase improvements that cut boilerplate required to onboard newly acquired white-labeled/branded clients, reducing delivery timelines from 2-3 months to 1-2 months - saving engineering labor per client launch and tightening time-to-launch SLAs for new acquisitions.",
-        "Led org-wide adoption of AI coding assistants (Claude Code, GitHub Copilot, Atlassian Rovo) across the engineering team, including building custom internal plugins/skills to fit team workflows; drove reports' onboarding onto these tools, improving code quality and delivery velocity as reflected in SLO/SLA adherence and system uptime."
-      ]
+      "experience_note": "Promoted 4 times in 8 years, from Associate Software Engineer to Sr. Manager."
     },
     {
-      "experience_name": "Flatiron School",
+      "experience_name": "Technical Instructor",
       "experience_titles": [
         {
-          "title": "Course Facilitator",
+          "title": "Flatiron School",
           "start": "02/2025",
           "end": null
-        }
-      ],
-      "summary": "Course facilitator at Flatiron School, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
-      "accomplishments": [
-        "Design and deliver software engineering curriculum for cohorts of up to 5 adult learners transitioning into tech careers; mentor students 1:1 through technical problem-solving, code review, and career readiness, including guiding students on effective use of AI coding assistants in their workflow."
-      ]
-    },
-    {
-      "experience_name": "NuCamp Bootcamp",
-      "experience_titles": [
+        },
         {
-          "title": "Code Instructor",
+          "title": "NuCamp Bootcamp",
           "start": "02/2022",
           "end": "02/2024"
         }
       ],
-      "summary": "Code instructor at NuCamp Bootcamp, a technical \"bootcamp\" for adults looking to become Software Engineers\n",
-      "accomplishments": [
-        "Designed and delivered software engineering curriculum for cohorts of up to 5 adult learners transitioning into tech careers; mentored students 1:1 through technical problem-solving, code review, and career readiness, including guiding students on effective use of AI coding assistants in their workflow."
-      ]
+      "summary": "Teach software engineering to cohorts of up to 5 adult career-changers; mentor 1:1 on code review and career readiness, including effective use of AI coding assistants.\n"
     },
     {
       "experience_name": "Research Foundation City University of New York",
-      "experience_titles": [
-        {
-          "title": "Teacher Assistant",
-          "start": "06/2023",
-          "end": "08/2023"
-        }
-      ],
-      "summary": "Teacher assistant at the RF CUNY Coding Bootcamp. A technical bootcamp for adults looking to become software engineers.  Here I help students to break down the concepts they learned in class, support students with their workload and review and grade the assignments submitted by the students\n",
-      "accomplishments": [
-        "Supported a cohort of 20 bootcamp students by breaking down complex technical concepts, reviewing and grading assignments, and providing structured feedback on project work."
-      ]
+      "experience_titles": [],
+      "summary": "Teaching Assistant, RF CUNY Coding Bootcamp (2023): supported 20 students and graded assignments.\n",
+      "compact": true
     }
   ],
   "skills": [
     {
       "name": "Leadership & People Management",
       "examples": [
-        "Direct team leadership (18+ reports)",
+        "Org leadership (18+ person org, incl. 2 managers)",
         "Hiring & performance management",
         "Mentorship & coaching",
         "Org scaling"
@@ -102,6 +99,12 @@
       ]
     },
     {
+      "name": "Engineering Background",
+      "examples": [
+        "Java, JavaScript, Python, Ruby, Scala · React, Node.js, Rails · AWS, Azure · PostgreSQL, MySQL, Elasticsearch, Redis"
+      ]
+    },
+    {
       "name": "Technical Program Management",
       "examples": [
         "Cross-functional delivery",
@@ -115,30 +118,6 @@
         "System design oversight",
         "Code quality standards",
         "Technical due diligence"
-      ]
-    },
-    {
-      "name": "Engineering Background",
-      "examples": [
-        "Java",
-        "Javascript",
-        "Python",
-        "Ruby",
-        "Scala",
-        "React.js",
-        "Node.js",
-        "Ruby on Rails",
-        "AWS",
-        "Azure"
-      ]
-    },
-    {
-      "name": "Data Stores",
-      "examples": [
-        "ElasticSearch",
-        "MySQL",
-        "PostgreSQL",
-        "Redis/Memcached"
       ]
     },
     {
