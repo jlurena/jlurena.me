@@ -69,6 +69,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ changeTabFunc }) => {
       })
     })
 
+    /* v8 ignore else -- ref is always set after mount */
     if (iframeContainerDiv.current) {
       observer.observe(iframeContainerDiv.current, { childList: true, subtree: true })
     }
