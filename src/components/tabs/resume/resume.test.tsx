@@ -75,4 +75,25 @@ describe('Resume', () => {
     expect(screen.getByText('Acme summary')).toBeInTheDocument()
     expect(screen.getByText('Did a thing at Acme')).toBeInTheDocument()
   })
+
+  it('renders title-level summary', () => {
+    mockConfig.current = {
+      experiences: [
+        {
+          experience_name: 'Acme',
+          experience_titles: [
+            {
+              title: 'Engineer',
+              start: '01/2020',
+              summary: 'Engineer summary'
+            }
+          ]
+        }
+      ]
+    }
+    render(<Resume />)
+    mockConfig.current = undefined
+
+    expect(screen.getByText('Engineer summary')).toBeInTheDocument()
+  })
 })
