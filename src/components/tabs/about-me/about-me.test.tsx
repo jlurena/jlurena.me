@@ -81,4 +81,19 @@ describe('AboutMe', () => {
 
     expect(asFragment()).toMatchSnapshot()
   });
+
+  it('ignores non-iframe nodes and iframes without a content document', async () => {
+    const { container } = render(<AboutMe changeTabFunc={vi.fn()} />)
+    const badgeDiv = container.querySelector('.badge-base')!
+
+    const iframe = document.createElement('iframe')
+    Object.defineProperty(iframe, 'contentWindow', { value: null })
+    badgeDiv.appendChild(document.createElement('div'))
+    badgeDiv.appendChild(iframe)
+
+    // Let the MutationObserver callback flush
+    await new Promise(resolve => setTimeout(resolve, 0))
+
+    expect(badgeDiv.querySelector('style')).toBeNull()
+  })
 })

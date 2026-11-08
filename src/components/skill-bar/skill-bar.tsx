@@ -28,6 +28,8 @@ const SkillBar: React.FC<SkillBarProps> = ({ skillName, percent }) => {
   }, [isAnimationDelayed, percentNumber, percent])
 
   useEffect(() => {
+    // Intentional: set after mount so the CSS width transition animates from 0
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setBarWidth(percent)
   }, [percent])
 
